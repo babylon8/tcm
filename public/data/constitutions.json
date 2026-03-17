@@ -1,0 +1,348 @@
+{
+  "version": "1.0.0",
+  "source": "中华中医药学会标准 - 中医体质分类与判定",
+  "constitutions": [
+    {
+      "id": "A",
+      "code": "pinghe",
+      "name": "平和质",
+      "nameEn": "Balanced Constitution",
+      "summary": "阴阳气血调和，以体态适中、面色红润、精力充沛等为主要特征",
+      "characteristics": {
+        "overall": "体态适中、面色红润、精力充沛、脏腑功能良好",
+        "physical": "体形匀称健壮，面色红润，两目有神，须发润泽，肌肉皮肤有弹性",
+        "psychological": "性格随和开朗，情绪稳定，精力充沛，睡眠良好"
+      },
+      "bodyFeatures": {
+        "bodyType": "体形匀称健壮",
+        "complexion": "面色、肤色润泽，头发稠密有光泽，鼻色明润",
+        "tongueBody": "舌色淡红",
+        "tongueCoating": "苔薄白",
+        "pulse": "脉和缓有力"
+      },
+      "healthTendencies": {
+        "susceptibleDiseases": ["平素患病较少"],
+        "diseaseCharacteristics": "正气充足，抵抗力强，不易感受外邪",
+        "seasonalSensitivity": ["对自然环境和社会环境适应能力较强"]
+      },
+      "recommendations": {
+        "diet": {
+          "suitable": ["饮食有节", "饥饱适度", "五味调和"],
+          "avoid": ["饮食偏嗜", "暴饮暴食"],
+          "principles": "饮食宜清淡，不宜偏食，保持营养均衡"
+        },
+        "lifestyle": ["起居有常", "劳逸结合", "顺应四时"],
+        "exercise": ["适度运动", "形神兼养"],
+        "emotional": "保持心态平和，情志舒畅"
+      },
+      "scoring": {
+        "threshold": 60,
+        "weight": 1
+      }
+    },
+    {
+      "id": "B",
+      "code": "qixu",
+      "name": "气虚质",
+      "nameEn": "Qi Deficiency Constitution",
+      "summary": "元气不足，以疲乏、气短、自汗等气虚表现为主要特征",
+      "characteristics": {
+        "overall": "元气不足，脏腑功能减退，气短懒言，容易疲乏",
+        "physical": "肌肉松软不实，语音低弱，气短懒言，容易出汗",
+        "psychological": "性格内向，不喜冒险，精神不振"
+      },
+      "bodyFeatures": {
+        "bodyType": "肌肉松软不实",
+        "complexion": "面色偏黄或偏白，易出汗",
+        "tongueBody": "舌淡红，边有齿痕",
+        "tongueCoating": "苔薄白",
+        "pulse": "脉弱"
+      },
+      "healthTendencies": {
+        "susceptibleDiseases": ["感冒", "内脏下垂", "虚劳"],
+        "diseaseCharacteristics": "易患感冒、内脏下垂等病，病后康复缓慢",
+        "seasonalSensitivity": ["不耐受风、寒、暑、湿邪"]
+      },
+      "recommendations": {
+        "diet": {
+          "suitable": ["山药", "莲子", "黄芪", "党参", "鸡肉", "牛肉", "大枣"],
+          "avoid": ["生冷食物", "油腻食物", "破气食物(如萝卜)"],
+          "principles": "宜食益气健脾食物，忌食破气耗气之品"
+        },
+        "lifestyle": ["避免过度劳累", "注意保暖", "避免出汗过多"],
+        "exercise": ["宜柔缓运动", "不宜剧烈运动", "太极拳", "八段锦"],
+        "emotional": "避免过度思虑，保持心情舒畅"
+      },
+      "scoring": {
+        "threshold": 40,
+        "weight": 1
+      }
+    },
+    {
+      "id": "C",
+      "code": "yangxu",
+      "name": "阳虚质",
+      "nameEn": "Yang Deficiency Constitution",
+      "summary": "阳气不足，以畏寒怕冷、手足不温等虚寒表现为主要特征",
+      "characteristics": {
+        "overall": "阳气不足，虚寒内生，畏寒怕冷，手足不温",
+        "physical": "肌肉松软不实，畏寒肢冷，喜热饮食",
+        "psychological": "性格多沉静、内向，精神不振"
+      },
+      "bodyFeatures": {
+        "bodyType": "肌肉松软不实，多见肥胖",
+        "complexion": "面色柔白或晦暗",
+        "tongueBody": "舌淡胖嫩",
+        "tongueCoating": "苔白润",
+        "pulse": "脉沉迟"
+      },
+      "healthTendencies": {
+        "susceptibleDiseases": ["痰饮", "肿胀", "泄泻", "阳痿", "不孕"],
+        "diseaseCharacteristics": "感邪易从寒化，易患寒证、虚证",
+        "seasonalSensitivity": ["耐夏不耐冬", "易感风、寒、湿邪"]
+      },
+      "recommendations": {
+        "diet": {
+          "suitable": ["羊肉", "狗肉", "鹿肉", "韭菜", "核桃", "生姜", "桂皮"],
+          "avoid": ["生冷食物", "寒凉水果", "冷饮"],
+          "principles": "宜食温热食物，忌食生冷寒凉"
+        },
+        "lifestyle": ["注意保暖", "避免受寒", "多晒太阳"],
+        "exercise": ["适量运动", "避免大汗淋漓", "慢跑", "散步"],
+        "emotional": "保持心情愉快，避免过度忧思悲恐"
+      },
+      "scoring": {
+        "threshold": 40,
+        "weight": 1
+      }
+    },
+    {
+      "id": "D",
+      "code": "yinxu",
+      "name": "阴虚质",
+      "nameEn": "Yin Deficiency Constitution",
+      "summary": "阴液亏少，以口燥咽干、手足心热等虚热表现为主要特征",
+      "characteristics": {
+        "overall": "阴液不足，虚热内生，口燥咽干，手足心热",
+        "physical": "体形偏瘦，手足心热，口燥咽干，鼻微干",
+        "psychological": "性情急躁，外向好动，活泼"
+      },
+      "bodyFeatures": {
+        "bodyType": "体形偏瘦",
+        "complexion": "面颊潮红或偏红",
+        "tongueBody": "舌红少津",
+        "tongueCoating": "少苔或无苔",
+        "pulse": "脉细数"
+      },
+      "healthTendencies": {
+        "susceptibleDiseases": ["虚劳", "失精", "不寐", "便秘", "消渴"],
+        "diseaseCharacteristics": "感邪易从热化，易患虚热证",
+        "seasonalSensitivity": ["耐冬不耐夏", "不耐受暑、热、燥邪"]
+      },
+      "recommendations": {
+        "diet": {
+          "suitable": ["银耳", "百合", "梨", "枸杞", "鸭肉", "猪肉", "海参"],
+          "avoid": ["辛辣食物", "羊肉", "狗肉", "酒"],
+          "principles": "宜食滋阴清热食物，忌食辛辣温燥之品"
+        },
+        "lifestyle": ["避免熬夜", "保持环境湿润", "节制房事"],
+        "exercise": ["不宜剧烈运动", "避免出汗过多", "瑜伽", "散步"],
+        "emotional": "保持心态平和，避免急躁易怒"
+      },
+      "scoring": {
+        "threshold": 40,
+        "weight": 1
+      }
+    },
+    {
+      "id": "E",
+      "code": "tanshi",
+      "name": "痰湿质",
+      "nameEn": "Phlegm-Dampness Constitution",
+      "summary": "痰湿凝聚，以形体肥胖、腹部肥满、口黏苔腻等痰湿表现为主要特征",
+      "characteristics": {
+        "overall": "痰湿内蕴，形体肥胖，腹部肥满，口黏苔腻",
+        "physical": "体形肥胖，腹部肥满松软，面部皮肤油脂较多，多汗且黏",
+        "psychological": "性格温和、稳重，善于忍耐"
+      },
+      "bodyFeatures": {
+        "bodyType": "体形肥胖，腹部肥满松软",
+        "complexion": "面部皮肤油脂较多，眼胞微浮",
+        "tongueBody": "舌体胖大",
+        "tongueCoating": "苔腻",
+        "pulse": "脉滑"
+      },
+      "healthTendencies": {
+        "susceptibleDiseases": ["消渴", "中风", "胸痹", "高血脂", "高血压"],
+        "diseaseCharacteristics": "易患代谢性疾病，病程缠绵",
+        "seasonalSensitivity": ["对梅雨季节及潮湿环境适应能力差"]
+      },
+      "recommendations": {
+        "diet": {
+          "suitable": ["薏苡仁", "白萝卜", "冬瓜", "赤小豆", "海带", "紫菜"],
+          "avoid": ["肥甘厚味", "甜食", "油腻食物", "酒"],
+          "principles": "宜食健脾利湿食物，忌食肥甘厚味"
+        },
+        "lifestyle": ["避免久坐", "保持环境干燥", "适度减肥"],
+        "exercise": ["坚持运动", "有氧运动", "慢跑", "游泳"],
+        "emotional": "保持心情舒畅，避免思虑过度"
+      },
+      "scoring": {
+        "threshold": 40,
+        "weight": 1
+      }
+    },
+    {
+      "id": "F",
+      "code": "shire",
+      "name": "湿热质",
+      "nameEn": "Damp-Heat Constitution",
+      "summary": "湿热内蕴，以面垢油光、口苦、苔黄腻等湿热表现为主要特征",
+      "characteristics": {
+        "overall": "湿热内蕴，面垢油光，口苦口干，身重困倦",
+        "physical": "形体中等或偏瘦，面垢油光，易生痤疮，口苦口干",
+        "psychological": "容易心烦急躁"
+      },
+      "bodyFeatures": {
+        "bodyType": "形体中等或偏瘦",
+        "complexion": "面垢油光，易生痤疮粉刺",
+        "tongueBody": "舌质偏红",
+        "tongueCoating": "苔黄腻",
+        "pulse": "脉滑数"
+      },
+      "healthTendencies": {
+        "susceptibleDiseases": ["疮疖", "黄疸", "热淋", "痤疮"],
+        "diseaseCharacteristics": "易患湿热性疾病，病程缠绵",
+        "seasonalSensitivity": ["对夏末秋初湿热气候适应能力差"]
+      },
+      "recommendations": {
+        "diet": {
+          "suitable": ["绿豆", "苦瓜", "薏苡仁", "冬瓜", "黄瓜", "莲藕"],
+          "avoid": ["辛辣食物", "油腻食物", "甜食", "酒", "滋补品"],
+          "principles": "宜食清热利湿食物，忌食辛辣燥热之品"
+        },
+        "lifestyle": ["避免居住潮湿环境", "保持皮肤清洁", "避免熬夜"],
+        "exercise": ["适合大运动量锻炼", "慢跑", "游泳", "爬山"],
+        "emotional": "保持心态平和，避免急躁发怒"
+      },
+      "scoring": {
+        "threshold": 40,
+        "weight": 1
+      }
+    },
+    {
+      "id": "G",
+      "code": "xueyu",
+      "name": "血瘀质",
+      "nameEn": "Blood Stasis Constitution",
+      "summary": "血行不畅，以肤色晦暗、舌质紫暗等血瘀表现为主要特征",
+      "characteristics": {
+        "overall": "血行不畅，肤色晦暗，易有瘀斑，疼痛明显",
+        "physical": "胖瘦均见，肤色晦暗，色素沉着，容易出现瘀斑",
+        "psychological": "易烦，健忘"
+      },
+      "bodyFeatures": {
+        "bodyType": "胖瘦均见",
+        "complexion": "肤色晦暗，色素沉着，口唇暗淡",
+        "tongueBody": "舌暗或有瘀点，舌下络脉紫暗或增粗",
+        "tongueCoating": "苔薄白或薄黄",
+        "pulse": "脉涩"
+      },
+      "healthTendencies": {
+        "susceptibleDiseases": ["癥瘕", "痛证", "血证", "冠心病", "脑血管病"],
+        "diseaseCharacteristics": "易患血瘀证，疼痛固定不移",
+        "seasonalSensitivity": ["不耐受寒邪"]
+      },
+      "recommendations": {
+        "diet": {
+          "suitable": ["山楂", "桃仁", "玫瑰花", "黑木耳", "黑豆", "醋"],
+          "avoid": ["寒凉食物", "收敛食物", "油腻食物"],
+          "principles": "宜食活血化瘀食物，忌食寒凉凝滞之品"
+        },
+        "lifestyle": ["避免久坐", "注意保暖", "保持心情舒畅"],
+        "exercise": ["坚持运动", "促进血液循环", "太极拳", "舞蹈"],
+        "emotional": "保持心情愉快，避免抑郁恼怒"
+      },
+      "scoring": {
+        "threshold": 40,
+        "weight": 1
+      }
+    },
+    {
+      "id": "H",
+      "code": "qiyu",
+      "name": "气郁质",
+      "nameEn": "Qi Stagnation Constitution",
+      "summary": "气机郁滞，以神情抑郁、忧虑脆弱等气郁表现为主要特征",
+      "characteristics": {
+        "overall": "气机郁滞，神情抑郁，忧虑脆弱，敏感多疑",
+        "physical": "形体瘦者为多，神情抑郁，情感脆弱，烦闷不乐",
+        "psychological": "性格内向不稳定，敏感多虑"
+      },
+      "bodyFeatures": {
+        "bodyType": "形体瘦者为多",
+        "complexion": "面色晦暗或偏青",
+        "tongueBody": "舌淡红",
+        "tongueCoating": "苔薄白",
+        "pulse": "脉弦"
+      },
+      "healthTendencies": {
+        "susceptibleDiseases": ["郁证", "脏躁", "梅核气", "百合病", "失眠"],
+        "diseaseCharacteristics": "易患情志病，与精神刺激密切相关",
+        "seasonalSensitivity": ["对精神刺激适应能力差", "不适应阴雨天气"]
+      },
+      "recommendations": {
+        "diet": {
+          "suitable": ["玫瑰花", "茉莉花", "佛手", "柑橘", "金橘", "荞麦"],
+          "avoid": ["收敛酸涩食物", "冰冷食物"],
+          "principles": "宜食疏肝理气食物，忌食收敛酸涩之品"
+        },
+        "lifestyle": ["多参加社交活动", "听音乐", "旅游", "保持居室通风"],
+        "exercise": ["适量运动", "舒展身心", "瑜伽", "太极拳", "舞蹈"],
+        "emotional": "保持心情舒畅，及时宣泄不良情绪，避免过度思虑"
+      },
+      "scoring": {
+        "threshold": 40,
+        "weight": 1
+      }
+    },
+    {
+      "id": "I",
+      "code": "tebing",
+      "name": "特禀质",
+      "nameEn": "Special/Allergic Constitution",
+      "summary": "先天失常，以生理缺陷、过敏反应等为主要特征",
+      "characteristics": {
+        "overall": "先天失常，过敏体质，易发生过敏反应或先天性疾病",
+        "physical": "过敏体质者常见哮喘、风团、咽痒、鼻塞、喷嚏等，或有先天畸形",
+        "psychological": "随禀质不同情况各异"
+      },
+      "bodyFeatures": {
+        "bodyType": "过敏体质者无特殊形体特征，先天异常者可有畸形",
+        "complexion": "一般无特殊",
+        "tongueBody": "一般无特殊",
+        "tongueCoating": "一般无特殊",
+        "pulse": "一般无特殊"
+      },
+      "healthTendencies": {
+        "susceptibleDiseases": ["哮喘", "荨麻疹", "花粉症", "药物过敏", "遗传性疾病"],
+        "diseaseCharacteristics": "易发生过敏反应，或有先天性、遗传性疾病",
+        "seasonalSensitivity": ["适应能力差", "对过敏季节适应能力差"]
+      },
+      "recommendations": {
+        "diet": {
+          "suitable": ["饮食清淡", "均衡营养"],
+          "avoid": ["过敏源食物", "辛辣刺激食物", "腥膻发物"],
+          "principles": "避免过敏源，饮食清淡，忌食辛辣腥膻发物"
+        },
+        "lifestyle": ["避免接触过敏源", "保持室内清洁", "避免养宠物"],
+        "exercise": ["适度运动", "增强体质", "避免过敏环境运动"],
+        "emotional": "保持心情平和，避免过度紧张"
+      },
+      "scoring": {
+        "threshold": 40,
+        "weight": 1
+      }
+    }
+  ]
+}

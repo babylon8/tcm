@@ -1,0 +1,1197 @@
+{
+  "version": "1.0.0",
+  "recommendations": [
+    {
+      "id": "REC_A_001",
+      "title": "平和质养生建议",
+      "summary": "保持现有良好状态，顺应自然，形神共养",
+      "appliesTo": {
+        "constitutionTypes": [
+          "A"
+        ]
+      },
+      "sections": [
+        {
+          "type": "diet",
+          "title": "饮食调养",
+          "content": [
+            {
+              "name": "饮食有节",
+              "description": "定时定量，不暴饮暴食，不偏食挑食",
+              "frequency": "每日",
+              "nameEn": "Regular Eating",
+              "descriptionEn": "Regular timing and quantity, no overeating, no partial diet",
+              "frequencyEn": "Daily"
+            },
+            {
+              "name": "五味调和",
+              "description": "酸、苦、甘、辛、咸均衡摄入",
+              "frequency": "每日",
+              "nameEn": "Balance Five Flavors",
+              "descriptionEn": "Balanced intake of sour, bitter, sweet, pungent, and salty",
+              "frequencyEn": "Daily"
+            },
+            {
+              "name": "顺应四时",
+              "description": "春夏养阳，秋冬养阴，根据季节调整饮食",
+              "nameEn": "Follow Four Seasons",
+              "descriptionEn": "Nourish yang in spring and summer, nourish yin in autumn and winter, adjust diet according to season"
+            }
+          ],
+          "titleEn": "Dietary Regulation"
+        },
+        {
+          "type": "lifestyle",
+          "title": "起居调养",
+          "content": "起居有常，劳逸结合，顺应四时阴阳变化，保持良好的生活规律。春季夜卧早起，夏季夜卧早起，秋季早卧早起，冬季早卧晚起。",
+          "titleEn": "Daily Life Regulation",
+          "contentEn": "Regular daily routine, balance work and rest, follow four seasons' yin-yang changes, maintain good lifestyle. In spring: sleep late, rise early; in summer: sleep late, rise early; in autumn: sleep early, rise early; in winter: sleep early, rise late."
+        },
+        {
+          "type": "exercise",
+          "title": "运动建议",
+          "content": [
+            {
+              "name": "适度运动",
+              "description": "选择适合自己的运动方式，如散步、慢跑、游泳等",
+              "frequency": "每周3-5次，每次30分钟以上",
+              "nameEn": "Moderate Exercise",
+              "descriptionEn": "Choose suitable exercise methods, such as walking, jogging, swimming, etc.",
+              "frequencyEn": "每周3-5次，每次30分钟以上"
+            },
+            {
+              "name": "传统养生功法",
+              "description": "太极拳、八段锦、五禽戏等",
+              "frequency": "每日或隔日",
+              "nameEn": "Traditional Health Exercises",
+              "descriptionEn": "Tai Chi, Baduanjin, Five Animal Frolics, etc.",
+              "frequencyEn": "Daily or every other day"
+            }
+          ],
+          "titleEn": "Exercise Recommendations"
+        },
+        {
+          "type": "emotional",
+          "title": "情志调摄",
+          "content": "保持心态平和，情志舒畅，恬惔虚无，精神内守。避免过度喜、怒、忧、思、悲、恐、惊等情志刺激。",
+          "titleEn": "Emotional Regulation",
+          "contentEn": "Maintain peaceful mindset, smooth emotions, quiet emptiness, spirit kept internally. Avoid excessive emotional stimulation from joy, anger, worry, thought, sorrow, fear, and fright."
+        }
+      ],
+      "priority": "medium",
+      "tags": [
+        "平和质",
+        "养生",
+        "预防"
+      ],
+      "titleEn": "Health Recommendations for Balanced Constitution",
+      "summaryEn": "Maintain current good state, follow nature, nourish both body and spirit",
+      "tagsEn": [
+        "Balanced Constitution",
+        "Health Preservation",
+        "Prevention"
+      ]
+    },
+    {
+      "id": "REC_B_001",
+      "title": "气虚质调理建议",
+      "summary": "益气健脾，避免耗气，补中益气",
+      "appliesTo": {
+        "constitutionTypes": [
+          "B"
+        ]
+      },
+      "sections": [
+        {
+          "type": "diet",
+          "title": "饮食调养",
+          "content": [
+            {
+              "name": "宜食益气健脾食物",
+              "description": "山药、莲子、黄芪、党参、白术、茯苓、大枣、桂圆、鸡肉、牛肉、鲤鱼、鲫鱼",
+              "frequency": "常食",
+              "nameEn": "Eat foods that tonify qi and strengthen spleen",
+              "descriptionEn": "Yam, lotus seed, astragalus, codonopsis, atractylodes, poria, jujube, longan, chicken, beef, carp, crucian carp",
+              "frequencyEn": "Eat regularly"
+            },
+            {
+              "name": "忌食耗气破气食物",
+              "description": "生萝卜、空心菜、山楂、槟榔等破气耗气之品",
+              "contraindications": [
+                "气虚严重者"
+              ],
+              "nameEn": "Avoid foods that consume or break qi",
+              "descriptionEn": "生萝卜、空心菜、山楂、槟榔等破气耗气之品"
+            },
+            {
+              "name": "黄芪炖鸡",
+              "description": "黄芪30g，母鸡1只，炖汤食用",
+              "frequency": "每周1-2次",
+              "nameEn": "黄芪炖鸡",
+              "descriptionEn": "黄芪30g，母鸡1只，炖汤食用",
+              "frequencyEn": "每周1-2次"
+            }
+          ],
+          "titleEn": "Dietary Regulation"
+        },
+        {
+          "type": "lifestyle",
+          "title": "起居调养",
+          "content": "避免过度劳累，注意休息，避免出汗过多。注意保暖，避免受风着凉。作息规律，保证充足睡眠。避免久站久立，防止中气下陷。",
+          "titleEn": "Daily Life Regulation",
+          "contentEn": "避免过度劳累，注意休息，避免出汗过多。注意保暖，避免受风着凉。作息规律，保证充足睡眠。避免久站久立，防止中气下陷。"
+        },
+        {
+          "type": "exercise",
+          "title": "运动建议",
+          "content": [
+            {
+              "name": "柔缓运动",
+              "description": "不宜剧烈运动，选择柔缓的运动方式",
+              "frequency": "每日30分钟",
+              "nameEn": "柔缓运动",
+              "descriptionEn": "不宜剧烈运动，选择柔缓的运动方式",
+              "frequencyEn": "每日30分钟"
+            },
+            {
+              "name": "太极拳",
+              "description": "柔和缓慢，呼吸深长，益气养神",
+              "frequency": "每日",
+              "nameEn": "太极拳",
+              "descriptionEn": "柔和缓慢，呼吸深长，益气养神",
+              "frequencyEn": "Daily"
+            },
+            {
+              "name": "八段锦",
+              "description": "特别是\"调理脾胃须单举\"、\"两手托天理三焦\"",
+              "frequency": "每日",
+              "nameEn": "八段锦",
+              "descriptionEn": "特别是\"调理脾胃须单举\"、\"两手托天理三焦\"",
+              "frequencyEn": "Daily"
+            }
+          ],
+          "titleEn": "Exercise Recommendations"
+        },
+        {
+          "type": "acupressure",
+          "title": "穴位按摩",
+          "content": [
+            {
+              "name": "足三里",
+              "description": "位于外膝眼下3寸，胫骨前缘外1横指处",
+              "frequency": "每日按摩5-10分钟",
+              "nameEn": "足三里",
+              "descriptionEn": "位于外膝眼下3寸，胫骨前缘外1横指处",
+              "frequencyEn": "每日按摩5-10分钟"
+            },
+            {
+              "name": "气海",
+              "description": "位于前正中线上，脐下1.5寸",
+              "frequency": "每日按摩5-10分钟",
+              "nameEn": "气海",
+              "descriptionEn": "位于前正中线上，脐下1.5寸",
+              "frequencyEn": "每日按摩5-10分钟"
+            },
+            {
+              "name": "关元",
+              "description": "位于前正中线上，脐下3寸",
+              "frequency": "每日按摩5-10分钟",
+              "nameEn": "关元",
+              "descriptionEn": "位于前正中线上，脐下3寸",
+              "frequencyEn": "每日按摩5-10分钟"
+            }
+          ],
+          "titleEn": "Acupressure Points"
+        },
+        {
+          "type": "emotional",
+          "title": "情志调摄",
+          "content": "避免过度思虑，\"思伤脾\"，过度思虑会加重气虚。保持心情舒畅，避免精神紧张。可多听舒缓音乐，参加集体活动。",
+          "titleEn": "Emotional Regulation",
+          "contentEn": "避免过度思虑，\"思伤脾\"，过度思虑会加重气虚。保持心情舒畅，避免精神紧张。可多听舒缓音乐，参加集体活动。"
+        }
+      ],
+      "priority": "high",
+      "tags": [
+        "气虚质",
+        "益气",
+        "健脾"
+      ],
+      "titleEn": "Regulation Recommendations for Qi Deficiency Constitution",
+      "summaryEn": "Tonify qi and strengthen spleen, avoid qi consumption, tonify middle qi",
+      "tagsEn": [
+        "气虚质",
+        "益气",
+        "健脾"
+      ]
+    },
+    {
+      "id": "REC_C_001",
+      "title": "阳虚质调理建议",
+      "summary": "温阳散寒，补肾壮阳，避免受寒",
+      "appliesTo": {
+        "constitutionTypes": [
+          "C"
+        ]
+      },
+      "sections": [
+        {
+          "type": "diet",
+          "title": "饮食调养",
+          "content": [
+            {
+              "name": "宜食温热食物",
+              "description": "羊肉、狗肉、鹿肉、牛肉、韭菜、核桃、栗子、桂圆、生姜、桂皮、胡椒、茴香",
+              "frequency": "常食",
+              "nameEn": "宜食温热食物",
+              "descriptionEn": "羊肉、狗肉、鹿肉、牛肉、韭菜、核桃、栗子、桂圆、生姜、桂皮、胡椒、茴香",
+              "frequencyEn": "Eat regularly"
+            },
+            {
+              "name": "忌食生冷寒凉",
+              "description": "冷饮、冰淇淋、西瓜、梨、苦瓜、绿豆、螃蟹等",
+              "contraindications": [
+                "阳虚明显者"
+              ],
+              "nameEn": "忌食生冷寒凉",
+              "descriptionEn": "冷饮、冰淇淋、西瓜、梨、苦瓜、绿豆、螃蟹等"
+            },
+            {
+              "name": "当归生姜羊肉汤",
+              "description": "当归10g，生姜30g，羊肉200g，炖汤食用",
+              "frequency": "冬季每周1-2次",
+              "nameEn": "当归生姜羊肉汤",
+              "descriptionEn": "当归10g，生姜30g，羊肉200g，炖汤食用",
+              "frequencyEn": "冬季每周1-2次"
+            },
+            {
+              "name": "韭菜炒核桃",
+              "description": "韭菜100g，核桃仁30g，炒食",
+              "frequency": "每周2-3次",
+              "nameEn": "韭菜炒核桃",
+              "descriptionEn": "韭菜100g，核桃仁30g，炒食",
+              "frequencyEn": "每周2-3次"
+            }
+          ],
+          "titleEn": "Dietary Regulation"
+        },
+        {
+          "type": "lifestyle",
+          "title": "起居调养",
+          "content": "注意保暖，特别是腹部、腰部和下肢的保暖。避免受寒着凉，冬天注意添加衣物。多晒太阳，特别是背部督脉。居住环境宜温暖向阳，避免潮湿寒冷。",
+          "titleEn": "Daily Life Regulation",
+          "contentEn": "注意保暖，特别是腹部、腰部和下肢的保暖。避免受寒着凉，冬天注意添加衣物。多晒太阳，特别是背部督脉。居住环境宜温暖向阳，避免潮湿寒冷。"
+        },
+        {
+          "type": "exercise",
+          "title": "运动建议",
+          "content": [
+            {
+              "name": "适量运动",
+              "description": "运动以微微出汗为宜，避免大汗淋漓伤阳",
+              "frequency": "每日30分钟",
+              "nameEn": "适量运动",
+              "descriptionEn": "运动以微微出汗为宜，避免大汗淋漓伤阳",
+              "frequencyEn": "每日30分钟"
+            },
+            {
+              "name": "慢跑散步",
+              "description": "阳光下慢跑或散步，吸收阳气",
+              "frequency": "每日上午",
+              "nameEn": "慢跑散步",
+              "descriptionEn": "阳光下慢跑或散步，吸收阳气",
+              "frequencyEn": "每日上午"
+            },
+            {
+              "name": "太极拳",
+              "description": "动作缓慢柔和，调和阴阳",
+              "frequency": "每日",
+              "nameEn": "太极拳",
+              "descriptionEn": "动作缓慢柔和，调和阴阳",
+              "frequencyEn": "Daily"
+            }
+          ],
+          "titleEn": "Exercise Recommendations"
+        },
+        {
+          "type": "acupressure",
+          "title": "穴位按摩",
+          "content": [
+            {
+              "name": "关元",
+              "description": "位于前正中线上，脐下3寸，培元固本",
+              "frequency": "每日艾灸或按摩10-15分钟",
+              "nameEn": "关元",
+              "descriptionEn": "位于前正中线上，脐下3寸，培元固本",
+              "frequencyEn": "每日艾灸或按摩10-15分钟"
+            },
+            {
+              "name": "命门",
+              "description": "位于后正中线上，第二腰椎棘突下，温肾壮阳",
+              "frequency": "每日艾灸或按摩10-15分钟",
+              "nameEn": "命门",
+              "descriptionEn": "位于后正中线上，第二腰椎棘突下，温肾壮阳",
+              "frequencyEn": "每日艾灸或按摩10-15分钟"
+            },
+            {
+              "name": "肾俞",
+              "description": "位于第二腰椎棘突下旁开1.5寸",
+              "frequency": "每日按摩10-15分钟",
+              "nameEn": "肾俞",
+              "descriptionEn": "位于第二腰椎棘突下旁开1.5寸",
+              "frequencyEn": "每日按摩10-15分钟"
+            }
+          ],
+          "titleEn": "Acupressure Points"
+        },
+        {
+          "type": "emotional",
+          "title": "情志调摄",
+          "content": "避免过度忧思、恐惧、悲伤，\"恐伤肾\"、\"忧伤脾\"。保持心情愉快，多参加集体活动，多与人交流。",
+          "titleEn": "Emotional Regulation",
+          "contentEn": "避免过度忧思、恐惧、悲伤，\"恐伤肾\"、\"忧伤脾\"。保持心情愉快，多参加集体活动，多与人交流。"
+        }
+      ],
+      "priority": "high",
+      "tags": [
+        "阳虚质",
+        "温阳",
+        "补肾"
+      ],
+      "titleEn": "Regulation Recommendations for Yang Deficiency Constitution",
+      "summaryEn": "温阳散寒，补肾壮阳，避免受寒",
+      "tagsEn": [
+        "阳虚质",
+        "温阳",
+        "补肾"
+      ]
+    },
+    {
+      "id": "REC_D_001",
+      "title": "阴虚质调理建议",
+      "summary": "滋阴清热，养阴生津，避免燥热",
+      "appliesTo": {
+        "constitutionTypes": [
+          "D"
+        ]
+      },
+      "sections": [
+        {
+          "type": "diet",
+          "title": "饮食调养",
+          "content": [
+            {
+              "name": "宜食滋阴清热食物",
+              "description": "银耳、百合、梨、枸杞、桑葚、黑芝麻、鸭肉、猪肉、海参、龟肉、甲鱼、荸荠、莲藕",
+              "frequency": "常食",
+              "nameEn": "宜食滋阴清热食物",
+              "descriptionEn": "银耳、百合、梨、枸杞、桑葚、黑芝麻、鸭肉、猪肉、海参、龟肉、甲鱼、荸荠、莲藕",
+              "frequencyEn": "Eat regularly"
+            },
+            {
+              "name": "忌食辛辣温燥",
+              "description": "羊肉、狗肉、辣椒、生姜、大蒜、酒、咖啡、浓茶",
+              "contraindications": [
+                "阴虚火旺者"
+              ],
+              "nameEn": "忌食辛辣温燥",
+              "descriptionEn": "羊肉、狗肉、辣椒、生姜、大蒜、酒、咖啡、浓茶"
+            },
+            {
+              "name": "银耳百合羹",
+              "description": "银耳10g，百合15g，冰糖适量，炖羹食用",
+              "frequency": "每周2-3次",
+              "nameEn": "银耳百合羹",
+              "descriptionEn": "银耳10g，百合15g，冰糖适量，炖羹食用",
+              "frequencyEn": "每周2-3次"
+            },
+            {
+              "name": "枸杞菊花茶",
+              "description": "枸杞10g，菊花5g，泡茶饮用",
+              "frequency": "每日",
+              "nameEn": "枸杞菊花茶",
+              "descriptionEn": "枸杞10g，菊花5g，泡茶饮用",
+              "frequencyEn": "Daily"
+            }
+          ],
+          "titleEn": "Dietary Regulation"
+        },
+        {
+          "type": "lifestyle",
+          "title": "起居调养",
+          "content": "避免熬夜，保证充足睡眠，\"静则神藏，躁则消亡\"。居住环境宜湿润凉爽，避免燥热。节制房事，避免耗伤肾精。避免剧烈运动和高温环境。",
+          "titleEn": "Daily Life Regulation",
+          "contentEn": "避免熬夜，保证充足睡眠，\"静则神藏，躁则消亡\"。居住环境宜湿润凉爽，避免燥热。节制房事，避免耗伤肾精。避免剧烈运动和高温环境。"
+        },
+        {
+          "type": "exercise",
+          "title": "运动建议",
+          "content": [
+            {
+              "name": "不宜剧烈运动",
+              "description": "避免大汗淋漓，防止阴津耗伤",
+              "frequency": "控制运动量",
+              "nameEn": "不宜剧烈运动",
+              "descriptionEn": "避免大汗淋漓，防止阴津耗伤",
+              "frequencyEn": "控制运动量"
+            },
+            {
+              "name": "瑜伽",
+              "description": "柔和舒缓，调息养神",
+              "frequency": "每日30分钟",
+              "nameEn": "瑜伽",
+              "descriptionEn": "柔和舒缓，调息养神",
+              "frequencyEn": "每日30分钟"
+            },
+            {
+              "name": "太极拳",
+              "description": "动作轻柔，呼吸深长",
+              "frequency": "每日",
+              "nameEn": "太极拳",
+              "descriptionEn": "动作轻柔，呼吸深长",
+              "frequencyEn": "Daily"
+            }
+          ],
+          "titleEn": "Exercise Recommendations"
+        },
+        {
+          "type": "acupressure",
+          "title": "穴位按摩",
+          "content": [
+            {
+              "name": "三阴交",
+              "description": "位于内踝尖上3寸，胫骨内侧面后缘，滋阴要穴",
+              "frequency": "每日按摩5-10分钟",
+              "nameEn": "三阴交",
+              "descriptionEn": "位于内踝尖上3寸，胫骨内侧面后缘，滋阴要穴",
+              "frequencyEn": "每日按摩5-10分钟"
+            },
+            {
+              "name": "太溪",
+              "description": "位于内踝与跟腱之间的凹陷处，补肾滋阴",
+              "frequency": "每日按摩5-10分钟",
+              "nameEn": "太溪",
+              "descriptionEn": "位于内踝与跟腱之间的凹陷处，补肾滋阴",
+              "frequencyEn": "每日按摩5-10分钟"
+            },
+            {
+              "name": "涌泉",
+              "description": "位于足底前1/3凹陷处，引火归元",
+              "frequency": "每日按摩或艾灸",
+              "nameEn": "涌泉",
+              "descriptionEn": "位于足底前1/3凹陷处，引火归元",
+              "frequencyEn": "每日按摩或艾灸"
+            }
+          ],
+          "titleEn": "Acupressure Points"
+        },
+        {
+          "type": "emotional",
+          "title": "情志调摄",
+          "content": "避免急躁易怒，\"怒伤肝\"、\"五志化火\"。保持心态平和，避免情绪激动。可练习冥想、静坐，使心神安宁。",
+          "titleEn": "Emotional Regulation",
+          "contentEn": "避免急躁易怒，\"怒伤肝\"、\"五志化火\"。保持心态平和，避免情绪激动。可练习冥想、静坐，使心神安宁。"
+        }
+      ],
+      "priority": "high",
+      "tags": [
+        "阴虚质",
+        "滋阴",
+        "清热"
+      ],
+      "titleEn": "Regulation Recommendations for Yin Deficiency Constitution",
+      "summaryEn": "滋阴清热，养阴生津，避免燥热",
+      "tagsEn": [
+        "阴虚质",
+        "滋阴",
+        "清热"
+      ]
+    },
+    {
+      "id": "REC_E_001",
+      "title": "痰湿质调理建议",
+      "summary": "健脾利湿，化痰祛湿，减肥降脂",
+      "appliesTo": {
+        "constitutionTypes": [
+          "E"
+        ]
+      },
+      "sections": [
+        {
+          "type": "diet",
+          "title": "饮食调养",
+          "content": [
+            {
+              "name": "宜食健脾利湿食物",
+              "description": "薏苡仁、白扁豆、赤小豆、茯苓、冬瓜、黄瓜、苦瓜、海带、紫菜、萝卜、山楂",
+              "frequency": "常食",
+              "nameEn": "宜食健脾利湿食物",
+              "descriptionEn": "薏苡仁、白扁豆、赤小豆、茯苓、冬瓜、黄瓜、苦瓜、海带、紫菜、萝卜、山楂",
+              "frequencyEn": "Eat regularly"
+            },
+            {
+              "name": "忌食肥甘厚味",
+              "description": "油炸食品、肥肉、甜食、蛋糕、巧克力、酒类",
+              "contraindications": [
+                "痰湿重者"
+              ],
+              "nameEn": "忌食肥甘厚味",
+              "descriptionEn": "油炸食品、肥肉、甜食、蛋糕、巧克力、酒类"
+            },
+            {
+              "name": "薏苡仁赤小豆粥",
+              "description": "薏苡仁30g，赤小豆30g，煮粥食用",
+              "frequency": "每日或隔日",
+              "nameEn": "薏苡仁赤小豆粥",
+              "descriptionEn": "薏苡仁30g，赤小豆30g，煮粥食用",
+              "frequencyEn": "Daily or every other day"
+            },
+            {
+              "name": "冬瓜荷叶茶",
+              "description": "冬瓜皮30g，干荷叶10g，泡茶饮用",
+              "frequency": "每日",
+              "nameEn": "冬瓜荷叶茶",
+              "descriptionEn": "冬瓜皮30g，干荷叶10g，泡茶饮用",
+              "frequencyEn": "Daily"
+            }
+          ],
+          "titleEn": "Dietary Regulation"
+        },
+        {
+          "type": "lifestyle",
+          "title": "起居调养",
+          "content": "避免久坐少动，增加运动量。居住环境宜干燥通风，避免潮湿。控制饮食总量，减少热量摄入。保持大便通畅，促进湿邪排出。",
+          "titleEn": "Daily Life Regulation",
+          "contentEn": "避免久坐少动，增加运动量。居住环境宜干燥通风，避免潮湿。控制饮食总量，减少热量摄入。保持大便通畅，促进湿邪排出。"
+        },
+        {
+          "type": "exercise",
+          "title": "运动建议",
+          "content": [
+            {
+              "name": "坚持有氧运动",
+              "description": "慢跑、快走、游泳、骑车等，促进代谢",
+              "frequency": "每日40-60分钟",
+              "nameEn": "坚持有氧运动",
+              "descriptionEn": "慢跑、快走、游泳、骑车等，促进代谢",
+              "frequencyEn": "每日40-60分钟"
+            },
+            {
+              "name": "控制体重",
+              "description": "通过运动和饮食控制，逐渐减轻体重",
+              "frequency": "持续",
+              "nameEn": "控制体重",
+              "descriptionEn": "通过运动和饮食控制，逐渐减轻体重",
+              "frequencyEn": "持续"
+            }
+          ],
+          "titleEn": "Exercise Recommendations"
+        },
+        {
+          "type": "acupressure",
+          "title": "穴位按摩",
+          "content": [
+            {
+              "name": "丰隆",
+              "description": "位于外踝尖上8寸，条口穴外1寸，化痰要穴",
+              "frequency": "每日按摩5-10分钟",
+              "nameEn": "丰隆",
+              "descriptionEn": "位于外踝尖上8寸，条口穴外1寸，化痰要穴",
+              "frequencyEn": "每日按摩5-10分钟"
+            },
+            {
+              "name": "足三里",
+              "description": "位于外膝眼下3寸，健脾和胃",
+              "frequency": "每日按摩5-10分钟",
+              "nameEn": "足三里",
+              "descriptionEn": "位于外膝眼下3寸，健脾和胃",
+              "frequencyEn": "每日按摩5-10分钟"
+            },
+            {
+              "name": "中脘",
+              "description": "位于前正中线上，脐上4寸，和胃化痰",
+              "frequency": "每日按摩5-10分钟",
+              "nameEn": "中脘",
+              "descriptionEn": "位于前正中线上，脐上4寸，和胃化痰",
+              "frequencyEn": "每日按摩5-10分钟"
+            }
+          ],
+          "titleEn": "Acupressure Points"
+        },
+        {
+          "type": "emotional",
+          "title": "情志调摄",
+          "content": "避免思虑过度，\"思伤脾\"，脾伤则运化失常，湿邪内生。保持心情舒畅，多参加户外活动。",
+          "titleEn": "Emotional Regulation",
+          "contentEn": "避免思虑过度，\"思伤脾\"，脾伤则运化失常，湿邪内生。保持心情舒畅，多参加户外活动。"
+        }
+      ],
+      "priority": "high",
+      "tags": [
+        "痰湿质",
+        "健脾",
+        "利湿",
+        "减肥"
+      ],
+      "titleEn": "Regulation Recommendations for Phlegm-Dampness Constitution",
+      "summaryEn": "健脾利湿，化痰祛湿，减肥降脂",
+      "tagsEn": [
+        "痰湿质",
+        "健脾",
+        "利湿",
+        "减肥"
+      ]
+    },
+    {
+      "id": "REC_F_001",
+      "title": "湿热质调理建议",
+      "summary": "清热利湿，祛湿解毒，避免湿热",
+      "appliesTo": {
+        "constitutionTypes": [
+          "F"
+        ]
+      },
+      "sections": [
+        {
+          "type": "diet",
+          "title": "饮食调养",
+          "content": [
+            {
+              "name": "宜食清热利湿食物",
+              "description": "绿豆、薏苡仁、苦瓜、冬瓜、黄瓜、西瓜、莲藕、芹菜、白菜、萝卜、海带、绿茶",
+              "frequency": "常食",
+              "nameEn": "宜食清热利湿食物",
+              "descriptionEn": "绿豆、薏苡仁、苦瓜、冬瓜、黄瓜、西瓜、莲藕、芹菜、白菜、萝卜、海带、绿茶",
+              "frequencyEn": "Eat regularly"
+            },
+            {
+              "name": "忌食辛辣油腻",
+              "description": "辣椒、生姜、大蒜、羊肉、狗肉、油炸食品、甜食、酒类",
+              "contraindications": [
+                "湿热重者"
+              ],
+              "nameEn": "忌食辛辣油腻",
+              "descriptionEn": "辣椒、生姜、大蒜、羊肉、狗肉、油炸食品、甜食、酒类"
+            },
+            {
+              "name": "绿豆薏苡仁汤",
+              "description": "绿豆30g，薏苡仁30g，煮汤食用",
+              "frequency": "夏季每周2-3次",
+              "nameEn": "绿豆薏苡仁汤",
+              "descriptionEn": "绿豆30g，薏苡仁30g，煮汤食用",
+              "frequencyEn": "夏季每周2-3次"
+            },
+            {
+              "name": "苦瓜排骨汤",
+              "description": "苦瓜100g，排骨200g，炖汤食用",
+              "frequency": "每周1-2次",
+              "nameEn": "苦瓜排骨汤",
+              "descriptionEn": "苦瓜100g，排骨200g，炖汤食用",
+              "frequencyEn": "每周1-2次"
+            }
+          ],
+          "titleEn": "Dietary Regulation"
+        },
+        {
+          "type": "lifestyle",
+          "title": "起居调养",
+          "content": "避免居住潮湿环境，保持室内通风干燥。避免熬夜，保证充足睡眠。保持皮肤清洁，预防痤疮、湿疹等皮肤病。避免高温高湿环境。",
+          "titleEn": "Daily Life Regulation",
+          "contentEn": "避免居住潮湿环境，保持室内通风干燥。避免熬夜，保证充足睡眠。保持皮肤清洁，预防痤疮、湿疹等皮肤病。避免高温高湿环境。"
+        },
+        {
+          "type": "exercise",
+          "title": "运动建议",
+          "content": [
+            {
+              "name": "适合大运动量",
+              "description": "湿热质适合较大运动量，通过出汗排出湿热",
+              "frequency": "每日40-60分钟",
+              "nameEn": "适合大运动量",
+              "descriptionEn": "湿热质适合较大运动量，通过出汗排出湿热",
+              "frequencyEn": "每日40-60分钟"
+            },
+            {
+              "name": "有氧运动",
+              "description": "慢跑、游泳、爬山、球类运动",
+              "frequency": "每周4-5次",
+              "nameEn": "有氧运动",
+              "descriptionEn": "慢跑、游泳、爬山、球类运动",
+              "frequencyEn": "每周4-5次"
+            }
+          ],
+          "titleEn": "Exercise Recommendations"
+        },
+        {
+          "type": "acupressure",
+          "title": "穴位按摩",
+          "content": [
+            {
+              "name": "阴陵泉",
+              "description": "位于胫骨内侧髁下缘凹陷处，利湿要穴",
+              "frequency": "每日按摩5-10分钟",
+              "nameEn": "阴陵泉",
+              "descriptionEn": "位于胫骨内侧髁下缘凹陷处，利湿要穴",
+              "frequencyEn": "每日按摩5-10分钟"
+            },
+            {
+              "name": "曲池",
+              "description": "位于肘横纹外侧端，屈肘时当尺泽与肱骨外上髁连线中点，清热要穴",
+              "frequency": "每日按摩5-10分钟",
+              "nameEn": "曲池",
+              "descriptionEn": "位于肘横纹外侧端，屈肘时当尺泽与肱骨外上髁连线中点，清热要穴",
+              "frequencyEn": "每日按摩5-10分钟"
+            }
+          ],
+          "titleEn": "Acupressure Points"
+        },
+        {
+          "type": "emotional",
+          "title": "情志调摄",
+          "content": "避免急躁发怒，\"五志化火\"，加重湿热。保持心态平和，情绪稳定。",
+          "titleEn": "Emotional Regulation",
+          "contentEn": "避免急躁发怒，\"五志化火\"，加重湿热。保持心态平和，情绪稳定。"
+        }
+      ],
+      "priority": "high",
+      "tags": [
+        "湿热质",
+        "清热",
+        "利湿"
+      ],
+      "titleEn": "Regulation Recommendations for Damp-Heat Constitution",
+      "summaryEn": "清热利湿，祛湿解毒，避免湿热",
+      "tagsEn": [
+        "湿热质",
+        "清热",
+        "利湿"
+      ]
+    },
+    {
+      "id": "REC_G_001",
+      "title": "血瘀质调理建议",
+      "summary": "活血化瘀，行气活血，疏通经络",
+      "appliesTo": {
+        "constitutionTypes": [
+          "G"
+        ]
+      },
+      "sections": [
+        {
+          "type": "diet",
+          "title": "饮食调养",
+          "content": [
+            {
+              "name": "宜食活血化瘀食物",
+              "description": "山楂、桃仁、红花、玫瑰花、黑木耳、黑豆、洋葱、生姜、大蒜、醋、葡萄酒（适量）",
+              "frequency": "常食",
+              "nameEn": "宜食活血化瘀食物",
+              "descriptionEn": "山楂、桃仁、红花、玫瑰花、黑木耳、黑豆、洋葱、生姜、大蒜、醋、葡萄酒（适量）",
+              "frequencyEn": "Eat regularly"
+            },
+            {
+              "name": "忌食寒凉收敛",
+              "description": "冷饮、寒凉水果、乌梅、石榴、柿子等收敛食物",
+              "contraindications": [
+                "血瘀明显者"
+              ],
+              "nameEn": "忌食寒凉收敛",
+              "descriptionEn": "冷饮、寒凉水果、乌梅、石榴、柿子等收敛食物"
+            },
+            {
+              "name": "山楂玫瑰花茶",
+              "description": "山楂10g，玫瑰花5g，泡茶饮用",
+              "frequency": "每日",
+              "nameEn": "山楂玫瑰花茶",
+              "descriptionEn": "山楂10g，玫瑰花5g，泡茶饮用",
+              "frequencyEn": "Daily"
+            },
+            {
+              "name": "黑木耳炒洋葱",
+              "description": "黑木耳10g，洋葱100g，炒食",
+              "frequency": "每周2-3次",
+              "nameEn": "黑木耳炒洋葱",
+              "descriptionEn": "黑木耳10g，洋葱100g，炒食",
+              "frequencyEn": "每周2-3次"
+            }
+          ],
+          "titleEn": "Dietary Regulation"
+        },
+        {
+          "type": "lifestyle",
+          "title": "起居调养",
+          "content": "避免久坐久站，定时活动，促进血液循环。注意保暖，避免受寒，\"寒凝血瘀\"。保持心情舒畅，避免抑郁恼怒。",
+          "titleEn": "Daily Life Regulation",
+          "contentEn": "避免久坐久站，定时活动，促进血液循环。注意保暖，避免受寒，\"寒凝血瘀\"。保持心情舒畅，避免抑郁恼怒。"
+        },
+        {
+          "type": "exercise",
+          "title": "运动建议",
+          "content": [
+            {
+              "name": "坚持运动",
+              "description": "促进血液循环，预防瘀血形成",
+              "frequency": "每日30-40分钟",
+              "nameEn": "坚持运动",
+              "descriptionEn": "促进血液循环，预防瘀血形成",
+              "frequencyEn": "每日30-40分钟"
+            },
+            {
+              "name": "有氧运动",
+              "description": "慢跑、快走、跳舞、游泳等",
+              "frequency": "每周4-5次",
+              "nameEn": "有氧运动",
+              "descriptionEn": "慢跑、快走、跳舞、游泳等",
+              "frequencyEn": "每周4-5次"
+            }
+          ],
+          "titleEn": "Exercise Recommendations"
+        },
+        {
+          "type": "acupressure",
+          "title": "穴位按摩",
+          "content": [
+            {
+              "name": "血海",
+              "description": "位于髌骨内上缘上2寸，活血化瘀要穴",
+              "frequency": "每日按摩5-10分钟",
+              "nameEn": "血海",
+              "descriptionEn": "位于髌骨内上缘上2寸，活血化瘀要穴",
+              "frequencyEn": "每日按摩5-10分钟"
+            },
+            {
+              "name": "三阴交",
+              "description": "位于内踝尖上3寸，调理气血",
+              "frequency": "每日按摩5-10分钟",
+              "nameEn": "三阴交",
+              "descriptionEn": "位于内踝尖上3寸，调理气血",
+              "frequencyEn": "每日按摩5-10分钟"
+            },
+            {
+              "name": "合谷",
+              "description": "位于手背第一、二掌骨之间，行气活血",
+              "frequency": "每日按摩5-10分钟",
+              "nameEn": "合谷",
+              "descriptionEn": "位于手背第一、二掌骨之间，行气活血",
+              "frequencyEn": "每日按摩5-10分钟"
+            }
+          ],
+          "titleEn": "Acupressure Points"
+        },
+        {
+          "type": "emotional",
+          "title": "情志调摄",
+          "content": "保持心情愉快，避免抑郁恼怒，\"气滞则血瘀\"。多参加社交活动，及时宣泄不良情绪。",
+          "titleEn": "Emotional Regulation",
+          "contentEn": "保持心情愉快，避免抑郁恼怒，\"气滞则血瘀\"。多参加社交活动，及时宣泄不良情绪。"
+        }
+      ],
+      "priority": "high",
+      "tags": [
+        "血瘀质",
+        "活血",
+        "化瘀"
+      ],
+      "titleEn": "Regulation Recommendations for Blood Stasis Constitution",
+      "summaryEn": "活血化瘀，行气活血，疏通经络",
+      "tagsEn": [
+        "血瘀质",
+        "活血",
+        "化瘀"
+      ]
+    },
+    {
+      "id": "REC_H_001",
+      "title": "气郁质调理建议",
+      "summary": "疏肝理气，解郁安神，调畅情志",
+      "appliesTo": {
+        "constitutionTypes": [
+          "H"
+        ]
+      },
+      "sections": [
+        {
+          "type": "diet",
+          "title": "饮食调养",
+          "content": [
+            {
+              "name": "宜食疏肝理气食物",
+              "description": "玫瑰花、茉莉花、佛手、柑橘、金橘、柚子、荞麦、高粱、刀豆、蘑菇、萝卜",
+              "frequency": "常食",
+              "nameEn": "宜食疏肝理气食物",
+              "descriptionEn": "玫瑰花、茉莉花、佛手、柑橘、金橘、柚子、荞麦、高粱、刀豆、蘑菇、萝卜",
+              "frequencyEn": "Eat regularly"
+            },
+            {
+              "name": "忌食收敛酸涩",
+              "description": "乌梅、石榴、柿子、杨梅、酸菜等",
+              "contraindications": [
+                "气郁明显者"
+              ],
+              "nameEn": "忌食收敛酸涩",
+              "descriptionEn": "乌梅、石榴、柿子、杨梅、酸菜等"
+            },
+            {
+              "name": "玫瑰花茶",
+              "description": "玫瑰花5-10g，泡茶饮用",
+              "frequency": "每日",
+              "nameEn": "玫瑰花茶",
+              "descriptionEn": "玫瑰花5-10g，泡茶饮用",
+              "frequencyEn": "Daily"
+            },
+            {
+              "name": "佛手柑橘茶",
+              "description": "佛手5g，柑橘皮5g，泡茶饮用",
+              "frequency": "每日",
+              "nameEn": "佛手柑橘茶",
+              "descriptionEn": "佛手5g，柑橘皮5g，泡茶饮用",
+              "frequencyEn": "Daily"
+            }
+          ],
+          "titleEn": "Dietary Regulation"
+        },
+        {
+          "type": "lifestyle",
+          "title": "起居调养",
+          "content": "多参加社交活动，多与人交流，避免独处。保持居室通风明亮，多晒太阳。听舒缓音乐，看喜剧节目，保持心情愉悦。",
+          "titleEn": "Daily Life Regulation",
+          "contentEn": "多参加社交活动，多与人交流，避免独处。保持居室通风明亮，多晒太阳。听舒缓音乐，看喜剧节目，保持心情愉悦。"
+        },
+        {
+          "type": "exercise",
+          "title": "运动建议",
+          "content": [
+            {
+              "name": "舒展身心运动",
+              "description": "选择能使身心舒展放松的运动",
+              "frequency": "每日30分钟以上",
+              "nameEn": "舒展身心运动",
+              "descriptionEn": "选择能使身心舒展放松的运动",
+              "frequencyEn": "每日30分钟以上"
+            },
+            {
+              "name": "瑜伽",
+              "description": "配合呼吸调息，舒缓身心",
+              "frequency": "每日",
+              "nameEn": "瑜伽",
+              "descriptionEn": "配合呼吸调息，舒缓身心",
+              "frequencyEn": "Daily"
+            },
+            {
+              "name": "太极拳",
+              "description": "动作柔和，调节气机",
+              "frequency": "每日",
+              "nameEn": "太极拳",
+              "descriptionEn": "动作柔和，调节气机",
+              "frequencyEn": "Daily"
+            },
+            {
+              "name": "舞蹈",
+              "description": "集体舞蹈，愉悦身心",
+              "frequency": "每周2-3次",
+              "nameEn": "舞蹈",
+              "descriptionEn": "集体舞蹈，愉悦身心",
+              "frequencyEn": "每周2-3次"
+            }
+          ],
+          "titleEn": "Exercise Recommendations"
+        },
+        {
+          "type": "acupressure",
+          "title": "穴位按摩",
+          "content": [
+            {
+              "name": "太冲",
+              "description": "位于足背第一、二跖骨结合部前凹陷处，疏肝理气要穴",
+              "frequency": "每日按摩5-10分钟",
+              "nameEn": "太冲",
+              "descriptionEn": "位于足背第一、二跖骨结合部前凹陷处，疏肝理气要穴",
+              "frequencyEn": "每日按摩5-10分钟"
+            },
+            {
+              "name": "期门",
+              "description": "位于乳头直下，第六肋间隙，疏肝解郁",
+              "frequency": "每日按摩5-10分钟",
+              "nameEn": "期门",
+              "descriptionEn": "位于乳头直下，第六肋间隙，疏肝解郁",
+              "frequencyEn": "每日按摩5-10分钟"
+            },
+            {
+              "name": "膻中",
+              "description": "位于前正中线上，两乳头连线中点，宽胸理气",
+              "frequency": "每日按摩5-10分钟",
+              "nameEn": "膻中",
+              "descriptionEn": "位于前正中线上，两乳头连线中点，宽胸理气",
+              "frequencyEn": "每日按摩5-10分钟"
+            }
+          ],
+          "titleEn": "Acupressure Points"
+        },
+        {
+          "type": "emotional",
+          "title": "情志调摄",
+          "content": "保持心情舒畅，及时宣泄不良情绪，不要闷在心里。多与人交流，多参加集体活动。避免过度思虑和抑郁。可练习冥想、深呼吸放松身心。",
+          "titleEn": "Emotional Regulation",
+          "contentEn": "保持心情舒畅，及时宣泄不良情绪，不要闷在心里。多与人交流，多参加集体活动。避免过度思虑和抑郁。可练习冥想、深呼吸放松身心。"
+        }
+      ],
+      "priority": "high",
+      "tags": [
+        "气郁质",
+        "疏肝",
+        "理气",
+        "解郁"
+      ],
+      "titleEn": "Regulation Recommendations for Qi Stagnation Constitution",
+      "summaryEn": "疏肝理气，解郁安神，调畅情志",
+      "tagsEn": [
+        "气郁质",
+        "疏肝",
+        "理气",
+        "解郁"
+      ]
+    },
+    {
+      "id": "REC_I_001",
+      "title": "特禀质调理建议",
+      "summary": "避免过敏源，增强体质，预防过敏",
+      "appliesTo": {
+        "constitutionTypes": [
+          "I"
+        ]
+      },
+      "sections": [
+        {
+          "type": "diet",
+          "title": "饮食调养",
+          "content": [
+            {
+              "name": "饮食清淡均衡",
+              "description": "避免过敏源食物，饮食清淡，营养均衡",
+              "frequency": "每日",
+              "nameEn": "饮食清淡均衡",
+              "descriptionEn": "避免过敏源食物，饮食清淡，营养均衡",
+              "frequencyEn": "Daily"
+            },
+            {
+              "name": "忌食过敏源",
+              "description": "根据个人过敏源，严格避免相应食物",
+              "contraindications": [
+                "过敏体质者"
+              ],
+              "nameEn": "忌食过敏源",
+              "descriptionEn": "根据个人过敏源，严格避免相应食物"
+            },
+            {
+              "name": "忌食辛辣腥膻发物",
+              "description": "羊肉、狗肉、海鲜、辣椒、酒等",
+              "contraindications": [
+                "过敏发作期"
+              ],
+              "nameEn": "忌食辛辣腥膻发物",
+              "descriptionEn": "羊肉、狗肉、海鲜、辣椒、酒等"
+            }
+          ],
+          "titleEn": "Dietary Regulation"
+        },
+        {
+          "type": "lifestyle",
+          "title": "起居调养",
+          "content": "避免接触已知过敏源（花粉、尘螨、动物毛发等）。保持室内清洁，定期清洗床上用品。避免养宠物。过敏季节减少外出，外出时戴口罩。",
+          "titleEn": "Daily Life Regulation",
+          "contentEn": "避免接触已知过敏源（花粉、尘螨、动物毛发等）。保持室内清洁，定期清洗床上用品。避免养宠物。过敏季节减少外出，外出时戴口罩。"
+        },
+        {
+          "type": "exercise",
+          "title": "运动建议",
+          "content": [
+            {
+              "name": "适度运动增强体质",
+              "description": "选择适合自己的运动方式，增强体质",
+              "frequency": "每日30分钟",
+              "nameEn": "适度运动增强体质",
+              "descriptionEn": "选择适合自己的运动方式，增强体质",
+              "frequencyEn": "每日30分钟"
+            },
+            {
+              "name": "避免过敏环境运动",
+              "description": "花粉季节避免户外运动，选择室内运动",
+              "nameEn": "避免过敏环境运动",
+              "descriptionEn": "花粉季节避免户外运动，选择室内运动"
+            }
+          ],
+          "titleEn": "Exercise Recommendations"
+        },
+        {
+          "type": "acupressure",
+          "title": "穴位按摩",
+          "content": [
+            {
+              "name": "迎香",
+              "description": "位于鼻翼外缘中点旁，鼻唇沟中，通鼻窍",
+              "frequency": "每日按摩3-5分钟",
+              "nameEn": "迎香",
+              "descriptionEn": "位于鼻翼外缘中点旁，鼻唇沟中，通鼻窍",
+              "frequencyEn": "每日按摩3-5分钟"
+            },
+            {
+              "name": "足三里",
+              "description": "位于外膝眼下3寸，增强体质",
+              "frequency": "每日按摩5-10分钟",
+              "nameEn": "足三里",
+              "descriptionEn": "位于外膝眼下3寸，增强体质",
+              "frequencyEn": "每日按摩5-10分钟"
+            }
+          ],
+          "titleEn": "Acupressure Points"
+        },
+        {
+          "type": "emotional",
+          "title": "情志调摄",
+          "content": "保持心情平和，避免过度紧张。正确认识和对待过敏问题，避免过度焦虑。",
+          "titleEn": "Emotional Regulation",
+          "contentEn": "保持心情平和，避免过度紧张。正确认识和对待过敏问题，避免过度焦虑。"
+        }
+      ],
+      "priority": "high",
+      "tags": [
+        "特禀质",
+        "过敏",
+        "预防"
+      ],
+      "titleEn": "Regulation Recommendations for Special/Allergic Constitution",
+      "summaryEn": "Avoid allergens, strengthen constitution, prevent allergies",
+      "tagsEn": [
+        "特禀质",
+        "过敏",
+        "Prevention"
+      ]
+    }
+  ],
+  "seasonalRecommendations": [
+    {
+      "season": "spring",
+      "name": "春季",
+      "advice": "春季阳气升发，应顺应春季\"生\"的特性，夜卧早起，舒缓形体，使情志舒畅。宜食辛甘发散之品，如韭菜、香菜、豆芽等，少食酸涩收敛之物。多到户外活动，舒展形体。"
+    },
+    {
+      "season": "summer",
+      "name": "夏季",
+      "advice": "夏季阳气旺盛，应顺应夏季\"长\"的特性，夜卧早起，不厌恶日晒，使情志愉快。宜食清热解暑之品，如西瓜、绿豆、苦瓜等，少食辛辣温燥之物。避免过度贪凉，防止寒邪伤阳。"
+    },
+    {
+      "season": "autumn",
+      "name": "秋季",
+      "advice": "秋季阳气收敛，应顺应秋季\"收\"的特性，早卧早起，与鸡俱兴，使情志安宁。宜食滋阴润燥之品，如梨、百合、银耳等，少食辛辣燥热之物。防止秋燥伤肺。"
+    },
+    {
+      "season": "winter",
+      "name": "冬季",
+      "advice": "冬季阳气闭藏，应顺应冬季\"藏\"的特性，早卧晚起，必待日光，使情志潜伏。宜食温补肾阳之品，如羊肉、核桃、栗子等，少食生冷寒凉之物。注意保暖，避免受寒。"
+    }
+  ],
+  "metadata": {
+    "totalRecommendations": 9,
+    "totalSections": 40
+  }
+}

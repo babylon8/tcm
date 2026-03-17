@@ -1,0 +1,120 @@
+{
+  "version": "1.0.0",
+  "description": "Plain English body type descriptions for lay-persons",
+  "types": {
+    "A": {
+      "id": "A",
+      "name": "Balanced",
+      "tagline": "Your body is in harmony",
+      "plainEnglish": "You have good energy levels, sleep well, and rarely get sick. Your body handles stress well and recovers quickly. This is the ideal state of health.",
+      "quickTips": [
+        "Keep up your healthy habits",
+        "Stay physically active",
+        "Eat a varied, balanced diet"
+      ],
+      "icon": "✨"
+    },
+    "B": {
+      "id": "B",
+      "name": "Low Energy",
+      "tagline": "You tend to tire easily",
+      "plainEnglish": "You often feel fatigued, may catch colds easily, and sometimes feel weak or short of breath. You might prefer to avoid strenuous activities.",
+      "quickTips": [
+        "Get plenty of rest and sleep",
+        "Eat warm, cooked foods (soups, stews)",
+        "Try gentle exercise like walking or tai chi"
+      ],
+      "icon": "🔋"
+    },
+    "C": {
+      "id": "C",
+      "name": "Cold Sensitivity",
+      "tagline": "You feel cold easily",
+      "plainEnglish": "Your hands and feet are often cold, you dislike cold weather, and you prefer warm drinks and foods. You may feel sluggish in winter.",
+      "quickTips": [
+        "Keep warm, especially your feet and lower back",
+        "Drink warm beverages throughout the day",
+        "Avoid cold and raw foods"
+      ],
+      "icon": "❄️"
+    },
+    "D": {
+      "id": "D",
+      "name": "Heat Sensitivity",
+      "tagline": "You run warm and feel dry",
+      "plainEnglish": "You often feel warm, have dry skin or mouth, and may experience night sweats or insomnia. You prefer cool environments and cold drinks.",
+      "quickTips": [
+        "Stay hydrated with water and herbal teas",
+        "Eat cooling foods (cucumber, watermelon, pears)",
+        "Avoid spicy foods and alcohol"
+      ],
+      "icon": "🔥"
+    },
+    "E": {
+      "id": "E",
+      "name": "Sluggish Metabolism",
+      "tagline": "Your body holds onto weight easily",
+      "plainEnglish": "You may gain weight easily, feel heavy or sluggish, have oily skin, or experience bloating. You might feel tired after meals.",
+      "quickTips": [
+        "Eat lighter meals, avoid greasy foods",
+        "Stay active with regular cardio exercise",
+        "Limit dairy and sweet foods"
+      ],
+      "icon": "⚖️"
+    },
+    "F": {
+      "id": "F",
+      "name": "Overheated & Oily",
+      "tagline": "You run hot with oily skin",
+      "plainEnglish": "You have oily skin prone to acne, may feel hot and sweaty, and might experience a bitter taste in your mouth. You may feel irritable in hot weather.",
+      "quickTips": [
+        "Avoid fried, greasy, and spicy foods",
+        "Eat more vegetables and light foods",
+        "Stay cool and keep skin clean"
+      ],
+      "icon": "💧"
+    },
+    "G": {
+      "id": "G",
+      "name": "Poor Circulation",
+      "tagline": "Your blood flow could be better",
+      "plainEnglish": "You may bruise easily, have a darker complexion, or experience pain in fixed locations. Your skin might look dull or have dark spots.",
+      "quickTips": [
+        "Stay active to improve circulation",
+        "Eat foods that support blood flow (beets, leafy greens)",
+        "Avoid sitting for long periods"
+      ],
+      "icon": "🩸"
+    },
+    "H": {
+      "id": "H",
+      "name": "Stress-Prone",
+      "tagline": "You're sensitive to emotional stress",
+      "plainEnglish": "You tend to feel anxious or moody, may sigh often, and can feel a tightness in your chest when stressed. Your mood affects your physical wellbeing.",
+      "quickTips": [
+        "Practice stress relief (yoga, meditation, walking)",
+        "Talk to friends and stay socially connected",
+        "Try calming teas (chamomile, lavender, rose)"
+      ],
+      "icon": "🧘"
+    },
+    "I": {
+      "id": "I",
+      "name": "Sensitive & Allergic",
+      "tagline": "Your body reacts easily to triggers",
+      "plainEnglish": "You may have allergies, sensitive skin, or react to certain foods, medications, or environmental factors. You need to be careful about what you're exposed to.",
+      "quickTips": [
+        "Identify and avoid your personal triggers",
+        "Keep your environment clean and dust-free",
+        "Build immunity with regular sleep and exercise"
+      ],
+      "icon": "🌸"
+    }
+  },
+  "matchStrength": {
+    "strong": { "threshold": 50, "label": "Strong match", "bars": "████████░░" },
+    "moderate": { "threshold": 35, "label": "Moderate match", "bars": "█████░░░░░" },
+    "slight": { "threshold": 25, "label": "Slight match", "bars": "███░░░░░░░" },
+    "none": { "threshold": 0, "label": "Not a match", "bars": "░░░░░░░░░░" }
+  }
+}

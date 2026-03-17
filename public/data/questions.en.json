@@ -1,0 +1,668 @@
+{
+  "version": "1.0.0",
+  "source": "China Association of Chinese Medicine Standard - Classification and Determination of TCM Constitution",
+  "answerOptions": [
+    { "id": "1", "text": "没有（根本不/从来没有）", "textEn": "Never", "score": 1 },
+    { "id": "2", "text": "很少（有一点/偶尔）", "textEn": "Rarely", "score": 2 },
+    { "id": "3", "text": "有时（有些/少数时间）", "textEn": "Sometimes", "score": 3 },
+    { "id": "4", "text": "经常（相当/多数时间）", "textEn": "Often", "score": 4 },
+    { "id": "5", "text": "总是（非常/每天）", "textEn": "Always", "score": 5 }
+  ],
+  "questions": [
+    {
+      "id": "Q_A01",
+      "order": 1,
+      "text": "您精力充沛吗？",
+      "textEn": "Do you feel energetic?",
+      "constitutionType": "A",
+      "category": "physical",
+      "isReverseScored": false,
+      "note": "Balanced constitution positive question, higher scores indicate tendency toward balanced constitution"
+    },
+    {
+      "id": "Q_A02",
+      "order": 2,
+      "text": "您容易疲乏吗？",
+      "textEn": "Do you get tired easily?",
+      "constitutionType": "A",
+      "category": "physical",
+      "isReverseScored": true,
+      "note": "Balanced constitution reverse question, lower scores indicate tendency toward balanced constitution",
+      "alsoMapsTo": ["B"]
+    },
+    {
+      "id": "Q_A03",
+      "order": 3,
+      "text": "您说话声音低弱无力吗？",
+      "textEn": "Do you speak in a weak voice?",
+      "constitutionType": "A",
+      "category": "physical",
+      "isReverseScored": true,
+      "alsoMapsTo": ["B"]
+    },
+    {
+      "id": "Q_A04",
+      "order": 4,
+      "text": "您感到闷闷不乐、情绪低沉吗？",
+      "textEn": "Do you feel depressed?",
+      "constitutionType": "A",
+      "category": "emotion",
+      "isReverseScored": true,
+      "alsoMapsTo": ["H"]
+    },
+    {
+      "id": "Q_A05",
+      "order": 5,
+      "text": "比一般人容易受到惊吓吗？",
+      "textEn": "Are you more easily frightened than others?",
+      "constitutionType": "A",
+      "category": "emotion",
+      "isReverseScored": true
+    },
+    {
+      "id": "Q_A06",
+      "order": 6,
+      "text": "您容易忘事（健忘）吗？",
+      "textEn": "Do you tend to be forgetful?",
+      "constitutionType": "A",
+      "category": "mental",
+      "isReverseScored": true,
+      "alsoMapsTo": ["G"]
+    },
+    {
+      "id": "Q_A07",
+      "order": 7,
+      "text": "您容易失眠吗？",
+      "textEn": "Do you have trouble sleeping?",
+      "constitutionType": "A",
+      "category": "sleep",
+      "isReverseScored": true
+    },
+    {
+      "id": "Q_A08",
+      "order": 8,
+      "text": "您容易心慌吗？",
+      "textEn": "Do you get heart palpitations easily?",
+      "constitutionType": "A",
+      "category": "physical",
+      "isReverseScored": true,
+      "alsoMapsTo": ["B"]
+    },
+    {
+      "id": "Q_A09",
+      "order": 9,
+      "text": "您容易气短（呼吸短促）吗？",
+      "textEn": "Do you get short of breath easily?",
+      "constitutionType": "A",
+      "category": "physical",
+      "isReverseScored": true,
+      "alsoMapsTo": ["B"]
+    },
+    {
+      "id": "Q_A10",
+      "order": 10,
+      "text": "您容易心烦吗？",
+      "textEn": "Do you get irritated easily?",
+      "constitutionType": "A",
+      "category": "emotion",
+      "isReverseScored": true
+    },
+    {
+      "id": "Q_B01",
+      "order": 11,
+      "text": "您容易疲乏吗？",
+      "textEn": "Do you get tired easily?",
+      "constitutionType": "B",
+      "category": "physical",
+      "isReverseScored": false,
+      "isSharedWith": "Q_A02"
+    },
+    {
+      "id": "Q_B02",
+      "order": 12,
+      "text": "您容易气短（呼吸短促）吗？",
+      "textEn": "Do you get short of breath easily?",
+      "constitutionType": "B",
+      "category": "physical",
+      "isReverseScored": false,
+      "isSharedWith": "Q_A09"
+    },
+    {
+      "id": "Q_B03",
+      "order": 13,
+      "text": "您容易心慌吗？",
+      "textEn": "Do you get heart palpitations easily?",
+      "constitutionType": "B",
+      "category": "physical",
+      "isReverseScored": false,
+      "isSharedWith": "Q_A08"
+    },
+    {
+      "id": "Q_B04",
+      "order": 14,
+      "text": "您容易头晕或站起时晕眩吗？",
+      "textEn": "Do you get dizzy easily or feel dizzy when standing up?",
+      "constitutionType": "B",
+      "category": "physical",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_B05",
+      "order": 15,
+      "text": "您比别人容易患感冒吗？",
+      "textEn": "Are you more susceptible to colds than others?",
+      "constitutionType": "B",
+      "category": "susceptibility",
+      "isReverseScored": false,
+      "alsoMapsTo": ["C"]
+    },
+    {
+      "id": "Q_B06",
+      "order": 16,
+      "text": "您喜欢安静、懒得说话吗？",
+      "textEn": "Do you prefer quietness and feel too lazy to talk?",
+      "constitutionType": "B",
+      "category": "emotion",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_B07",
+      "order": 17,
+      "text": "您说话声音低弱无力吗？",
+      "textEn": "Do you speak in a weak voice?",
+      "constitutionType": "B",
+      "category": "physical",
+      "isReverseScored": false,
+      "isSharedWith": "Q_A03"
+    },
+    {
+      "id": "Q_B08",
+      "order": 18,
+      "text": "您活动量稍大就容易出虚汗吗？",
+      "textEn": "Do you sweat easily with slight physical activity?",
+      "constitutionType": "B",
+      "category": "sweat",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_C01",
+      "order": 19,
+      "text": "您手脚发凉吗？",
+      "textEn": "Do your hands and feet feel cold?",
+      "constitutionType": "C",
+      "category": "cold-heat",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_C02",
+      "order": 20,
+      "text": "您胃脘部、背部或腰膝部怕冷吗？",
+      "textEn": "Do you feel cold in your stomach area, back, or knees?",
+      "constitutionType": "C",
+      "category": "cold-heat",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_C03",
+      "order": 21,
+      "text": "您感到怕冷、衣服比别人穿得多吗？",
+      "textEn": "Do you feel cold and wear more clothes than others?",
+      "constitutionType": "C",
+      "category": "cold-heat",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_C04",
+      "order": 22,
+      "text": "您比一般人耐受不了冬天寒冷吗？",
+      "textEn": "Are you less tolerant of winter cold than others?",
+      "constitutionType": "C",
+      "category": "susceptibility",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_C05",
+      "order": 23,
+      "text": "您比别人容易患感冒吗？",
+      "textEn": "Are you more susceptible to colds than others?",
+      "constitutionType": "C",
+      "category": "susceptibility",
+      "isReverseScored": false,
+      "isSharedWith": "Q_B05"
+    },
+    {
+      "id": "Q_C06",
+      "order": 24,
+      "text": "您吃（喝）凉的东西会感到不舒服或者怕吃（喝）凉的吗？",
+      "textEn": "Do you feel uncomfortable eating or drinking cold things?",
+      "constitutionType": "C",
+      "category": "digestion",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_C07",
+      "order": 25,
+      "text": "您受凉或吃（喝）凉的东西后，容易腹泻、拉肚子吗？",
+      "textEn": "Do you easily get diarrhea after catching cold or eating/drinking cold things?",
+      "constitutionType": "C",
+      "category": "excretion",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_C08",
+      "order": 26,
+      "text": "您小肚子怕冷吗？",
+      "textEn": "Is your lower abdomen sensitive to cold?",
+      "constitutionType": "C",
+      "category": "cold-heat",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_D01",
+      "order": 27,
+      "text": "您感到手脚心发热吗？",
+      "textEn": "Do your palms and soles feel hot?",
+      "constitutionType": "D",
+      "category": "cold-heat",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_D02",
+      "order": 28,
+      "text": "您感觉身体、脸上发热吗？",
+      "textEn": "Do you feel hot in your body or face?",
+      "constitutionType": "D",
+      "category": "cold-heat",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_D03",
+      "order": 29,
+      "text": "您皮肤或口唇干吗？",
+      "textEn": "Is your skin or lips dry?",
+      "constitutionType": "D",
+      "category": "physical",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_D04",
+      "order": 30,
+      "text": "您口唇颜色比一般人红吗？",
+      "textEn": "Are your lips redder than most people?",
+      "constitutionType": "D",
+      "category": "complexion",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_D05",
+      "order": 31,
+      "text": "您容易便秘或大便干燥吗？",
+      "textEn": "Do you easily get constipation or dry stools?",
+      "constitutionType": "D",
+      "category": "excretion",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_D06",
+      "order": 32,
+      "text": "您面部两颧潮红或偏红吗？",
+      "textEn": "Are your cheeks flushed or reddish?",
+      "constitutionType": "D",
+      "category": "complexion",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_D07",
+      "order": 33,
+      "text": "您感到眼睛干涩吗？",
+      "textEn": "Do your eyes feel dry?",
+      "constitutionType": "D",
+      "category": "physical",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_D08",
+      "order": 34,
+      "text": "您感到口干咽燥、总想喝水吗？",
+      "textEn": "Do you feel dry in the mouth and throat, always wanting to drink water?",
+      "constitutionType": "D",
+      "category": "digestion",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_E01",
+      "order": 35,
+      "text": "您感到胸闷或腹部胀满吗？",
+      "textEn": "Do you feel chest tightness or abdominal bloating?",
+      "constitutionType": "E",
+      "category": "physical",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_E02",
+      "order": 36,
+      "text": "您感到身体沉重不轻松或不爽快吗？",
+      "textEn": "Do you feel heavy and uncomfortable in your body?",
+      "constitutionType": "E",
+      "category": "physical",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_E03",
+      "order": 37,
+      "text": "您腹部肥满松软吗？",
+      "textEn": "Is your abdomen fat and soft?",
+      "constitutionType": "E",
+      "category": "physical",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_E04",
+      "order": 38,
+      "text": "您有额部油脂分泌多的现象吗？",
+      "textEn": "Do you have excessive oil secretion on your forehead?",
+      "constitutionType": "E",
+      "category": "complexion",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_E05",
+      "order": 39,
+      "text": "您上眼睑比别人肿（上眼睑有轻微隆起的现象）吗？",
+      "textEn": "Are your upper eyelids more swollen than others?",
+      "constitutionType": "E",
+      "category": "complexion",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_E06",
+      "order": 40,
+      "text": "您嘴里有黏黏的感觉吗？",
+      "textEn": "Do you have a sticky feeling in your mouth?",
+      "constitutionType": "E",
+      "category": "digestion",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_E07",
+      "order": 41,
+      "text": "您平时痰多，特别是感到咽喉部有痰堵着吗？",
+      "textEn": "Do you often have phlegm, especially feeling it stuck in your throat?",
+      "constitutionType": "E",
+      "category": "respiration",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_E08",
+      "order": 42,
+      "text": "您舌苔厚腻或有舌苔厚厚的感觉吗？",
+      "textEn": "Do you have a thick or greasy tongue coating?",
+      "constitutionType": "E",
+      "category": "physical",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_F01",
+      "order": 43,
+      "text": "您面部或鼻部有油腻感或者油亮发光吗？",
+      "textEn": "Does your face or nose feel oily or shiny?",
+      "constitutionType": "F",
+      "category": "complexion",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_F02",
+      "order": 44,
+      "text": "您容易生痤疮或疮疖吗？",
+      "textEn": "Do you easily get acne or boils?",
+      "constitutionType": "F",
+      "category": "skin",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_F03",
+      "order": 45,
+      "text": "您感到口苦或嘴里有异味吗？",
+      "textEn": "Do you have a bitter taste in your mouth or bad breath?",
+      "constitutionType": "F",
+      "category": "digestion",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_F04",
+      "order": 46,
+      "text": "您大便黏滞不爽、有解不尽的感觉吗？",
+      "textEn": "Do you have sticky stools that feel incomplete?",
+      "constitutionType": "F",
+      "category": "excretion",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_F05",
+      "order": 47,
+      "text": "您小便时尿道有发热感、尿色深（黄）吗？",
+      "textEn": "Do you feel burning when urinating or have dark yellow urine?",
+      "constitutionType": "F",
+      "category": "excretion",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_F06",
+      "order": 48,
+      "text": "您带下色黄（白带颜色发黄）吗？",
+      "textEn": "Is your vaginal discharge yellowish?",
+      "constitutionType": "F",
+      "category": "excretion",
+      "isReverseScored": false,
+      "genderSpecific": "female"
+    },
+    {
+      "id": "Q_F07",
+      "order": 49,
+      "text": "您阴囊部位潮湿吗？",
+      "textEn": "Is your scrotum damp?",
+      "constitutionType": "F",
+      "category": "physical",
+      "isReverseScored": false,
+      "genderSpecific": "male"
+    },
+    {
+      "id": "Q_G01",
+      "order": 50,
+      "text": "您的皮肤在不知不觉中会出现青紫瘀斑（皮下出血）吗？",
+      "textEn": "Does your skin easily bruise without obvious cause?",
+      "constitutionType": "G",
+      "category": "skin",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_G02",
+      "order": 51,
+      "text": "您两颧部有细微红丝吗？",
+      "textEn": "Do you have fine red lines on your cheeks?",
+      "constitutionType": "G",
+      "category": "complexion",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_G03",
+      "order": 52,
+      "text": "您身体上有哪里疼痛吗？",
+      "textEn": "Do you have pain anywhere in your body?",
+      "constitutionType": "G",
+      "category": "pain",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_G04",
+      "order": 53,
+      "text": "您面色晦暗或容易出现褐斑吗？",
+      "textEn": "Is your complexion dull or do you easily get brown spots?",
+      "constitutionType": "G",
+      "category": "complexion",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_G05",
+      "order": 54,
+      "text": "您容易有黑眼圈吗？",
+      "textEn": "Do you easily get dark circles under your eyes?",
+      "constitutionType": "G",
+      "category": "complexion",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_G06",
+      "order": 55,
+      "text": "您容易忘事（健忘）吗？",
+      "textEn": "Do you tend to be forgetful?",
+      "constitutionType": "G",
+      "category": "mental",
+      "isReverseScored": false,
+      "isSharedWith": "Q_A06"
+    },
+    {
+      "id": "Q_G07",
+      "order": 56,
+      "text": "您口唇颜色偏暗吗？",
+      "textEn": "Are your lips dark in color?",
+      "constitutionType": "G",
+      "category": "complexion",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_H01",
+      "order": 57,
+      "text": "您感到闷闷不乐、情绪低沉吗？",
+      "textEn": "Do you feel depressed?",
+      "constitutionType": "H",
+      "category": "emotion",
+      "isReverseScored": false,
+      "isSharedWith": "Q_A04"
+    },
+    {
+      "id": "Q_H02",
+      "order": 58,
+      "text": "您容易精神紧张、焦虑不安吗？",
+      "textEn": "Do you easily feel nervous or anxious?",
+      "constitutionType": "H",
+      "category": "emotion",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_H03",
+      "order": 59,
+      "text": "您多愁善感、感情脆弱吗？",
+      "textEn": "Are you sentimental and emotionally fragile?",
+      "constitutionType": "H",
+      "category": "emotion",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_H04",
+      "order": 60,
+      "text": "您容易感到害怕或受到惊吓吗？",
+      "textEn": "Do you easily feel scared or frightened?",
+      "constitutionType": "H",
+      "category": "emotion",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_H05",
+      "order": 61,
+      "text": "您胁肋部或乳房胀痛吗？",
+      "textEn": "Do you have pain in your rib sides or breasts?",
+      "constitutionType": "H",
+      "category": "pain",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_H06",
+      "order": 62,
+      "text": "您无缘无故叹气吗？",
+      "textEn": "Do you sigh for no reason?",
+      "constitutionType": "H",
+      "category": "emotion",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_H07",
+      "order": 63,
+      "text": "您咽喉部有异物感（梅核气）吗？",
+      "textEn": "Do you feel something stuck in your throat (plum pit qi)?",
+      "constitutionType": "H",
+      "category": "physical",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_I01",
+      "order": 64,
+      "text": "您不感冒也会打喷嚏吗？",
+      "textEn": "Do you sneeze even without a cold?",
+      "constitutionType": "I",
+      "category": "susceptibility",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_I02",
+      "order": 65,
+      "text": "您不感冒也会鼻塞、流鼻涕吗？",
+      "textEn": "Do you have a stuffy or runny nose even without a cold?",
+      "constitutionType": "I",
+      "category": "susceptibility",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_I03",
+      "order": 66,
+      "text": "您有因季节变化、温度变化或异味等原因而咳喘的现象吗？",
+      "textEn": "Do you cough or wheeze due to seasonal changes, temperature changes, or odors?",
+      "constitutionType": "I",
+      "category": "susceptibility",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_I04",
+      "order": 67,
+      "text": "您容易过敏（药物、食物、气味、花粉）吗？",
+      "textEn": "Do you easily have allergies (to drugs, food, odors, pollen)?",
+      "constitutionType": "I",
+      "category": "susceptibility",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_I05",
+      "order": 68,
+      "text": "您的皮肤起荨麻疹（风团、风疹块、风疙瘩）吗？",
+      "textEn": "Do you get hives (urticaria) on your skin?",
+      "constitutionType": "I",
+      "category": "skin",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_I06",
+      "order": 69,
+      "text": "您的皮肤因过敏出现过紫癜（紫红色瘀点、瘀斑）吗？",
+      "textEn": "Have you had purpura (purple spots) on your skin due to allergies?",
+      "constitutionType": "I",
+      "category": "skin",
+      "isReverseScored": false
+    },
+    {
+      "id": "Q_I07",
+      "order": 70,
+      "text": "您的皮肤一抓就红，并出现抓痕吗？",
+      "textEn": "Does your skin turn red and show scratch marks easily?",
+      "constitutionType": "I",
+      "category": "skin",
+      "isReverseScored": false
+    }
+  ],
+  "metadata": {
+    "totalQuestions": 70,
+    "uniqueQuestions": 60,
+    "sharedQuestions": 10,
+    "categories": ["physical", "complexion", "cold-heat", "sweat", "sleep", "digestion", "excretion", "emotion", "mental", "pain", "respiration", "skin", "susceptibility"],
+    "scoringFormula": "Converted Score = (Raw Score - Number of Items) / (Number of Items × 4) × 100"
+  }
+}

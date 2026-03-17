@@ -1,0 +1,348 @@
+{
+  "version": "1.0.0",
+  "source": "China Association of Chinese Medicine Standard - Classification and Determination of TCM Constitution",
+  "constitutions": [
+    {
+      "id": "A",
+      "code": "pinghe",
+      "name": "平和质",
+      "nameEn": "Balanced Constitution",
+      "summary": "Harmony of yin, yang, qi, and blood, characterized by moderate body shape, ruddy complexion, and abundant energy",
+      "characteristics": {
+        "overall": "Moderate body shape, ruddy complexion, abundant energy, good organ function",
+        "physical": "Symmetrical and robust body shape, ruddy complexion, spirited eyes, lustrous hair, elastic muscles and skin",
+        "psychological": "Easygoing and cheerful personality, stable emotions, abundant energy, good sleep"
+      },
+      "bodyFeatures": {
+        "bodyType": "Symmetrical and robust body shape",
+        "complexion": "Ruddy complexion and skin, dense and lustrous hair, bright and moist nose",
+        "tongueBody": "Pale red tongue",
+        "tongueCoating": "Thin white coating",
+        "pulse": "Smooth and moderate pulse"
+      },
+      "healthTendencies": {
+        "susceptibleDiseases": ["Rarely falls ill under normal circumstances"],
+        "diseaseCharacteristics": "Sufficient vital qi, strong resistance, not easily affected by external pathogens",
+        "seasonalSensitivity": ["Strong adaptability to natural and social environments"]
+      },
+      "recommendations": {
+        "diet": {
+          "suitable": ["Regular eating", "Moderate hunger and fullness", "Balanced five flavors"],
+          "avoid": ["Dietary bias", "Overeating"],
+          "principles": "Diet should be light, avoid partial eating, maintain nutritional balance"
+        },
+        "lifestyle": ["Regular daily routine", "Balance between work and rest", "Follow the four seasons"],
+        "exercise": ["Moderate exercise", "Cultivate both body and spirit"],
+        "emotional": "Maintain a peaceful mindset, smooth emotions"
+      },
+      "scoring": {
+        "threshold": 60,
+        "weight": 1
+      }
+    },
+    {
+      "id": "B",
+      "code": "qixu",
+      "name": "气虚质",
+      "nameEn": "Qi Deficiency Constitution",
+      "summary": "Deficiency of primordial qi, characterized by fatigue, shortness of breath, spontaneous sweating, and other qi deficiency manifestations",
+      "characteristics": {
+        "overall": "Deficiency of primordial qi, decreased organ function, shortness of breath and reluctance to speak, easy fatigue",
+        "physical": "Flabby and soft muscles, weak voice, shortness of breath and reluctance to speak, easy sweating",
+        "psychological": "Introverted personality, dislikes adventure, lack of spirit"
+      },
+      "bodyFeatures": {
+        "bodyType": "Flabby and soft muscles",
+        "complexion": "Slightly yellow or pale complexion, easy to sweat",
+        "tongueBody": "Pale red tongue with teeth marks on edges",
+        "tongueCoating": "Thin white coating",
+        "pulse": "Weak pulse"
+      },
+      "healthTendencies": {
+        "susceptibleDiseases": ["Common cold", "Visceral prolapse", "Deficiency consumption"],
+        "diseaseCharacteristics": "Prone to common cold, visceral prolapse, etc., slow recovery after illness",
+        "seasonalSensitivity": ["Intolerant of wind, cold, heat, and damp pathogens"]
+      },
+      "recommendations": {
+        "diet": {
+          "suitable": ["Yam", "Lotus seed", "Astragalus", "Codonopsis", "Chicken", "Beef", "Chinese date"],
+          "avoid": ["Raw and cold foods", "Greasy foods", "Qi-breaking foods (such as radish)"],
+          "principles": "Eat foods that tonify qi and strengthen spleen, avoid foods that break qi or consume qi"
+        },
+        "lifestyle": ["Avoid overexertion", "Keep warm", "Avoid excessive sweating"],
+        "exercise": ["Gentle exercise", "No vigorous exercise", "Tai Chi", "Baduanjin"],
+        "emotional": "Avoid excessive worry, maintain a cheerful mood"
+      },
+      "scoring": {
+        "threshold": 40,
+        "weight": 1
+      }
+    },
+    {
+      "id": "C",
+      "code": "yangxu",
+      "name": "阳虚质",
+      "nameEn": "Yang Deficiency Constitution",
+      "summary": "Deficiency of yang qi, characterized by fear of cold, cold hands and feet, and other deficiency cold manifestations",
+      "characteristics": {
+        "overall": "Deficiency of yang qi, internal generation of deficiency cold, fear of cold, cold hands and feet",
+        "physical": "Flabby and soft muscles, fear of cold and cold limbs, preference for warm foods",
+        "psychological": "Mostly quiet and introverted personality, lack of spirit"
+      },
+      "bodyFeatures": {
+        "bodyType": "Flabby and soft muscles, often obese",
+        "complexion": "Pale or dull complexion",
+        "tongueBody": "Pale and fat tongue",
+        "tongueCoating": "White and moist coating",
+        "pulse": "Deep and slow pulse"
+      },
+      "healthTendencies": {
+        "susceptibleDiseases": ["Phlegm-fluid", "Swelling", "Diarrhea", "Impotence", "Infertility"],
+        "diseaseCharacteristics": "When infected, tends to transform into cold patterns, prone to cold and deficiency syndromes",
+        "seasonalSensitivity": "Tolerant of summer but not winter, easily affected by wind, cold, and damp pathogens"
+      },
+      "recommendations": {
+        "diet": {
+          "suitable": ["Mutton", "Dog meat", "Venison", "Chives", "Walnut", "Ginger", "Cinnamon bark"],
+          "avoid": ["Raw and cold foods", "Cold fruits", "Cold drinks"],
+          "principles": "Eat warm and hot foods, avoid raw and cold foods"
+        },
+        "lifestyle": ["Keep warm", "Avoid cold exposure", "Get plenty of sunlight"],
+        "exercise": ["Moderate exercise", "Avoid profuse sweating", "Jogging", "Walking"],
+        "emotional": "Maintain a happy mood, avoid excessive worry, sorrow, fear"
+      },
+      "scoring": {
+        "threshold": 40,
+        "weight": 1
+      }
+    },
+    {
+      "id": "D",
+      "code": "yinxu",
+      "name": "阴虚质",
+      "nameEn": "Yin Deficiency Constitution",
+      "summary": "Deficiency of yin fluids, characterized by dry mouth and throat, heat in palms and soles, and other deficiency heat manifestations",
+      "characteristics": {
+        "overall": "Insufficient yin fluids, internal generation of deficiency heat, dry mouth and throat, heat in palms and soles",
+        "physical": "Slightly thin body shape, heat in palms and soles, dry mouth and throat, slightly dry nose",
+        "psychological": "Impetuous temperament, extroverted and active, lively"
+      },
+      "bodyFeatures": {
+        "bodyType": "Slightly thin body shape",
+        "complexion": "Flushed cheeks or reddish complexion",
+        "tongueBody": "Red tongue with little fluid",
+        "tongueCoating": "Little or no coating",
+        "pulse": "Thin and rapid pulse"
+      },
+      "healthTendencies": {
+        "susceptibleDiseases": ["Deficiency consumption", "Sperm loss", "Insomnia", "Constipation", "Consumptive thirst"],
+        "diseaseCharacteristics": "When infected, tends to transform into heat patterns, prone to deficiency heat syndromes",
+        "seasonalSensitivity": ["Tolerant of winter but not summer", "intolerant of heat, hot, and dry pathogens"]
+      },
+      "recommendations": {
+        "diet": {
+          "suitable": ["White fungus", "Lily bulb", "Pear", "Goji berry", "Duck meat", "Pork", "Sea cucumber"],
+          "avoid": ["Spicy foods", "Mutton", "Dog meat", "Alcohol"],
+          "principles": "Eat foods that nourish yin and clear heat, avoid spicy and warm-dry foods"
+        },
+        "lifestyle": ["Avoid staying up late", "Keep environment humid", "Moderate sexual activity"],
+        "exercise": ["No vigorous exercise", "Avoid excessive sweating", "Yoga", "Walking"],
+        "emotional": "Maintain a peaceful mindset, avoid impatience and anger"
+      },
+      "scoring": {
+        "threshold": 40,
+        "weight": 1
+      }
+    },
+    {
+      "id": "E",
+      "code": "tanshi",
+      "name": "痰湿质",
+      "nameEn": "Phlegm-Dampness Constitution",
+      "summary": "Phlegm-dampness accumulation, characterized by obesity, fullness in the abdomen, sticky mouth taste, greasy coating, and other phlegm-dampness manifestations",
+      "characteristics": {
+        "overall": "Internal accumulation of phlegm-dampness, obese body shape, fullness in the abdomen, sticky mouth taste, greasy coating",
+        "physical": "Obese body shape, full and soft abdomen, excessive facial oil, heavy and sticky sweating",
+        "psychological": "Gentle and steady personality, good at endurance"
+      },
+      "bodyFeatures": {
+        "bodyType": "Obese body shape, full and soft abdomen",
+        "complexion": "Excessive facial oil, slightly puffy eyelids",
+        "tongueBody": "Enlarged tongue body",
+        "tongueCoating": "Greasy coating",
+        "pulse": "Slippery pulse"
+      },
+      "healthTendencies": {
+        "susceptibleDiseases": ["Consumptive thirst", "Stroke", "Chest obstruction", "Hyperlipidemia", "Hypertension"],
+        "diseaseCharacteristics": "Prone to metabolic diseases, prolonged disease course",
+        "seasonalSensitivity": ["Poor adaptability to rainy season and humid environments"]
+      },
+      "recommendations": {
+        "diet": {
+          "suitable": ["Coix seed", "White radish", "Winter melon", "Red bean", "Kelp", "Nori"],
+          "avoid": ["Rich and sweet greasy foods", "Sweets", "Greasy foods", "Alcohol"],
+          "principles": "Eat foods that strengthen spleen and drain dampness, avoid rich and sweet greasy foods"
+        },
+        "lifestyle": ["Avoid prolonged sitting", "Keep environment dry", "Moderate weight loss"],
+        "exercise": ["Persist in exercise", "Aerobic exercise", "Jogging", "Swimming"],
+        "emotional": "Maintain a cheerful mood, avoid excessive worry"
+      },
+      "scoring": {
+        "threshold": 40,
+        "weight": 1
+      }
+    },
+    {
+      "id": "F",
+      "code": "shire",
+      "name": "湿热质",
+      "nameEn": "Damp-Heat Constitution",
+      "summary": "Internal accumulation of damp-heat, characterized by oily and dull complexion, bitter taste, yellow greasy coating, and other damp-heat manifestations",
+      "characteristics": {
+        "overall": "Internal accumulation of damp-heat, oily and dull complexion, bitter taste in mouth, dry mouth, heaviness and lethargy",
+        "physical": "Medium or slightly thin body shape, oily and dull complexion, prone to acne, bitter taste in mouth, dry mouth",
+        "psychological": "Easily irritable and impatient"
+      },
+      "bodyFeatures": {
+        "bodyType": "Medium or slightly thin body shape",
+        "complexion": "Oily and dull complexion, prone to acne and blackheads",
+        "tongueBody": "Slightly red tongue",
+        "tongueCoating": "Yellow greasy coating",
+        "pulse": "Slippery and rapid pulse"
+      },
+      "healthTendencies": {
+        "susceptibleDiseases": ["Boils and sores", "Jaundice", "Heat strangury", "Acne"],
+        "diseaseCharacteristics": "Prone to damp-heat diseases, prolonged disease course",
+        "seasonalSensitivity": ["Poor adaptability to damp-heat climate in late summer and early autumn"]
+      },
+      "recommendations": {
+        "diet": {
+          "suitable": ["Mung bean", "Bitter melon", "Coix seed", "Winter melon", "Cucumber", "Lotus root"],
+          "avoid": ["Spicy foods", "Greasy foods", "Sweets", "Alcohol", "Tonics"],
+          "principles": "Eat foods that clear heat and drain dampness, avoid spicy, dry, and hot foods"
+        },
+        "lifestyle": ["Avoid living in humid environments", "Keep skin clean", "Avoid staying up late"],
+        "exercise": ["Suitable for high-intensity exercise", "Jogging", "Swimming", "Hiking"],
+        "emotional": "Maintain a peaceful mindset, avoid impatience and anger"
+      },
+      "scoring": {
+        "threshold": 40,
+        "weight": 1
+      }
+    },
+    {
+      "id": "G",
+      "code": "xueyu",
+      "name": "血瘀质",
+      "nameEn": "Blood Stasis Constitution",
+      "summary": "Poor blood circulation, characterized by dull skin color, purple dark tongue, and other blood stasis manifestations",
+      "characteristics": {
+        "overall": "Poor blood circulation, dull skin color, easy bruising, obvious pain",
+        "physical": "Both fat and thin body shapes, dull skin color, pigmentation, easy bruising",
+        "psychological": "Easily irritable, forgetful"
+      },
+      "bodyFeatures": {
+        "bodyType": "Both fat and thin body shapes",
+        "complexion": "Dull skin color, pigmentation, dull lip color",
+        "tongueBody": "Dark tongue or with petechiae, purple and dark or thickened sublingual veins",
+        "tongueCoating": "Thin white or thin yellow coating",
+        "pulse": "Choppy pulse"
+      },
+      "healthTendencies": {
+        "susceptibleDiseases": ["Masses", "Pain syndromes", "Blood syndromes", "Coronary heart disease", "Cerebrovascular disease"],
+        "diseaseCharacteristics": "Prone to blood stasis syndromes, fixed pain",
+        "seasonalSensitivity": ["Intolerant of cold pathogens"]
+      },
+      "recommendations": {
+        "diet": {
+          "suitable": ["Hawthorn", "Peach kernel", "Rose", "Black fungus", "Black bean", "Vinegar"],
+          "avoid": ["Cold foods", "Astringent foods", "Greasy foods"],
+          "principles": "Eat foods that invigorate blood and resolve stasis, avoid cold and stagnating foods"
+        },
+        "lifestyle": ["Avoid prolonged sitting", "Keep warm", "Maintain a cheerful mood"],
+        "exercise": ["Persist in exercise", "Promote blood circulation", "Tai Chi", "Dancing"],
+        "emotional": "Maintain a happy mood, avoid depression and anger"
+      },
+      "scoring": {
+        "threshold": 40,
+        "weight": 1
+      }
+    },
+    {
+      "id": "H",
+      "code": "qiyu",
+      "name": "气郁质",
+      "nameEn": "Qi Stagnation Constitution",
+      "summary": "Qi stagnation, characterized by depression, anxiety, fragility, and other qi stagnation manifestations",
+      "characteristics": {
+        "overall": "Qi stagnation, depressed expression, anxiety and fragility, sensitive and suspicious",
+        "physical": "Mostly thin body shape, depressed expression, fragile emotions, unhappy and bored",
+        "psychological": "Introverted and unstable personality, sensitive and prone to worry"
+      },
+      "bodyFeatures": {
+        "bodyType": "Mostly thin body shape",
+        "complexion": "Dull or slightly greenish complexion",
+        "tongueBody": "Pale red tongue",
+        "tongueCoating": "Thin white coating",
+        "pulse": "Wiry pulse"
+      },
+      "healthTendencies": {
+        "susceptibleDiseases": ["Depression syndrome", "Hysteria", "Plum pit qi", "Lily disease", "Insomnia"],
+        "diseaseCharacteristics": "Prone to emotional disorders, closely related to mental stimulation",
+        "seasonalSensitivity": ["Poor adaptability to mental stimulation", "Not adaptable to rainy weather"]
+      },
+      "recommendations": {
+        "diet": {
+          "suitable": ["Rose", "Jasmine", "Finger citron", "Citrus", "Kumquat", "Buckwheat"],
+          "avoid": ["Astringent and sour foods", "Cold foods"],
+          "principles": "Eat foods that soothe liver and regulate qi, avoid astringent and sour foods"
+        },
+        "lifestyle": ["Participate in social activities", "Listen to music", "Travel", "Keep living space ventilated"],
+        "exercise": ["Moderate exercise", "Stretch body and mind", "Yoga", "Tai Chi", "Dancing"],
+        "emotional": "Maintain a cheerful mood, vent negative emotions in time, avoid excessive worry"
+      },
+      "scoring": {
+        "threshold": 40,
+        "weight": 1
+      }
+    },
+    {
+      "id": "I",
+      "code": "tebing",
+      "name": "特禀质",
+      "nameEn": "Special/Allergic Constitution",
+      "summary": "Congenital abnormality, characterized by physical defects, allergic reactions, etc.",
+      "characteristics": {
+        "overall": "Congenital abnormality, allergic constitution, prone to allergic reactions or congenital diseases",
+        "physical": "Those with allergic constitution often have asthma, wheals, throat itching, nasal congestion, sneezing, etc., or may have congenital deformities",
+        "psychological": "Varies depending on constitutional qualities"
+      },
+      "bodyFeatures": {
+        "bodyType": "Those with allergic constitution have no special body features, those with congenital abnormalities may have deformities",
+        "complexion": "Generally no special features",
+        "tongueBody": "Generally no special features",
+        "tongueCoating": "Generally no special features",
+        "pulse": "Generally no special features"
+      },
+      "healthTendencies": {
+        "susceptibleDiseases": ["Asthma", "Urticaria", "Hay fever", "Drug allergy", "Genetic diseases"],
+        "diseaseCharacteristics": "Prone to allergic reactions, or has congenital or genetic diseases",
+        "seasonalSensitivity": ["Poor adaptability", "Poor adaptability to allergy seasons"]
+      },
+      "recommendations": {
+        "diet": {
+          "suitable": ["Light diet", "Balanced nutrition"],
+          "avoid": ["Allergenic foods", "Spicy and stimulating foods", "Foul-smelling triggering foods"],
+          "principles": "Avoid allergens, light diet, avoid spicy, foul-smelling, and triggering foods"
+        },
+        "lifestyle": ["Avoid contact with allergens", "Keep indoor clean", "Avoid keeping pets"],
+        "exercise": ["Moderate exercise", "Strengthen constitution", "Avoid exercise in allergic environments"],
+        "emotional": "Maintain a peaceful mindset, avoid excessive tension"
+      },
+      "scoring": {
+        "threshold": 40,
+        "weight": 1
+      }
+    }
+  ]
+}

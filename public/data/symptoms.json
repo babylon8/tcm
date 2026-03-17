@@ -1,0 +1,797 @@
+{
+  "version": "1.0.0",
+  "categories": [
+    { "id": "cold-heat", "name": "寒热", "nameEn": "Cold & Heat", "icon": "thermometer" },
+    { "id": "sweat", "name": "汗", "nameEn": "Sweat", "icon": "droplets" },
+    { "id": "pain", "name": "疼痛", "nameEn": "Pain", "icon": "alert-circle" },
+    { "id": "digestion", "name": "饮食", "nameEn": "Digestion", "icon": "utensils" },
+    { "id": "sleep", "name": "睡眠", "nameEn": "Sleep", "icon": "moon" },
+    { "id": "excretion", "name": "二便", "nameEn": "Excretion", "icon": "activity" },
+    { "id": "emotion", "name": "情志", "nameEn": "Emotion", "icon": "heart" },
+    { "id": "respiration", "name": "呼吸", "nameEn": "Respiration", "icon": "wind" },
+    { "id": "skin", "name": "皮肤", "nameEn": "Skin", "icon": "layers" },
+    { "id": "head-face", "name": "头面", "nameEn": "Head & Face", "icon": "user" },
+    { "id": "body-limbs", "name": "躯体四肢", "nameEn": "Body & Limbs", "icon": "move" }
+  ],
+  "bodyRegions": [
+    { "id": "head", "name": "头部", "nameEn": "Head" },
+    { "id": "face", "name": "面部", "nameEn": "Face" },
+    { "id": "neck", "name": "颈部", "nameEn": "Neck" },
+    { "id": "chest", "name": "胸部", "nameEn": "Chest" },
+    { "id": "abdomen", "name": "腹部", "nameEn": "Abdomen" },
+    { "id": "back", "name": "背部", "nameEn": "Back" },
+    { "id": "upper-limbs", "name": "上肢", "nameEn": "Upper Limbs" },
+    { "id": "lower-limbs", "name": "下肢", "nameEn": "Lower Limbs" },
+    { "id": "whole-body", "name": "全身", "nameEn": "Whole Body" },
+    { "id": "skin", "name": "皮肤", "nameEn": "Skin" }
+  ],
+  "severityLevels": [
+    { "value": 1, "label": "轻微", "description": "偶尔出现，不影响日常生活" },
+    { "value": 2, "label": "轻度", "description": "有时出现，轻微影响日常生活" },
+    { "value": 3, "label": "中度", "description": "经常出现，明显影响日常生活" },
+    { "value": 4, "label": "较重", "description": "频繁出现，严重影响日常生活" },
+    { "value": 5, "label": "严重", "description": "持续存在，无法正常生活" }
+  ],
+  "durationOptions": [
+    { "value": "today", "label": "今天" },
+    { "value": "week", "label": "一周内" },
+    { "value": "month", "label": "一个月内" },
+    { "value": "half-year", "label": "半年内" },
+    { "value": "long-term", "label": "长期/慢性" }
+  ],
+  "symptoms": [
+    {
+      "id": "SYM_COLD_001",
+      "code": "WU_HAN",
+      "name": "恶寒",
+      "nameEn": "Aversion to Cold",
+      "category": "cold-heat",
+      "bodyRegion": "whole-body",
+      "description": "自觉怕冷，加衣被或近火取暖不能缓解",
+      "tcmMeaning": {
+        "primary": "外感风寒初期，卫阳被遏，或阳气不足",
+        "patterns": [
+          { "pattern": "风寒表证", "condition": "恶寒伴发热，无汗", "confidence": 0.85, "constitution": ["C"] },
+          { "pattern": "阳虚证", "condition": "长期畏寒喜暖，四肢不温", "confidence": 0.80, "constitution": ["C"] },
+          { "pattern": "气虚证", "condition": "怕风自汗，气短乏力", "confidence": 0.70, "constitution": ["B"] }
+        ]
+      },
+      "relatedOrgans": ["肺", "肾", "脾"],
+      "relatedSymptoms": ["SYM_COLD_002", "SYM_SWEAT_003"],
+      "followUpQuestions": ["是否伴有发热？", "是否有出汗？", "症状是持续性还是间歇性？"]
+    },
+    {
+      "id": "SYM_COLD_002",
+      "code": "FA_RE",
+      "name": "发热",
+      "nameEn": "Fever",
+      "category": "cold-heat",
+      "bodyRegion": "whole-body",
+      "description": "体温升高，或自觉身热",
+      "tcmMeaning": {
+        "primary": "正气抗邪，或阴阳失调，阳气偏盛",
+        "patterns": [
+          { "pattern": "外感风热", "condition": "发热伴咽喉痛，口渴", "confidence": 0.80, "constitution": [] },
+          { "pattern": "阴虚发热", "condition": "午后或夜间发热，手足心热", "confidence": 0.85, "constitution": ["D"] },
+          { "pattern": "气虚发热", "condition": "劳累后发热，气短乏力", "confidence": 0.70, "constitution": ["B"] }
+        ]
+      },
+      "relatedOrgans": ["肺", "心", "肾"],
+      "relatedSymptoms": ["SYM_COLD_001"],
+      "followUpQuestions": ["发热是持续性还是间歇性？", "什么时间发热更明显？", "是否伴有出汗？"]
+    },
+    {
+      "id": "SYM_COLD_003",
+      "code": "WU_HAN_FA_RE",
+      "name": "寒热往来",
+      "nameEn": "Alternate Chills and Fever",
+      "category": "cold-heat",
+      "bodyRegion": "whole-body",
+      "description": "恶寒与发热交替出现",
+      "tcmMeaning": {
+        "primary": "邪在少阳，枢机不利",
+        "patterns": [
+          { "pattern": "少阳证", "condition": "寒热往来，胸胁苦满", "confidence": 0.90, "constitution": [] },
+          { "pattern": "疟疾", "condition": "寒热往来有规律", "confidence": 0.75, "constitution": [] }
+        ]
+      },
+      "relatedOrgans": ["胆", "三焦"],
+      "relatedSymptoms": ["SYM_COLD_001", "SYM_COLD_002"],
+      "followUpQuestions": ["寒热交替有无规律？", "每次发作持续时间？"]
+    },
+    {
+      "id": "SYM_COLD_004",
+      "code": "CHAO_RE",
+      "name": "潮热",
+      "nameEn": "Tidal Fever",
+      "category": "cold-heat",
+      "bodyRegion": "whole-body",
+      "description": "发热如潮水般定时而来",
+      "tcmMeaning": {
+        "primary": "阴虚内热，或阳明腑实",
+        "patterns": [
+          { "pattern": "阴虚潮热", "condition": "午后或夜间潮热，盗汗", "confidence": 0.90, "constitution": ["D"] },
+          { "pattern": "阳明潮热", "condition": "日晡潮热，便秘腹满", "confidence": 0.80, "constitution": [] }
+        ]
+      },
+      "relatedOrgans": ["肾", "胃", "大肠"],
+      "relatedSymptoms": ["SYM_SWEAT_002"],
+      "followUpQuestions": ["什么时间发热最明显？", "是否伴有出汗？"]
+    },
+    {
+      "id": "SYM_SWEAT_001",
+      "code": "ZI_HAN",
+      "name": "自汗",
+      "nameEn": "Spontaneous Sweating",
+      "category": "sweat",
+      "bodyRegion": "whole-body",
+      "description": "白天不因劳累、炎热而汗出，动则益甚",
+      "tcmMeaning": {
+        "primary": "气虚卫外不固，营卫不和",
+        "patterns": [
+          { "pattern": "气虚自汗", "condition": "动则汗出，气短乏力", "confidence": 0.90, "constitution": ["B"] },
+          { "pattern": "阳虚自汗", "condition": "汗出怕冷，四肢不温", "confidence": 0.80, "constitution": ["C"] }
+        ]
+      },
+      "relatedOrgans": ["肺", "脾", "心"],
+      "relatedSymptoms": ["SYM_DIGEST_003"],
+      "followUpQuestions": ["出汗是在活动后还是静息时？", "出汗量多少？", "是否有怕风？"]
+    },
+    {
+      "id": "SYM_SWEAT_002",
+      "code": "DAO_HAN",
+      "name": "盗汗",
+      "nameEn": "Night Sweats",
+      "category": "sweat",
+      "bodyRegion": "whole-body",
+      "description": "睡则汗出，醒则汗止",
+      "tcmMeaning": {
+        "primary": "阴虚内热迫津外泄",
+        "patterns": [
+          { "pattern": "阴虚盗汗", "condition": "睡则汗出，醒则汗止，手足心热", "confidence": 0.95, "constitution": ["D"] }
+        ]
+      },
+      "relatedOrgans": ["肾", "心"],
+      "relatedSymptoms": ["SYM_COLD_004"],
+      "followUpQuestions": ["是否伴有手足心热？", "是否有口干咽燥？"]
+    },
+    {
+      "id": "SYM_SWEAT_003",
+      "code": "WU_HAN",
+      "name": "无汗",
+      "nameEn": "No Sweating",
+      "category": "sweat",
+      "bodyRegion": "whole-body",
+      "description": "当汗出而不汗出",
+      "tcmMeaning": {
+        "primary": "外邪束表，玄府闭塞，或津血亏虚",
+        "patterns": [
+          { "pattern": "风寒表实", "condition": "恶寒发热，无汗，身痛", "confidence": 0.85, "constitution": [] },
+          { "pattern": "阴虚津亏", "condition": "皮肤干燥，口干咽燥", "confidence": 0.70, "constitution": ["D"] }
+        ]
+      },
+      "relatedOrgans": ["肺", "肾"],
+      "relatedSymptoms": ["SYM_COLD_001"],
+      "followUpQuestions": ["皮肤是否干燥？", "是否伴有恶寒发热？"]
+    },
+
+    {
+      "id": "SYM_PAIN_001",
+      "code": "TOU_TONG",
+      "name": "头痛",
+      "nameEn": "Headache",
+      "category": "pain",
+      "bodyRegion": "head",
+      "description": "头部疼痛不适",
+      "tcmMeaning": {
+        "primary": "外感风邪，或脏腑功能失调，气血不畅",
+        "patterns": [
+          { "pattern": "风寒头痛", "condition": "头痛连及项背，恶风畏寒", "confidence": 0.80, "constitution": [] },
+          { "pattern": "肝阳头痛", "condition": "头痛眩晕，急躁易怒", "confidence": 0.85, "constitution": ["H", "D"] },
+          { "pattern": "血瘀头痛", "condition": "头痛如刺，痛有定处", "confidence": 0.80, "constitution": ["G"] },
+          { "pattern": "痰湿头痛", "condition": "头痛如裹，胸闷恶心", "confidence": 0.75, "constitution": ["E"] }
+        ]
+      },
+      "relatedOrgans": ["肝", "肾", "脾"],
+      "relatedSymptoms": ["SYM_HEAD_001"],
+      "followUpQuestions": ["头痛部位？", "疼痛性质（胀痛、刺痛、隐痛）？", "什么时间加重？"]
+    },
+    {
+      "id": "SYM_PAIN_002",
+      "code": "XIONG_TONG",
+      "name": "胸痛",
+      "nameEn": "Chest Pain",
+      "category": "pain",
+      "bodyRegion": "chest",
+      "description": "胸部疼痛不适",
+      "tcmMeaning": {
+        "primary": "心脉痹阻，或肺气不宣",
+        "patterns": [
+          { "pattern": "心血瘀阻", "condition": "胸痛如刺，痛有定处", "confidence": 0.85, "constitution": ["G"] },
+          { "pattern": "痰热扰心", "condition": "胸闷心痛，痰多口苦", "confidence": 0.75, "constitution": ["E", "F"] },
+          { "pattern": "气滞心胸", "condition": "胸痛走窜，情志不遂加重", "confidence": 0.80, "constitution": ["H"] }
+        ]
+      },
+      "relatedOrgans": ["心", "肺"],
+      "relatedSymptoms": ["SYM_RESP_002"],
+      "followUpQuestions": ["疼痛部位固定吗？", "是否向其他部位放射？", "活动后加重吗？"]
+    },
+    {
+      "id": "SYM_PAIN_003",
+      "code": "FU_TONG",
+      "name": "腹痛",
+      "nameEn": "Abdominal Pain",
+      "category": "pain",
+      "bodyRegion": "abdomen",
+      "description": "腹部疼痛不适",
+      "tcmMeaning": {
+        "primary": "脏腑气机阻滞，气血运行不畅",
+        "patterns": [
+          { "pattern": "寒凝腹痛", "condition": "腹痛急发，得温痛减", "confidence": 0.80, "constitution": ["C"] },
+          { "pattern": "脾胃虚寒", "condition": "腹痛绵绵，喜温喜按", "confidence": 0.85, "constitution": ["B", "C"] },
+          { "pattern": "气滞腹痛", "condition": "腹胀痛，走窜不定", "confidence": 0.75, "constitution": ["H"] }
+        ]
+      },
+      "relatedOrgans": ["脾", "胃", "肝"],
+      "relatedSymptoms": ["SYM_DIGEST_001"],
+      "followUpQuestions": ["疼痛部位？", "喜按还是拒按？", "与饮食有无关系？"]
+    },
+    {
+      "id": "SYM_PAIN_004",
+      "code": "YAO_TONG",
+      "name": "腰痛",
+      "nameEn": "Lower Back Pain",
+      "category": "pain",
+      "bodyRegion": "back",
+      "description": "腰部一侧或两侧疼痛",
+      "tcmMeaning": {
+        "primary": "肾虚，或寒湿、瘀血阻滞",
+        "patterns": [
+          { "pattern": "肾虚腰痛", "condition": "腰痛酸软，遇劳加重", "confidence": 0.90, "constitution": ["B", "C", "D"] },
+          { "pattern": "寒湿腰痛", "condition": "腰痛冷重，阴雨天加重", "confidence": 0.80, "constitution": ["C", "E"] },
+          { "pattern": "瘀血腰痛", "condition": "腰痛如刺，痛有定处", "confidence": 0.75, "constitution": ["G"] }
+        ]
+      },
+      "relatedOrgans": ["肾"],
+      "relatedSymptoms": ["SYM_BODY_001"],
+      "followUpQuestions": ["腰痛性质（酸痛、刺痛、冷痛）？", "什么情况加重？", "是否伴有腿麻？"]
+    },
+
+    {
+      "id": "SYM_DIGEST_001",
+      "code": "NA_DAI",
+      "name": "纳呆",
+      "nameEn": "Poor Appetite",
+      "category": "digestion",
+      "bodyRegion": "abdomen",
+      "description": "食欲不振，不想进食",
+      "tcmMeaning": {
+        "primary": "脾胃虚弱，运化失职",
+        "patterns": [
+          { "pattern": "脾胃虚弱", "condition": "食少便溏，神疲乏力", "confidence": 0.85, "constitution": ["B"] },
+          { "pattern": "湿困脾土", "condition": "胸闷脘痞，口腻恶心", "confidence": 0.80, "constitution": ["E"] },
+          { "pattern": "肝郁脾虚", "condition": "纳呆腹胀，情志不遂加重", "confidence": 0.75, "constitution": ["H"] }
+        ]
+      },
+      "relatedOrgans": ["脾", "胃", "肝"],
+      "relatedSymptoms": ["SYM_PAIN_003"],
+      "followUpQuestions": ["是食欲下降还是吃不下？", "有恶心吗？", "与情绪有无关系？"]
+    },
+    {
+      "id": "SYM_DIGEST_002",
+      "code": "XIAO_GU_SHAN_JI",
+      "name": "消谷善饥",
+      "nameEn": "Excessive Appetite",
+      "category": "digestion",
+      "bodyRegion": "abdomen",
+      "description": "食欲亢进，容易饥饿",
+      "tcmMeaning": {
+        "primary": "胃火炽盛，腐熟太过",
+        "patterns": [
+          { "pattern": "胃火炽盛", "condition": "消谷善饥，口臭便秘", "confidence": 0.90, "constitution": ["F"] },
+          { "pattern": "胃阴不足", "condition": "饥不欲食，口干咽燥", "confidence": 0.80, "constitution": ["D"] }
+        ]
+      },
+      "relatedOrgans": ["胃"],
+      "relatedSymptoms": ["SYM_DIGEST_004"],
+      "followUpQuestions": ["吃得多但体重有下降吗？", "是否有口臭？", "大便情况？"]
+    },
+    {
+      "id": "SYM_DIGEST_003",
+      "code": "KOU_KU",
+      "name": "口苦",
+      "nameEn": "Bitter Taste in Mouth",
+      "category": "digestion",
+      "bodyRegion": "head",
+      "description": "口中有苦味",
+      "tcmMeaning": {
+        "primary": "肝胆湿热，胆火上炎",
+        "patterns": [
+          { "pattern": "肝胆湿热", "condition": "口苦咽干，烦躁易怒", "confidence": 0.90, "constitution": ["F", "H"] },
+          { "pattern": "胆郁痰扰", "condition": "口苦呕恶，眩晕心烦", "confidence": 0.80, "constitution": ["H"] }
+        ]
+      },
+      "relatedOrgans": ["肝", "胆"],
+      "relatedSymptoms": ["SYM_EMOTION_001"],
+      "followUpQuestions": ["是持续性还是间歇性？", "是否伴有咽干？", "情绪如何？"]
+    },
+    {
+      "id": "SYM_DIGEST_004",
+      "code": "KOU_GAN",
+      "name": "口干",
+      "nameEn": "Dry Mouth",
+      "category": "digestion",
+      "bodyRegion": "head",
+      "description": "口中干燥少津",
+      "tcmMeaning": {
+        "primary": "津液不足，或热盛伤津",
+        "patterns": [
+          { "pattern": "阴虚津亏", "condition": "口干咽燥，手足心热", "confidence": 0.90, "constitution": ["D"] },
+          { "pattern": "热盛伤津", "condition": "口干喜饮，发热汗出", "confidence": 0.80, "constitution": [] },
+          { "pattern": "气不化津", "condition": "口干不欲饮，气短乏力", "confidence": 0.70, "constitution": ["B"] }
+        ]
+      },
+      "relatedOrgans": ["肾", "肺", "胃"],
+      "relatedSymptoms": ["SYM_COLD_004"],
+      "followUpQuestions": ["是否想喝水？", "喝水能缓解吗？", "是否伴有口苦？"]
+    },
+
+    {
+      "id": "SYM_SLEEP_001",
+      "code": "SHI_MIAN",
+      "name": "失眠",
+      "nameEn": "Insomnia",
+      "category": "sleep",
+      "bodyRegion": "whole-body",
+      "description": "入睡困难，或寐而不酣，或时寐时醒，或醒后不能再寐",
+      "tcmMeaning": {
+        "primary": "心神不安，阴阳失调",
+        "patterns": [
+          { "pattern": "心脾两虚", "condition": "多梦易醒，心悸健忘", "confidence": 0.85, "constitution": ["B"] },
+          { "pattern": "肝火扰心", "condition": "烦躁难眠，口苦目赤", "confidence": 0.80, "constitution": ["H"] },
+          { "pattern": "阴虚火旺", "condition": "心烦不眠，手足心热", "confidence": 0.85, "constitution": ["D"] },
+          { "pattern": "痰热扰心", "condition": "失眠多梦，胸闷痰多", "confidence": 0.75, "constitution": ["E", "F"] }
+        ]
+      },
+      "relatedOrgans": ["心", "肝", "脾", "肾"],
+      "relatedSymptoms": ["SYM_EMOTION_002"],
+      "followUpQuestions": ["入睡困难还是早醒？", "是否多梦？", "白天精神如何？"]
+    },
+    {
+      "id": "SYM_SLEEP_002",
+      "code": "DUO_MENG",
+      "name": "多梦",
+      "nameEn": "Excessive Dreaming",
+      "category": "sleep",
+      "bodyRegion": "whole-body",
+      "description": "睡眠中梦境纷纭，醒后疲惫",
+      "tcmMeaning": {
+        "primary": "心神失养，魂不安舍",
+        "patterns": [
+          { "pattern": "心脾两虚", "condition": "多梦易醒，心悸健忘", "confidence": 0.80, "constitution": ["B"] },
+          { "pattern": "心肾不交", "condition": "多梦遗精，心烦腰酸", "confidence": 0.75, "constitution": ["D"] }
+        ]
+      },
+      "relatedOrgans": ["心", "肝", "肾"],
+      "relatedSymptoms": ["SYM_SLEEP_001"],
+      "followUpQuestions": ["梦境内容？", "醒后是否疲惫？", "睡眠质量？"]
+    },
+    {
+      "id": "SYM_SLEEP_003",
+      "code": "SHI_SHUI",
+      "name": "嗜睡",
+      "nameEn": "Drowsiness",
+      "category": "sleep",
+      "bodyRegion": "whole-body",
+      "description": "精神困顿，时时欲睡",
+      "tcmMeaning": {
+        "primary": "阳气不振，痰湿困脾",
+        "patterns": [
+          { "pattern": "痰湿困脾", "condition": "嗜睡困倦，身重胸闷", "confidence": 0.85, "constitution": ["E"] },
+          { "pattern": "脾气虚弱", "condition": "食后困倦，气短乏力", "confidence": 0.80, "constitution": ["B"] },
+          { "pattern": "阳虚阴盛", "condition": "嗜睡怕冷，手足不温", "confidence": 0.75, "constitution": ["C"] }
+        ]
+      },
+      "relatedOrgans": ["脾", "心"],
+      "relatedSymptoms": ["SYM_DIGEST_001"],
+      "followUpQuestions": ["什么时间最困？", "与饮食有无关系？", "白天还是夜间困倦？"]
+    },
+
+    {
+      "id": "SYM_EXCRE_001",
+      "code": "BIAN_MI",
+      "name": "便秘",
+      "nameEn": "Constipation",
+      "category": "excretion",
+      "bodyRegion": "abdomen",
+      "description": "大便次数减少，粪质干燥，排便困难",
+      "tcmMeaning": {
+        "primary": "肠道传导失常，津液不足",
+        "patterns": [
+          { "pattern": "热秘", "condition": "大便干结，腹胀口臭", "confidence": 0.80, "constitution": ["F"] },
+          { "pattern": "气秘", "condition": "大便秘结，腹胀嗳气", "confidence": 0.75, "constitution": ["H"] },
+          { "pattern": "虚秘", "condition": "大便干或不干，排便无力", "confidence": 0.85, "constitution": ["B", "D"] },
+          { "pattern": "冷秘", "condition": "大便艰涩，腹痛喜温", "confidence": 0.80, "constitution": ["C"] }
+        ]
+      },
+      "relatedOrgans": ["大肠", "脾", "肾"],
+      "relatedSymptoms": ["SYM_DIGEST_002"],
+      "followUpQuestions": ["大便干硬吗？", "几天排便一次？", "排便有无无力感？"]
+    },
+    {
+      "id": "SYM_EXCRE_002",
+      "code": "XIE_XIE",
+      "name": "泄泻",
+      "nameEn": "Diarrhea",
+      "category": "excretion",
+      "bodyRegion": "abdomen",
+      "description": "大便次数增多，粪质稀薄",
+      "tcmMeaning": {
+        "primary": "脾失健运，肠道传导失常",
+        "patterns": [
+          { "pattern": "脾虚泄泻", "condition": "大便溏薄，食少乏力", "confidence": 0.85, "constitution": ["B"] },
+          { "pattern": "脾肾阳虚", "condition": "五更泄泻，畏寒肢冷", "confidence": 0.80, "constitution": ["C"] },
+          { "pattern": "湿热泄泻", "condition": "泻下急迫，粪色黄褐臭秽", "confidence": 0.75, "constitution": ["F"] }
+        ]
+      },
+      "relatedOrgans": ["脾", "肾", "大肠"],
+      "relatedSymptoms": ["SYM_PAIN_003"],
+      "followUpQuestions": ["大便形状？", "有无腹痛？", "什么时间加重？"]
+    },
+    {
+      "id": "SYM_EXCRE_003",
+      "code": "XIAO_BIAN_HUANG",
+      "name": "小便短黄",
+      "nameEn": "Dark Yellow Urine",
+      "category": "excretion",
+      "bodyRegion": "lower-limbs",
+      "description": "尿量少，颜色深黄",
+      "tcmMeaning": {
+        "primary": "热盛伤津，或湿热下注",
+        "patterns": [
+          { "pattern": "湿热下注", "condition": "小便短黄，尿道灼热", "confidence": 0.85, "constitution": ["F"] },
+          { "pattern": "阴虚内热", "condition": "小便短黄，手足心热", "confidence": 0.80, "constitution": ["D"] }
+        ]
+      },
+      "relatedOrgans": ["膀胱", "肾"],
+      "relatedSymptoms": ["SYM_COLD_004"],
+      "followUpQuestions": ["有无尿频尿急？", "饮水情况？"]
+    },
+    {
+      "id": "SYM_EXCRE_004",
+      "code": "XIAO_BIAN_QING_CHANG",
+      "name": "小便清长",
+      "nameEn": "Clear Copious Urine",
+      "category": "excretion",
+      "bodyRegion": "lower-limbs",
+      "description": "尿量多，颜色清淡",
+      "tcmMeaning": {
+        "primary": "肾阳不足，气化失司",
+        "patterns": [
+          { "pattern": "肾阳虚", "condition": "小便清长，畏寒肢冷", "confidence": 0.90, "constitution": ["C"] },
+          { "pattern": "肾气不固", "condition": "小便频数，夜尿增多", "confidence": 0.80, "constitution": ["B", "C"] }
+        ]
+      },
+      "relatedOrgans": ["肾", "膀胱"],
+      "relatedSymptoms": ["SYM_COLD_001"],
+      "followUpQuestions": ["白天还是夜间尿多？", "有无尿急？", "有无遗尿？"]
+    },
+
+    {
+      "id": "SYM_EMOTION_001",
+      "code": "YI_NU",
+      "name": "易怒",
+      "nameEn": "Easily Angered",
+      "category": "emotion",
+      "bodyRegion": "whole-body",
+      "description": "容易发脾气，情绪激动",
+      "tcmMeaning": {
+        "primary": "肝气郁结，或肝火上炎",
+        "patterns": [
+          { "pattern": "肝郁气滞", "condition": "急躁易怒，胸闷胁胀", "confidence": 0.85, "constitution": ["H"] },
+          { "pattern": "肝火上炎", "condition": "急躁易怒，头痛目赤", "confidence": 0.80, "constitution": ["H"] },
+          { "pattern": "阴虚火旺", "condition": "急躁易怒，手足心热", "confidence": 0.75, "constitution": ["D"] }
+        ]
+      },
+      "relatedOrgans": ["肝"],
+      "relatedSymptoms": ["SYM_DIGEST_003", "SYM_PAIN_001"],
+      "followUpQuestions": ["发怒后有什么症状？", "是否伴有头痛？", "月经情况（女性）？"]
+    },
+    {
+      "id": "SYM_EMOTION_002",
+      "code": "YI_YU",
+      "name": "抑郁",
+      "nameEn": "Depression",
+      "category": "emotion",
+      "bodyRegion": "whole-body",
+      "description": "情绪低落，郁郁寡欢",
+      "tcmMeaning": {
+        "primary": "肝气郁结，气机不畅",
+        "patterns": [
+          { "pattern": "肝郁气滞", "condition": "情志抑郁，胸闷太息", "confidence": 0.90, "constitution": ["H"] },
+          { "pattern": "心脾两虚", "condition": "忧思多虑，心悸健忘", "confidence": 0.75, "constitution": ["B"] }
+        ]
+      },
+      "relatedOrgans": ["肝", "心", "脾"],
+      "relatedSymptoms": ["SYM_SLEEP_001"],
+      "followUpQuestions": ["持续多久了？", "有无诱因？", "影响生活吗？"]
+    },
+    {
+      "id": "SYM_EMOTION_003",
+      "code": "JIAO_LV",
+      "name": "焦虑",
+      "nameEn": "Anxiety",
+      "category": "emotion",
+      "bodyRegion": "whole-body",
+      "description": "精神紧张，坐立不安",
+      "tcmMeaning": {
+        "primary": "心神不宁，肝郁化火",
+        "patterns": [
+          { "pattern": "心神不宁", "condition": "心悸不宁，坐卧不安", "confidence": 0.85, "constitution": ["B"] },
+          { "pattern": "肝郁化火", "condition": "烦躁不安，口苦目赤", "confidence": 0.80, "constitution": ["H"] }
+        ]
+      },
+      "relatedOrgans": ["心", "肝"],
+      "relatedSymptoms": ["SYM_SLEEP_001"],
+      "followUpQuestions": ["有无心悸？", "睡眠如何？", "有无诱因？"]
+    },
+    {
+      "id": "SYM_EMOTION_004",
+      "code": "SHAN_BEI",
+      "name": "善悲",
+      "nameEn": "Easily Sad",
+      "category": "emotion",
+      "bodyRegion": "whole-body",
+      "description": "容易悲伤，无故哭泣",
+      "tcmMeaning": {
+        "primary": "心肺气虚，神不守舍",
+        "patterns": [
+          { "pattern": "心肺气虚", "condition": "悲伤欲哭，气短乏力", "confidence": 0.85, "constitution": ["B"] },
+          { "pattern": "肝郁脾虚", "condition": "悲伤欲哭，胸胁胀满", "confidence": 0.75, "constitution": ["H"] }
+        ]
+      },
+      "relatedOrgans": ["心", "肺", "肝"],
+      "relatedSymptoms": ["SYM_EMOTION_002"],
+      "followUpQuestions": ["有无诱因？", "持续多久？", "是否影响生活？"]
+    },
+
+    {
+      "id": "SYM_RESP_001",
+      "code": "KE_SO",
+      "name": "咳嗽",
+      "nameEn": "Cough",
+      "category": "respiration",
+      "bodyRegion": "chest",
+      "description": "肺气上逆，冲击声门",
+      "tcmMeaning": {
+        "primary": "外邪犯肺，或肺脏功能失调",
+        "patterns": [
+          { "pattern": "风寒犯肺", "condition": "咳嗽痰白，恶寒发热", "confidence": 0.80, "constitution": [] },
+          { "pattern": "痰湿蕴肺", "condition": "咳嗽痰多，胸闷呕恶", "confidence": 0.85, "constitution": ["E"] },
+          { "pattern": "肺阴亏虚", "condition": "干咳少痰，手足心热", "confidence": 0.80, "constitution": ["D"] }
+        ]
+      },
+      "relatedOrgans": ["肺"],
+      "relatedSymptoms": ["SYM_RESP_002"],
+      "followUpQuestions": ["有痰吗？什么颜色？", "白天还是夜间咳嗽？", "有无发热？"]
+    },
+    {
+      "id": "SYM_RESP_002",
+      "code": "XIONG_MEN",
+      "name": "胸闷",
+      "nameEn": "Chest Tightness",
+      "category": "respiration",
+      "bodyRegion": "chest",
+      "description": "胸部痞闷不畅",
+      "tcmMeaning": {
+        "primary": "心肺气虚，痰浊阻滞",
+        "patterns": [
+          { "pattern": "痰浊阻肺", "condition": "胸闷痰多，咳嗽气喘", "confidence": 0.85, "constitution": ["E"] },
+          { "pattern": "肝郁气滞", "condition": "胸闷太息，情志不遂加重", "confidence": 0.80, "constitution": ["H"] },
+          { "pattern": "心气不足", "condition": "胸闷气短，心悸乏力", "confidence": 0.75, "constitution": ["B"] }
+        ]
+      },
+      "relatedOrgans": ["肺", "心", "肝"],
+      "relatedSymptoms": ["SYM_PAIN_002"],
+      "followUpQuestions": ["活动后加重吗？", "有无心悸？", "与情绪有无关系？"]
+    },
+    {
+      "id": "SYM_RESP_003",
+      "code": "QI_DUAN",
+      "name": "气短",
+      "nameEn": "Shortness of Breath",
+      "category": "respiration",
+      "bodyRegion": "chest",
+      "description": "呼吸短促，气不接续",
+      "tcmMeaning": {
+        "primary": "肺肾气虚，摄纳无权",
+        "patterns": [
+          { "pattern": "肺气虚", "condition": "气短声低，易感冒", "confidence": 0.90, "constitution": ["B"] },
+          { "pattern": "肾不纳气", "condition": "气短喘促，呼多吸少", "confidence": 0.80, "constitution": ["C"] }
+        ]
+      },
+      "relatedOrgans": ["肺", "肾"],
+      "relatedSymptoms": ["SYM_SWEAT_001"],
+      "followUpQuestions": ["活动后加重吗？", "有无咳嗽？", "能否平卧？"]
+    },
+
+    {
+      "id": "SYM_SKIN_001",
+      "code": "PI_ZHEN",
+      "name": "皮疹",
+      "nameEn": "Skin Rash",
+      "category": "skin",
+      "bodyRegion": "skin",
+      "description": "皮肤出现疹子",
+      "tcmMeaning": {
+        "primary": "风热或湿热蕴结肌肤",
+        "patterns": [
+          { "pattern": "风热犯表", "condition": "皮疹色红，瘙痒灼热", "confidence": 0.80, "constitution": ["I"] },
+          { "pattern": "湿热蕴肤", "condition": "皮疹水疱，瘙痒渗液", "confidence": 0.85, "constitution": ["F"] }
+        ]
+      },
+      "relatedOrgans": ["肺", "脾"],
+      "relatedSymptoms": ["SYM_SKIN_002"],
+      "followUpQuestions": ["皮疹形态？", "有无瘙痒？", "什么部位？"]
+    },
+    {
+      "id": "SYM_SKIN_002",
+      "code": "SAO_YANG",
+      "name": "瘙痒",
+      "nameEn": "Itching",
+      "category": "skin",
+      "bodyRegion": "skin",
+      "description": "皮肤瘙痒不适",
+      "tcmMeaning": {
+        "primary": "风邪侵袭，血虚生风",
+        "patterns": [
+          { "pattern": "风热客肤", "condition": "瘙痒灼热，抓后起疹", "confidence": 0.80, "constitution": ["I"] },
+          { "pattern": "血虚风燥", "condition": "皮肤干燥瘙痒，夜间加重", "confidence": 0.75, "constitution": ["D"] },
+          { "pattern": "湿热蕴肤", "condition": "瘙痒渗液，抓后流滋", "confidence": 0.80, "constitution": ["F"] }
+        ]
+      },
+      "relatedOrgans": ["肝", "脾"],
+      "relatedSymptoms": ["SYM_SKIN_001"],
+      "followUpQuestions": ["白天还是夜间痒？", "皮肤干燥吗？", "有无渗液？"]
+    },
+    {
+      "id": "SYM_SKIN_003",
+      "code": "CUO_CHUANG",
+      "name": "痤疮",
+      "nameEn": "Acne",
+      "category": "skin",
+      "bodyRegion": "face",
+      "description": "面部粉刺、丘疹、脓疱",
+      "tcmMeaning": {
+        "primary": "肺经风热，湿热蕴结",
+        "patterns": [
+          { "pattern": "肺经风热", "condition": "粉刺色红，瘙痒疼痛", "confidence": 0.75, "constitution": [] },
+          { "pattern": "湿热蕴结", "condition": "痤疮脓疱，油腻口苦", "confidence": 0.90, "constitution": ["F"] }
+        ]
+      },
+      "relatedOrgans": ["肺", "脾"],
+      "relatedSymptoms": ["SYM_DIGEST_003"],
+      "followUpQuestions": ["有无脓疱？", "面部油腻吗？", "与月经有关吗（女性）？"]
+    },
+
+    {
+      "id": "SYM_HEAD_001",
+      "code": "XUAN_YUN",
+      "name": "眩晕",
+      "nameEn": "Dizziness",
+      "category": "head-face",
+      "bodyRegion": "head",
+      "description": "头晕眼花，视物旋转",
+      "tcmMeaning": {
+        "primary": "肝阳上亢，气血亏虚，痰浊中阻",
+        "patterns": [
+          { "pattern": "肝阳上亢", "condition": "眩晕耳鸣，急躁易怒", "confidence": 0.85, "constitution": ["H", "D"] },
+          { "pattern": "气血亏虚", "condition": "眩晕心悸，气短乏力", "confidence": 0.80, "constitution": ["B", "G"] },
+          { "pattern": "痰浊中阻", "condition": "眩晕头重，胸闷恶心", "confidence": 0.75, "constitution": ["E"] }
+        ]
+      },
+      "relatedOrgans": ["肝", "脾", "肾"],
+      "relatedSymptoms": ["SYM_PAIN_001"],
+      "followUpQuestions": ["有无耳鸣？", "视物旋转吗？", "什么情况加重？"]
+    },
+    {
+      "id": "SYM_HEAD_002",
+      "code": "ER_MING",
+      "name": "耳鸣",
+      "nameEn": "Tinnitus",
+      "category": "head-face",
+      "bodyRegion": "head",
+      "description": "耳内鸣响，或如蝉鸣，或如潮声",
+      "tcmMeaning": {
+        "primary": "肾精亏虚，或肝火上扰",
+        "patterns": [
+          { "pattern": "肾精亏虚", "condition": "耳鸣如蝉，腰膝酸软", "confidence": 0.85, "constitution": ["D"] },
+          { "pattern": "肝火上扰", "condition": "耳鸣如潮，烦躁易怒", "confidence": 0.80, "constitution": ["H"] }
+        ]
+      },
+      "relatedOrgans": ["肾", "肝"],
+      "relatedSymptoms": ["SYM_HEAD_001"],
+      "followUpQuestions": ["声音高还是低？", "持续性还是间歇性？", "有无听力下降？"]
+    },
+
+    {
+      "id": "SYM_BODY_001",
+      "code": "SUAN_RUAN",
+      "name": "腰膝酸软",
+      "nameEn": "Weakness of Waist and Knees",
+      "category": "body-limbs",
+      "bodyRegion": "lower-limbs",
+      "description": "腰部和膝部酸软无力",
+      "tcmMeaning": {
+        "primary": "肾精不足，腰府失养",
+        "patterns": [
+          { "pattern": "肾虚", "condition": "腰膝酸软，头晕耳鸣", "confidence": 0.95, "constitution": ["D", "C"] }
+        ]
+      },
+      "relatedOrgans": ["肾"],
+      "relatedSymptoms": ["SYM_PAIN_004", "SYM_HEAD_002"],
+      "followUpQuestions": ["是酸痛还是无力？", "什么情况加重？", "有无遗精或带下？"]
+    },
+    {
+      "id": "SYM_BODY_002",
+      "code": "SI_ZHI_BU_WEN",
+      "name": "四肢不温",
+      "nameEn": "Cold Limbs",
+      "category": "body-limbs",
+      "bodyRegion": "whole-body",
+      "description": "手足冰凉，寒冷不温",
+      "tcmMeaning": {
+        "primary": "阳气不足，不能温煦四肢",
+        "patterns": [
+          { "pattern": "阳虚", "condition": "四肢不温，畏寒喜暖", "confidence": 0.95, "constitution": ["C"] },
+          { "pattern": "气虚", "condition": "手足不温，气短自汗", "confidence": 0.70, "constitution": ["B"] }
+        ]
+      },
+      "relatedOrgans": ["肾", "脾", "心"],
+      "relatedSymptoms": ["SYM_COLD_001"],
+      "followUpQuestions": ["是一直冷还是间歇性？", "冬天更明显吗？", "有无怕冷？"]
+    },
+    {
+      "id": "SYM_BODY_003",
+      "code": "SHOU_ZU_XIN_RE",
+      "name": "手足心热",
+      "nameEn": "Hot Palms and Soles",
+      "category": "body-limbs",
+      "bodyRegion": "whole-body",
+      "description": "手掌、足心发热",
+      "tcmMeaning": {
+        "primary": "阴虚内热",
+        "patterns": [
+          { "pattern": "阴虚内热", "condition": "手足心热，潮热盗汗", "confidence": 0.95, "constitution": ["D"] }
+        ]
+      },
+      "relatedOrgans": ["肾", "心"],
+      "relatedSymptoms": ["SYM_SWEAT_002", "SYM_COLD_004"],
+      "followUpQuestions": ["什么时间明显？", "有无盗汗？", "有无心烦？"]
+    },
+    {
+      "id": "SYM_BODY_004",
+      "code": "SHEN_ZHONG",
+      "name": "身重",
+      "nameEn": "Body Heaviness",
+      "category": "body-limbs",
+      "bodyRegion": "whole-body",
+      "description": "身体沉重，困倦乏力",
+      "tcmMeaning": {
+        "primary": "湿邪困阻，脾失健运",
+        "patterns": [
+          { "pattern": "湿困脾土", "condition": "身重困倦，胸闷脘痞", "confidence": 0.90, "constitution": ["E"] },
+          { "pattern": "气虚", "condition": "身重乏力，气短懒言", "confidence": 0.75, "constitution": ["B"] }
+        ]
+      },
+      "relatedOrgans": ["脾"],
+      "relatedSymptoms": ["SYM_SLEEP_003"],
+      "followUpQuestions": ["全身还是局部？", "有无浮肿？", "什么情况加重？"]
+    }
+  ],
+  "metadata": {
+    "totalSymptoms": 40,
+    "totalCategories": 11,
+    "totalBodyRegions": 10
+  }
+}

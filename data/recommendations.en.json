@@ -1,0 +1,1197 @@
+{
+  "version": "1.0.0",
+  "recommendations": [
+    {
+      "id": "REC_A_001",
+      "title": "Balanced Constitution Health Recommendations",
+      "summary": "Maintain your current good state, follow nature, nurture both body and spirit",
+      "appliesTo": {
+        "constitutionTypes": [
+          "A"
+        ]
+      },
+      "sections": [
+        {
+          "type": "diet",
+          "title": "Dietary Regulation",
+          "titleEn": "Dietary Regulation",
+          "content": [
+            {
+              "name": "Moderate eating",
+              "description": "Regular timing and quantity, no overeating, no partial diet",
+              "frequency": "Daily",
+              "nameEn": "Moderate eating",
+              "descriptionEn": "Regular timing and quantity, no overeating, no partial diet",
+              "frequencyEn": "Daily"
+            },
+            {
+              "name": "Balanced five flavors",
+              "description": "Balanced intake of sour, bitter, sweet, pungent, and salty",
+              "frequency": "Daily",
+              "nameEn": "Balanced five flavors",
+              "descriptionEn": "Balanced intake of sour, bitter, sweet, pungent, and salty",
+              "frequencyEn": "Daily"
+            },
+            {
+              "name": "Follow seasons",
+              "description": "Nourish yang in spring/summer, yin in autumn/winter",
+              "nameEn": "Follow seasons",
+              "descriptionEn": "Nourish yang in spring/summer, yin in autumn/winter"
+            }
+          ]
+        },
+        {
+          "type": "lifestyle",
+          "title": "Daily Life Regulation",
+          "titleEn": "Daily Life Regulation",
+          "content": "Regular daily routine, balance work and rest, follow seasonal changes. Spring: late to bed, early to rise. Summer: late to bed, early to rise. Autumn: early to bed, early to rise. Winter: early to bed, late to rise.",
+          "contentEn": "Regular daily routine, balance work and rest, follow seasonal changes. Spring: late to bed, early to rise. Summer: late to bed, early to rise. Autumn: early to bed, early to rise. Winter: early to bed, late to rise."
+        },
+        {
+          "type": "exercise",
+          "title": "Exercise Recommendations",
+          "titleEn": "Exercise Recommendations",
+          "content": [
+            {
+              "name": "Moderate exercise",
+              "description": "Walking, jogging, swimming, etc.",
+              "frequency": "3-5 times per week, 30+ minutes each",
+              "nameEn": "Moderate exercise",
+              "descriptionEn": "Walking, jogging, swimming, etc.",
+              "frequencyEn": "3-5 times per week, 30+ minutes each"
+            },
+            {
+              "name": "Traditional practices",
+              "description": "Tai Chi, Baduanjin, Qigong",
+              "frequency": "Daily or every other day",
+              "nameEn": "Traditional practices",
+              "descriptionEn": "Tai Chi, Baduanjin, Qigong",
+              "frequencyEn": "Daily or every other day"
+            }
+          ]
+        },
+        {
+          "type": "emotional",
+          "title": "Emotional Regulation",
+          "titleEn": "Emotional Regulation",
+          "content": "Maintain peaceful mindset, smooth emotions, quiet emptiness, spirit kept internally. Avoid excessive emotional stimulation from joy, anger, worry, thought, sorrow, fear, and fright.",
+          "contentEn": "Maintain peaceful mindset, smooth emotions, quiet emptiness, spirit kept internally. Avoid excessive emotional stimulation from joy, anger, worry, thought, sorrow, fear, and fright."
+        }
+      ],
+      "priority": "medium",
+      "tags": [
+        "Balanced Constitution",
+        "Health Preservation",
+        "Prevention"
+      ],
+      "titleEn": "Balanced Constitution Health Recommendations",
+      "summaryEn": "Maintain your current good state, follow nature, nurture both body and spirit",
+      "tagsEn": [
+        "Balanced Constitution",
+        "Health Preservation",
+        "Prevention"
+      ]
+    },
+    {
+      "id": "REC_B_001",
+      "title": "Qi Deficiency Constitution Regulation",
+      "summary": "Boost Qi, strengthen spleen, avoid Qi depletion, supplement and benefit Qi",
+      "appliesTo": {
+        "constitutionTypes": [
+          "B"
+        ]
+      },
+      "sections": [
+        {
+          "type": "diet",
+          "title": "Dietary Regulation",
+          "titleEn": "Dietary Regulation",
+          "content": [
+            {
+              "name": "Eat Qi-boosting foods",
+              "description": "Chinese yam, lotus seed, astragalus, codonopsis, white atractylodes, poria, jujube, longan, chicken, beef, carp, crucian carp",
+              "frequency": "Eat regularly",
+              "nameEn": "Eat Qi-boosting foods",
+              "descriptionEn": "Chinese yam, lotus seed, astragalus, codonopsis, white atractylodes, poria, jujube, longan, chicken, beef, carp, crucian carp",
+              "frequencyEn": "Eat regularly"
+            },
+            {
+              "name": "Avoid Qi-depleting foods",
+              "description": "Raw radish, water spinach, hawthorn, betel nut - these foods deplete Qi",
+              "contraindications": [
+                "Those with severe Qi deficiency"
+              ],
+              "nameEn": "Avoid Qi-depleting foods",
+              "descriptionEn": "Raw radish, water spinach, hawthorn, betel nut - these foods deplete Qi"
+            },
+            {
+              "name": "Astragalus Chicken Broth",
+              "description": "30g Astragalus root, 1 whole chicken, slow-cooked into broth",
+              "frequency": "1-2 times per week",
+              "nameEn": "Astragalus Chicken Broth",
+              "descriptionEn": "30g Astragalus root, 1 whole chicken, slow-cooked into broth",
+              "frequencyEn": "1-2 times per week"
+            }
+          ]
+        },
+        {
+          "type": "lifestyle",
+          "title": "Daily Life Regulation",
+          "titleEn": "Daily Life Regulation",
+          "content": "Avoid overwork and excessive sweating. Keep warm, avoid drafts and cold. Maintain regular sleep schedule. Avoid prolonged standing to prevent sinking of middle Qi.",
+          "contentEn": "Avoid overwork and excessive sweating. Keep warm, avoid drafts and cold. Maintain regular sleep schedule. Avoid prolonged standing to prevent sinking of middle Qi."
+        },
+        {
+          "type": "exercise",
+          "title": "Exercise Recommendations",
+          "titleEn": "Exercise Recommendations",
+          "content": [
+            {
+              "name": "Gentle exercise",
+              "description": "Walking, yoga, qigong - stop when tired",
+              "frequency": "30 minutes daily",
+              "nameEn": "Gentle exercise",
+              "descriptionEn": "Walking, yoga, qigong - stop when tired",
+              "frequencyEn": "30 minutes daily"
+            },
+            {
+              "name": "Tai Chi",
+              "description": "Slow, gentle movements, deep breathing, tonifies Qi and nurtures spirit",
+              "frequency": "Daily",
+              "nameEn": "Tai Chi",
+              "descriptionEn": "Slow, gentle movements, deep breathing, tonifies Qi and nurtures spirit",
+              "frequencyEn": "Daily"
+            },
+            {
+              "name": "Ba Duan Jin",
+              "description": "Especially the 'Separating Heaven and Earth' and 'Drawing the Bow' movements",
+              "frequency": "Daily",
+              "nameEn": "Ba Duan Jin",
+              "descriptionEn": "Especially the 'Separating Heaven and Earth' and 'Drawing the Bow' movements",
+              "frequencyEn": "Daily"
+            }
+          ]
+        },
+        {
+          "type": "acupressure",
+          "title": "Acupressure Points",
+          "titleEn": "Acupressure Points",
+          "content": [
+            {
+              "name": "Zusanli (ST36)",
+              "description": "3 cun below the knee, 1 finger-breadth lateral to the anterior tibial crest",
+              "frequency": "Massage 5-10 minutes daily",
+              "nameEn": "Zusanli (ST36)",
+              "descriptionEn": "3 cun below the knee, 1 finger-breadth lateral to the anterior tibial crest",
+              "frequencyEn": "Massage 5-10 minutes daily"
+            },
+            {
+              "name": "Qihai (CV6)",
+              "description": "1.5 cun below the navel on the midline",
+              "frequency": "Massage 5-10 minutes daily",
+              "nameEn": "Qihai (CV6)",
+              "descriptionEn": "1.5 cun below the navel on the midline",
+              "frequencyEn": "Massage 5-10 minutes daily"
+            },
+            {
+              "name": "Guanyuan (CV4)",
+              "description": "3 cun below the navel on the midline, nourishes original Qi",
+              "frequency": "Massage 5-10 minutes daily",
+              "nameEn": "Guanyuan (CV4)",
+              "descriptionEn": "3 cun below the navel on the midline, nourishes original Qi",
+              "frequencyEn": "Massage 5-10 minutes daily"
+            }
+          ]
+        },
+        {
+          "type": "emotional",
+          "title": "Emotional Regulation",
+          "titleEn": "Emotional Regulation",
+          "content": "Avoid excessive worry — in TCM, 'overthinking injures the Spleen' and worsens Qi deficiency. Maintain a cheerful mood, avoid mental stress. Listen to soothing music and join group activities.",
+          "contentEn": "Avoid excessive worry — in TCM, 'overthinking injures the Spleen' and worsens Qi deficiency. Maintain a cheerful mood, avoid mental stress. Listen to soothing music and join group activities."
+        }
+      ],
+      "priority": "high",
+      "tags": [
+        "Qi Deficiency",
+        "Tonify Qi",
+        "Strengthen Spleen"
+      ],
+      "titleEn": "Qi Deficiency Constitution Regulation",
+      "summaryEn": "Boost Qi, strengthen spleen, avoid Qi depletion, supplement and benefit Qi",
+      "tagsEn": [
+        "Qi Deficiency",
+        "Tonify Qi",
+        "Strengthen Spleen"
+      ]
+    },
+    {
+      "id": "REC_C_001",
+      "title": "Yang Deficiency Constitution Regulation",
+      "summary": "Warm Yang, dispel cold, strengthen kidneys, avoid cold exposure",
+      "appliesTo": {
+        "constitutionTypes": [
+          "C"
+        ]
+      },
+      "sections": [
+        {
+          "type": "diet",
+          "title": "Dietary Regulation",
+          "titleEn": "Dietary Regulation",
+          "content": [
+            {
+              "name": "Eat warming Yang foods",
+              "description": "Lamb, beef, venison, chicken, leek, walnut, chestnut, longan, ginger, cinnamon, pepper, fennel",
+              "frequency": "Eat regularly",
+              "nameEn": "Eat warming Yang foods",
+              "descriptionEn": "Lamb, beef, venison, chicken, leek, walnut, chestnut, longan, ginger, cinnamon, pepper, fennel",
+              "frequencyEn": "Eat regularly"
+            },
+            {
+              "name": "Avoid cold foods",
+              "description": "Cold drinks, ice cream, watermelon, pear, bitter melon, mung beans, crab",
+              "contraindications": [
+                "Those with pronounced Yang deficiency"
+              ],
+              "nameEn": "Avoid cold foods",
+              "descriptionEn": "Cold drinks, ice cream, watermelon, pear, bitter melon, mung beans, crab"
+            },
+            {
+              "name": "Angelica Root, Ginger & Lamb Soup",
+              "description": "10g Angelica root, 30g ginger, 200g lamb, stewed together",
+              "frequency": "1-2 times per week in winter",
+              "nameEn": "Angelica Root, Ginger & Lamb Soup",
+              "descriptionEn": "10g Angelica root, 30g ginger, 200g lamb, stewed together",
+              "frequencyEn": "1-2 times per week in winter"
+            },
+            {
+              "name": "Stir-fried Chives with Walnuts",
+              "description": "100g chives, 30g walnut kernels, stir-fried",
+              "frequency": "2-3 times per week",
+              "nameEn": "Stir-fried Chives with Walnuts",
+              "descriptionEn": "100g chives, 30g walnut kernels, stir-fried",
+              "frequencyEn": "2-3 times per week"
+            }
+          ]
+        },
+        {
+          "type": "lifestyle",
+          "title": "Daily Life Regulation",
+          "titleEn": "Daily Life Regulation",
+          "content": "Keep warm, especially the abdomen, lower back, and legs. Avoid cold exposure. Get morning sunlight, especially on the back. Sleep early, avoid staying up late. Live in a warm, sunny environment.",
+          "contentEn": "Keep warm, especially the abdomen, lower back, and legs. Avoid cold exposure. Get morning sunlight, especially on the back. Sleep early, avoid staying up late. Live in a warm, sunny environment."
+        },
+        {
+          "type": "exercise",
+          "title": "Exercise Recommendations",
+          "titleEn": "Exercise Recommendations",
+          "content": [
+            {
+              "name": "Gentle exercise",
+              "description": "Walking, tai chi in sunshine, avoid sweating excessively",
+              "frequency": "30 minutes daily",
+              "nameEn": "Gentle exercise",
+              "descriptionEn": "Walking, tai chi in sunshine, avoid sweating excessively",
+              "frequencyEn": "30 minutes daily"
+            },
+            {
+              "name": "Jogging and Walking",
+              "description": "Jog or walk in the sunshine to absorb Yang energy",
+              "frequency": "Every morning",
+              "nameEn": "Jogging and Walking",
+              "descriptionEn": "Jog or walk in the sunshine to absorb Yang energy",
+              "frequencyEn": "Every morning"
+            },
+            {
+              "name": "Tai Chi",
+              "description": "Slow, gentle movements to balance Yin and Yang",
+              "frequency": "Daily",
+              "nameEn": "Tai Chi",
+              "descriptionEn": "Slow, gentle movements to balance Yin and Yang",
+              "frequencyEn": "Daily"
+            }
+          ]
+        },
+        {
+          "type": "acupressure",
+          "title": "Acupressure Points",
+          "titleEn": "Acupressure Points",
+          "content": [
+            {
+              "name": "Guanyuan (CV4)",
+              "description": "3 cun below the navel on the midline, warms and tonifies Yang",
+              "frequency": "Moxibustion or massage 10-15 minutes daily",
+              "nameEn": "Guanyuan (CV4)",
+              "descriptionEn": "3 cun below the navel on the midline, warms and tonifies Yang",
+              "frequencyEn": "Moxibustion or massage 10-15 minutes daily"
+            },
+            {
+              "name": "Shenshu (BL23)",
+              "description": "1.5 cun lateral to the lower border of the 2nd lumbar vertebra, warms and tonifies kidneys",
+              "frequency": "Moxibustion or massage 10-15 minutes daily",
+              "nameEn": "Shenshu (BL23)",
+              "descriptionEn": "1.5 cun lateral to the lower border of the 2nd lumbar vertebra, warms and tonifies kidneys",
+              "frequencyEn": "Moxibustion or massage 10-15 minutes daily"
+            },
+            {
+              "name": "Mingmen (GV4)",
+              "description": "On the posterior midline, below the 2nd lumbar vertebra spinous process",
+              "frequency": "Massage 10-15 minutes daily",
+              "nameEn": "Mingmen (GV4)",
+              "descriptionEn": "On the posterior midline, below the 2nd lumbar vertebra spinous process",
+              "frequencyEn": "Massage 10-15 minutes daily"
+            }
+          ]
+        },
+        {
+          "type": "emotional",
+          "title": "Emotional Regulation",
+          "titleEn": "Emotional Regulation",
+          "content": "Avoid excessive worry, fear, and grief — 'fear injures the Kidneys, worry injures the Spleen.' Stay cheerful, join group activities, and maintain social connections.",
+          "contentEn": "Avoid excessive worry, fear, and grief — 'fear injures the Kidneys, worry injures the Spleen.' Stay cheerful, join group activities, and maintain social connections."
+        }
+      ],
+      "priority": "high",
+      "tags": [
+        "Yang Deficiency",
+        "Warm Yang",
+        "Tonify Kidneys"
+      ],
+      "titleEn": "Yang Deficiency Constitution Regulation",
+      "summaryEn": "Warm Yang, dispel cold, strengthen kidneys, avoid cold exposure",
+      "tagsEn": [
+        "Yang Deficiency",
+        "Warm Yang",
+        "Tonify Kidneys"
+      ]
+    },
+    {
+      "id": "REC_D_001",
+      "title": "Yin Deficiency Constitution Regulation",
+      "summary": "Nourish Yin, clear heat, generate fluids, avoid dryness and heat",
+      "appliesTo": {
+        "constitutionTypes": [
+          "D"
+        ]
+      },
+      "sections": [
+        {
+          "type": "diet",
+          "title": "Dietary Regulation",
+          "titleEn": "Dietary Regulation",
+          "content": [
+            {
+              "name": "Eat Yin-nourishing foods",
+              "description": "Snow fungus, lily bulb, pear, goji berry, mulberry, black sesame, duck, pork, sea cucumber, turtle, soft-shelled turtle, water chestnut, lotus root",
+              "frequency": "Eat regularly",
+              "nameEn": "Eat Yin-nourishing foods",
+              "descriptionEn": "Snow fungus, lily bulb, pear, goji berry, mulberry, black sesame, duck, pork, sea cucumber, turtle, soft-shelled turtle, water chestnut, lotus root",
+              "frequencyEn": "Eat regularly"
+            },
+            {
+              "name": "Avoid drying foods",
+              "description": "Lamb, dog meat, chili, ginger, garlic, alcohol, coffee, strong tea",
+              "contraindications": [
+                "Those with Yin deficiency with vigorous fire"
+              ],
+              "nameEn": "Avoid drying foods",
+              "descriptionEn": "Lamb, dog meat, chili, ginger, garlic, alcohol, coffee, strong tea"
+            },
+            {
+              "name": "Snow Fungus & Lily Bulb Sweet Soup",
+              "description": "10g snow fungus, 15g lily bulb, rock sugar to taste, simmered into sweet soup",
+              "frequency": "2-3 times per week",
+              "nameEn": "Snow Fungus & Lily Bulb Sweet Soup",
+              "descriptionEn": "10g snow fungus, 15g lily bulb, rock sugar to taste, simmered into sweet soup",
+              "frequencyEn": "2-3 times per week"
+            },
+            {
+              "name": "Goji Berry & Chrysanthemum Tea",
+              "description": "10g goji berries, 5g chrysanthemum flowers, steeped as tea",
+              "frequency": "Daily",
+              "nameEn": "Goji Berry & Chrysanthemum Tea",
+              "descriptionEn": "10g goji berries, 5g chrysanthemum flowers, steeped as tea",
+              "frequencyEn": "Daily"
+            }
+          ]
+        },
+        {
+          "type": "lifestyle",
+          "title": "Daily Life Regulation",
+          "titleEn": "Daily Life Regulation",
+          "content": "Avoid staying up late; ensure adequate sleep. Live in a cool, moist environment. Avoid intense exercise and high temperatures. Stay well hydrated. Moderate sexual activity to preserve kidney essence.",
+          "contentEn": "Avoid staying up late; ensure adequate sleep. Live in a cool, moist environment. Avoid intense exercise and high temperatures. Stay well hydrated. Moderate sexual activity to preserve kidney essence."
+        },
+        {
+          "type": "exercise",
+          "title": "Exercise Recommendations",
+          "titleEn": "Exercise Recommendations",
+          "content": [
+            {
+              "name": "Gentle exercise",
+              "description": "Walking, yoga, qigong - avoid intense activity",
+              "frequency": "Moderate exercise intensity",
+              "nameEn": "Gentle exercise",
+              "descriptionEn": "Walking, yoga, qigong - avoid intense activity",
+              "frequencyEn": "Moderate exercise intensity"
+            },
+            {
+              "name": "Yoga",
+              "description": "Gentle and calming, regulating breath and nourishing the spirit",
+              "frequency": "30 minutes daily",
+              "nameEn": "Yoga",
+              "descriptionEn": "Gentle and calming, regulating breath and nourishing the spirit",
+              "frequencyEn": "30 minutes daily"
+            },
+            {
+              "name": "Tai Chi",
+              "description": "Light movements with deep breathing",
+              "frequency": "Daily",
+              "nameEn": "Tai Chi",
+              "descriptionEn": "Light movements with deep breathing",
+              "frequencyEn": "Daily"
+            }
+          ]
+        },
+        {
+          "type": "acupressure",
+          "title": "Acupressure Points",
+          "titleEn": "Acupressure Points",
+          "content": [
+            {
+              "name": "Sanyinjiao (SP6)",
+              "description": "3 cun above the medial malleolus, behind the medial border of the tibia, key point for nourishing Yin",
+              "frequency": "Massage 5-10 minutes daily",
+              "nameEn": "Sanyinjiao (SP6)",
+              "descriptionEn": "3 cun above the medial malleolus, behind the medial border of the tibia, key point for nourishing Yin",
+              "frequencyEn": "Massage 5-10 minutes daily"
+            },
+            {
+              "name": "Taixi (KD3)",
+              "description": "In the depression between the medial malleolus and Achilles tendon, tonifies kidneys and nourishes Yin",
+              "frequency": "Massage 5-10 minutes daily",
+              "nameEn": "Taixi (KD3)",
+              "descriptionEn": "In the depression between the medial malleolus and Achilles tendon, tonifies kidneys and nourishes Yin",
+              "frequencyEn": "Massage 5-10 minutes daily"
+            },
+            {
+              "name": "Yongquan (KD1)",
+              "description": "In the depression at the anterior 1/3 of the sole, guides fire downward",
+              "frequency": "Massage or moxibustion daily",
+              "nameEn": "Yongquan (KD1)",
+              "descriptionEn": "In the depression at the anterior 1/3 of the sole, guides fire downward",
+              "frequencyEn": "Massage or moxibustion daily"
+            }
+          ]
+        },
+        {
+          "type": "emotional",
+          "title": "Emotional Regulation",
+          "titleEn": "Emotional Regulation",
+          "content": "Avoid irritability and anger — 'anger injures the Liver' and emotional excess generates fire. Maintain inner calm, avoid emotional outbursts. Practice meditation or quiet sitting to calm the mind.",
+          "contentEn": "Avoid irritability and anger — 'anger injures the Liver' and emotional excess generates fire. Maintain inner calm, avoid emotional outbursts. Practice meditation or quiet sitting to calm the mind."
+        }
+      ],
+      "priority": "high",
+      "tags": [
+        "Yin Deficiency",
+        "Nourish Yin",
+        "Clear Heat"
+      ],
+      "titleEn": "Yin Deficiency Constitution Regulation",
+      "summaryEn": "Nourish Yin, clear heat, generate fluids, avoid dryness and heat",
+      "tagsEn": [
+        "Yin Deficiency",
+        "Nourish Yin",
+        "Clear Heat"
+      ]
+    },
+    {
+      "id": "REC_E_001",
+      "title": "Phlegm-Dampness Constitution Regulation",
+      "summary": "Strengthen spleen, drain dampness, resolve phlegm, lose weight and reduce fat",
+      "appliesTo": {
+        "constitutionTypes": [
+          "E"
+        ]
+      },
+      "sections": [
+        {
+          "type": "diet",
+          "title": "Dietary Regulation",
+          "titleEn": "Dietary Regulation",
+          "content": [
+            {
+              "name": "Eat spleen-strengthening, dampness-draining foods",
+              "description": "Coix seed, white kidney beans, red beans, poria, winter melon, cucumber, bitter melon, kelp, seaweed, radish, hawthorn",
+              "frequency": "Eat regularly",
+              "nameEn": "Eat spleen-strengthening, dampness-draining foods",
+              "descriptionEn": "Coix seed, white kidney beans, red beans, poria, winter melon, cucumber, bitter melon, kelp, seaweed, radish, hawthorn",
+              "frequencyEn": "Eat regularly"
+            },
+            {
+              "name": "Avoid fatty, sweet, rich foods",
+              "description": "Fried foods, fatty meat, sweets, cake, chocolate, alcohol",
+              "contraindications": [
+                "Those with heavy Phlegm-Dampness"
+              ],
+              "nameEn": "Avoid fatty, sweet, rich foods",
+              "descriptionEn": "Fried foods, fatty meat, sweets, cake, chocolate, alcohol"
+            },
+            {
+              "name": "Coix Seed and Red Bean Congee",
+              "description": "30g coix seeds, 30g red beans, cook as congee",
+              "frequency": "Daily or every other day",
+              "nameEn": "Coix Seed and Red Bean Congee",
+              "descriptionEn": "30g coix seeds, 30g red beans, cook as congee",
+              "frequencyEn": "Daily or every other day"
+            },
+            {
+              "name": "Winter Melon and Lotus Leaf Tea",
+              "description": "30g winter melon peel, 10g dried lotus leaf, steep as tea",
+              "frequency": "Daily",
+              "nameEn": "Winter Melon and Lotus Leaf Tea",
+              "descriptionEn": "30g winter melon peel, 10g dried lotus leaf, steep as tea",
+              "frequencyEn": "Daily"
+            }
+          ]
+        },
+        {
+          "type": "lifestyle",
+          "title": "Daily Life Regulation",
+          "titleEn": "Daily Life Regulation",
+          "content": "Avoid sedentary lifestyle, increase exercise. Living environment should be dry and well-ventilated. Control food intake, reduce calories. Maintain regular bowel movements.",
+          "contentEn": "Avoid sedentary lifestyle, increase exercise. Living environment should be dry and well-ventilated. Control food intake, reduce calories. Maintain regular bowel movements."
+        },
+        {
+          "type": "exercise",
+          "title": "Exercise Recommendations",
+          "titleEn": "Exercise Recommendations",
+          "content": [
+            {
+              "name": "Regular aerobic exercise",
+              "description": "Jogging, brisk walking, swimming, cycling - promotes metabolism",
+              "frequency": "40-60 minutes daily",
+              "nameEn": "Regular aerobic exercise",
+              "descriptionEn": "Jogging, brisk walking, swimming, cycling - promotes metabolism",
+              "frequencyEn": "40-60 minutes daily"
+            },
+            {
+              "name": "Weight control",
+              "description": "Through exercise and diet control, gradually reduce weight",
+              "frequency": "Continuously",
+              "nameEn": "Weight control",
+              "descriptionEn": "Through exercise and diet control, gradually reduce weight",
+              "frequencyEn": "Continuously"
+            }
+          ]
+        },
+        {
+          "type": "acupressure",
+          "title": "Acupressure Points",
+          "titleEn": "Acupressure Points",
+          "content": [
+            {
+              "name": "Fenglong (ST40)",
+              "description": "8 cun above the lateral malleolus, 1 cun lateral to Tiaokou (ST38) - key point for resolving phlegm",
+              "frequency": "Massage 5-10 minutes daily",
+              "nameEn": "Fenglong (ST40)",
+              "descriptionEn": "8 cun above the lateral malleolus, 1 cun lateral to Tiaokou (ST38) - key point for resolving phlegm",
+              "frequencyEn": "Massage 5-10 minutes daily"
+            },
+            {
+              "name": "Zusanli (ST36)",
+              "description": "3 cun below the knee, strengthens spleen and harmonizes stomach",
+              "frequency": "Massage 5-10 minutes daily",
+              "nameEn": "Zusanli (ST36)",
+              "descriptionEn": "3 cun below the knee, strengthens spleen and harmonizes stomach",
+              "frequencyEn": "Massage 5-10 minutes daily"
+            },
+            {
+              "name": "Zhongwan (CV12)",
+              "description": "On the midline, 4 cun above the navel, harmonizes stomach and resolves phlegm",
+              "frequency": "Massage 5-10 minutes daily",
+              "nameEn": "Zhongwan (CV12)",
+              "descriptionEn": "On the midline, 4 cun above the navel, harmonizes stomach and resolves phlegm",
+              "frequencyEn": "Massage 5-10 minutes daily"
+            }
+          ]
+        },
+        {
+          "type": "emotional",
+          "title": "Emotional Regulation",
+          "titleEn": "Emotional Regulation",
+          "content": "Avoid excessive thinking — 'overthinking injures the Spleen,' impairing digestion and generating dampness. Stay cheerful and engage in outdoor activities.",
+          "contentEn": "Avoid excessive thinking — 'overthinking injures the Spleen,' impairing digestion and generating dampness. Stay cheerful and engage in outdoor activities."
+        }
+      ],
+      "priority": "high",
+      "tags": [
+        "Phlegm-Dampness",
+        "Strengthen Spleen",
+        "Drain Dampness",
+        "Weight Management"
+      ],
+      "titleEn": "Phlegm-Dampness Constitution Regulation",
+      "summaryEn": "Strengthen spleen, drain dampness, resolve phlegm, lose weight and reduce fat",
+      "tagsEn": [
+        "Phlegm-Dampness",
+        "Strengthen Spleen",
+        "Drain Dampness",
+        "Weight Management"
+      ]
+    },
+    {
+      "id": "REC_F_001",
+      "title": "Damp-Heat Constitution Regulation",
+      "summary": "Clear heat, drain dampness, eliminate toxins, avoid damp-heat environments",
+      "appliesTo": {
+        "constitutionTypes": [
+          "F"
+        ]
+      },
+      "sections": [
+        {
+          "type": "diet",
+          "title": "Dietary Regulation",
+          "titleEn": "Dietary Regulation",
+          "content": [
+            {
+              "name": "Eat cooling, dampness-clearing foods",
+              "description": "Mung beans, coix seed, bitter melon, winter melon, cucumber, watermelon, lotus root, celery, bok choy, radish, kelp, green tea",
+              "frequency": "Eat regularly",
+              "nameEn": "Eat cooling, dampness-clearing foods",
+              "descriptionEn": "Mung beans, coix seed, bitter melon, winter melon, cucumber, watermelon, lotus root, celery, bok choy, radish, kelp, green tea",
+              "frequencyEn": "Eat regularly"
+            },
+            {
+              "name": "Avoid spicy, greasy foods",
+              "description": "Chili, ginger, garlic, lamb, dog meat, fried foods, sweets, alcohol",
+              "contraindications": [
+                "Those with severe Damp-Heat"
+              ],
+              "nameEn": "Avoid spicy, greasy foods",
+              "descriptionEn": "Chili, ginger, garlic, lamb, dog meat, fried foods, sweets, alcohol"
+            },
+            {
+              "name": "Mung Bean & Coix Seed Soup",
+              "description": "30g mung beans, 30g coix seeds, cooked into soup",
+              "frequency": "2-3 times per week in summer",
+              "nameEn": "Mung Bean & Coix Seed Soup",
+              "descriptionEn": "30g mung beans, 30g coix seeds, cooked into soup",
+              "frequencyEn": "2-3 times per week in summer"
+            },
+            {
+              "name": "Bitter Melon & Pork Rib Soup",
+              "description": "100g bitter melon, 200g pork ribs, slow-cooked into soup",
+              "frequency": "1-2 times per week",
+              "nameEn": "Bitter Melon & Pork Rib Soup",
+              "descriptionEn": "100g bitter melon, 200g pork ribs, slow-cooked into soup",
+              "frequencyEn": "1-2 times per week"
+            }
+          ]
+        },
+        {
+          "type": "lifestyle",
+          "title": "Daily Life Regulation",
+          "titleEn": "Daily Life Regulation",
+          "content": "Avoid damp environments; keep indoor spaces ventilated and dry. Avoid staying up late. Keep skin clean to prevent acne and eczema. Avoid hot, humid environments.",
+          "contentEn": "Avoid damp environments; keep indoor spaces ventilated and dry. Avoid staying up late. Keep skin clean to prevent acne and eczema. Avoid hot, humid environments."
+        },
+        {
+          "type": "exercise",
+          "title": "Exercise Recommendations",
+          "titleEn": "Exercise Recommendations",
+          "content": [
+            {
+              "name": "High intensity exercise suitable",
+              "description": "Damp-Heat constitution benefits from vigorous exercise to sweat out damp-heat",
+              "frequency": "40-60 minutes daily",
+              "nameEn": "High intensity exercise suitable",
+              "descriptionEn": "Damp-Heat constitution benefits from vigorous exercise to sweat out damp-heat",
+              "frequencyEn": "40-60 minutes daily"
+            },
+            {
+              "name": "Aerobic Exercise",
+              "description": "Jogging, swimming, hiking, ball sports",
+              "frequency": "4-5 times per week",
+              "nameEn": "Aerobic Exercise",
+              "descriptionEn": "Jogging, swimming, hiking, ball sports",
+              "frequencyEn": "4-5 times per week"
+            }
+          ]
+        },
+        {
+          "type": "acupressure",
+          "title": "Acupressure Points",
+          "titleEn": "Acupressure Points",
+          "content": [
+            {
+              "name": "Yinlingquan (SP9)",
+              "description": "On the inner lower leg, 3 cun above the medial malleolus, posterior to the medial border of the tibia - drains dampness",
+              "frequency": "Massage 5-10 minutes daily",
+              "nameEn": "Yinlingquan (SP9)",
+              "descriptionEn": "On the inner lower leg, 3 cun above the medial malleolus, posterior to the medial border of the tibia - drains dampness",
+              "frequencyEn": "Massage 5-10 minutes daily"
+            },
+            {
+              "name": "Quchi (LI11)",
+              "description": "At the lateral end of the elbow crease - clears heat and resolves dampness",
+              "frequency": "Massage 5-10 minutes daily",
+              "nameEn": "Quchi (LI11)",
+              "descriptionEn": "At the lateral end of the elbow crease - clears heat and resolves dampness",
+              "frequencyEn": "Massage 5-10 minutes daily"
+            }
+          ]
+        },
+        {
+          "type": "emotional",
+          "title": "Emotional Regulation",
+          "titleEn": "Emotional Regulation",
+          "content": "Avoid irritability and anger, as emotional excess generates fire and worsens damp-heat. Maintain a calm and stable emotional state.",
+          "contentEn": "Avoid irritability and anger, as emotional excess generates fire and worsens damp-heat. Maintain a calm and stable emotional state."
+        }
+      ],
+      "priority": "high",
+      "tags": [
+        "Damp-Heat",
+        "Clear Heat",
+        "Drain Dampness"
+      ],
+      "titleEn": "Damp-Heat Constitution Regulation",
+      "summaryEn": "Clear heat, drain dampness, eliminate toxins, avoid damp-heat environments",
+      "tagsEn": [
+        "Damp-Heat",
+        "Clear Heat",
+        "Drain Dampness"
+      ]
+    },
+    {
+      "id": "REC_G_001",
+      "title": "Blood Stasis Constitution Regulation",
+      "summary": "Activate blood, resolve stasis, promote Qi and blood circulation, unblock meridians",
+      "appliesTo": {
+        "constitutionTypes": [
+          "G"
+        ]
+      },
+      "sections": [
+        {
+          "type": "diet",
+          "title": "Dietary Regulation",
+          "titleEn": "Dietary Regulation",
+          "content": [
+            {
+              "name": "Eat blood-activating foods",
+              "description": "Hawthorn, peach kernel, safflower, rose petal, black fungus, black bean, onion, ginger, garlic, vinegar, red wine (in moderation)",
+              "frequency": "Eat regularly",
+              "nameEn": "Eat blood-activating foods",
+              "descriptionEn": "Hawthorn, peach kernel, safflower, rose petal, black fungus, black bean, onion, ginger, garlic, vinegar, red wine (in moderation)",
+              "frequencyEn": "Eat regularly"
+            },
+            {
+              "name": "Avoid cold, congealing foods",
+              "description": "Cold drinks, cold fruits, black plum, pomegranate, persimmon - astringent foods",
+              "contraindications": [
+                "Those with pronounced Blood Stasis"
+              ],
+              "nameEn": "Avoid cold, congealing foods",
+              "descriptionEn": "Cold drinks, cold fruits, black plum, pomegranate, persimmon - astringent foods"
+            },
+            {
+              "name": "Hawthorn & Rose Petal Tea",
+              "description": "10g hawthorn, 5g rose petals, steeped as tea",
+              "frequency": "Daily",
+              "nameEn": "Hawthorn & Rose Petal Tea",
+              "descriptionEn": "10g hawthorn, 5g rose petals, steeped as tea",
+              "frequencyEn": "Daily"
+            },
+            {
+              "name": "Stir-fried Black Fungus with Onion",
+              "description": "10g black fungus, 100g onion, stir-fried",
+              "frequency": "2-3 times per week",
+              "nameEn": "Stir-fried Black Fungus with Onion",
+              "descriptionEn": "10g black fungus, 100g onion, stir-fried",
+              "frequencyEn": "2-3 times per week"
+            }
+          ]
+        },
+        {
+          "type": "lifestyle",
+          "title": "Daily Life Regulation",
+          "titleEn": "Daily Life Regulation",
+          "content": "Keep warm, avoid cold. Gentle massage to promote circulation. Emotional stability. Avoid trauma. Moderate exercise to promote blood flow without overexertion.",
+          "contentEn": "Keep warm, avoid cold. Gentle massage to promote circulation. Emotional stability. Avoid trauma. Moderate exercise to promote blood flow without overexertion."
+        },
+        {
+          "type": "exercise",
+          "title": "Exercise Recommendations",
+          "titleEn": "Exercise Recommendations",
+          "content": [
+            {
+              "name": "Regular moderate exercise",
+              "description": "Walking, tai chi, yoga - promotes circulation without strain",
+              "frequency": "30-40 minutes daily",
+              "nameEn": "Regular moderate exercise",
+              "descriptionEn": "Walking, tai chi, yoga - promotes circulation without strain",
+              "frequencyEn": "30-40 minutes daily"
+            },
+            {
+              "name": "Aerobic Exercise",
+              "description": "Jogging, brisk walking, dancing, swimming",
+              "frequency": "4-5 times per week",
+              "nameEn": "Aerobic Exercise",
+              "descriptionEn": "Jogging, brisk walking, dancing, swimming",
+              "frequencyEn": "4-5 times per week"
+            }
+          ]
+        },
+        {
+          "type": "acupressure",
+          "title": "Acupressure Points",
+          "titleEn": "Acupressure Points",
+          "content": [
+            {
+              "name": "Xuehai (SP10)",
+              "description": "2 cun above the medial border of the patella, activates blood",
+              "frequency": "Massage 5-10 minutes daily",
+              "nameEn": "Xuehai (SP10)",
+              "descriptionEn": "2 cun above the medial border of the patella, activates blood",
+              "frequencyEn": "Massage 5-10 minutes daily"
+            },
+            {
+              "name": "Sanyinjiao (SP6)",
+              "description": "3 cun above the medial malleolus, regulates Qi and blood",
+              "frequency": "Massage 5-10 minutes daily",
+              "nameEn": "Sanyinjiao (SP6)",
+              "descriptionEn": "3 cun above the medial malleolus, regulates Qi and blood",
+              "frequencyEn": "Massage 5-10 minutes daily"
+            },
+            {
+              "name": "Hegu (LI4)",
+              "description": "On the dorsum of the hand between the 1st and 2nd metacarpals, promotes Qi and blood circulation",
+              "frequency": "Massage 5-10 minutes daily",
+              "nameEn": "Hegu (LI4)",
+              "descriptionEn": "On the dorsum of the hand between the 1st and 2nd metacarpals, promotes Qi and blood circulation",
+              "frequencyEn": "Massage 5-10 minutes daily"
+            }
+          ]
+        },
+        {
+          "type": "emotional",
+          "title": "Emotional Regulation",
+          "titleEn": "Emotional Regulation",
+          "content": "Maintain a cheerful mood, avoid depression and anger — 'Qi stagnation leads to Blood stasis.' Join social activities and find healthy outlets for negative emotions.",
+          "contentEn": "Maintain a cheerful mood, avoid depression and anger — 'Qi stagnation leads to Blood stasis.' Join social activities and find healthy outlets for negative emotions."
+        }
+      ],
+      "priority": "high",
+      "tags": [
+        "Blood Stasis",
+        "Invigorate Blood",
+        "Remove Stasis"
+      ],
+      "titleEn": "Blood Stasis Constitution Regulation",
+      "summaryEn": "Activate blood, resolve stasis, promote Qi and blood circulation, unblock meridians",
+      "tagsEn": [
+        "Blood Stasis",
+        "Invigorate Blood",
+        "Remove Stasis"
+      ]
+    },
+    {
+      "id": "REC_H_001",
+      "title": "Qi Stagnation Constitution Regulation",
+      "summary": "Soothe liver, regulate Qi, relieve depression, calm mind, harmonize emotions",
+      "appliesTo": {
+        "constitutionTypes": [
+          "H"
+        ]
+      },
+      "sections": [
+        {
+          "type": "diet",
+          "title": "Dietary Regulation",
+          "titleEn": "Dietary Regulation",
+          "content": [
+            {
+              "name": "Eat liver-soothing, qi-regulating foods",
+              "description": "Rose, jasmine, bergamot, citrus, kumquat, pomelo, buckwheat, sorghum, sword bean, mushroom, radish",
+              "frequency": "Eat regularly",
+              "nameEn": "Eat liver-soothing, qi-regulating foods",
+              "descriptionEn": "Rose, jasmine, bergamot, citrus, kumquat, pomelo, buckwheat, sorghum, sword bean, mushroom, radish",
+              "frequencyEn": "Eat regularly"
+            },
+            {
+              "name": "Avoid astringent, sour foods",
+              "description": "Black plum, pomegranate, persimmon, waxberry, pickled vegetables",
+              "contraindications": [
+                "Those with pronounced Qi Stagnation"
+              ],
+              "nameEn": "Avoid astringent, sour foods",
+              "descriptionEn": "Black plum, pomegranate, persimmon, waxberry, pickled vegetables"
+            },
+            {
+              "name": "Rose Petal Tea",
+              "description": "5-10g rose petals, steeped as tea",
+              "frequency": "Daily",
+              "nameEn": "Rose Petal Tea",
+              "descriptionEn": "5-10g rose petals, steeped as tea",
+              "frequencyEn": "Daily"
+            },
+            {
+              "name": "Buddha's Hand & Tangerine Peel Tea",
+              "description": "5g Buddha's hand, 5g tangerine peel, steeped as tea",
+              "frequency": "Daily",
+              "nameEn": "Buddha's Hand & Tangerine Peel Tea",
+              "descriptionEn": "5g Buddha's hand, 5g tangerine peel, steeped as tea",
+              "frequencyEn": "Daily"
+            }
+          ]
+        },
+        {
+          "type": "lifestyle",
+          "title": "Daily Life Regulation",
+          "titleEn": "Daily Life Regulation",
+          "content": "Participate more in social activities, communicate with others, avoid isolation. Keep living space ventilated and bright, get more sun. Listen to soothing music, watch comedy shows, maintain happy mood.",
+          "contentEn": "Participate more in social activities, communicate with others, avoid isolation. Keep living space ventilated and bright, get more sun. Listen to soothing music, watch comedy shows, maintain happy mood."
+        },
+        {
+          "type": "exercise",
+          "title": "Exercise Recommendations",
+          "titleEn": "Exercise Recommendations",
+          "content": [
+            {
+              "name": "Mind-body relaxing exercises",
+              "description": "Choose exercises that relax body and mind",
+              "frequency": "30+ minutes daily",
+              "nameEn": "Mind-body relaxing exercises",
+              "descriptionEn": "Choose exercises that relax body and mind",
+              "frequencyEn": "30+ minutes daily"
+            },
+            {
+              "name": "Yoga",
+              "description": "Combined with breath regulation, calming body and mind",
+              "frequency": "Daily",
+              "nameEn": "Yoga",
+              "descriptionEn": "Combined with breath regulation, calming body and mind",
+              "frequencyEn": "Daily"
+            },
+            {
+              "name": "Tai Chi",
+              "description": "Gentle movements that regulate Qi flow",
+              "frequency": "Daily",
+              "nameEn": "Tai Chi",
+              "descriptionEn": "Gentle movements that regulate Qi flow",
+              "frequencyEn": "Daily"
+            },
+            {
+              "name": "Dancing",
+              "description": "Group dancing for joy and wellbeing",
+              "frequency": "2-3 times per week",
+              "nameEn": "Dancing",
+              "descriptionEn": "Group dancing for joy and wellbeing",
+              "frequencyEn": "2-3 times per week"
+            }
+          ]
+        },
+        {
+          "type": "acupressure",
+          "title": "Acupressure Points",
+          "titleEn": "Acupressure Points",
+          "content": [
+            {
+              "name": "Taichong (LV3)",
+              "description": "Located on dorsum of foot, in depression anterior to junction of 1st and 2nd metatarsal bones - key point for soothing liver and regulating qi",
+              "frequency": "Massage 5-10 minutes daily",
+              "nameEn": "Taichong (LV3)",
+              "descriptionEn": "Located on dorsum of foot, in depression anterior to junction of 1st and 2nd metatarsal bones - key point for soothing liver and regulating qi",
+              "frequencyEn": "Massage 5-10 minutes daily"
+            },
+            {
+              "name": "Qimen (LV14)",
+              "description": "Located directly below nipple, 6th intercostal space, soothes liver and relieves depression",
+              "frequency": "Massage 5-10 minutes daily",
+              "nameEn": "Qimen (LV14)",
+              "descriptionEn": "Located directly below nipple, 6th intercostal space, soothes liver and relieves depression",
+              "frequencyEn": "Massage 5-10 minutes daily"
+            },
+            {
+              "name": "Danzhong (CV17)",
+              "description": "Located on midline, midpoint between nipples, expands chest and regulates qi",
+              "frequency": "Massage 5-10 minutes daily",
+              "nameEn": "Danzhong (CV17)",
+              "descriptionEn": "Located on midline, midpoint between nipples, expands chest and regulates qi",
+              "frequencyEn": "Massage 5-10 minutes daily"
+            }
+          ]
+        },
+        {
+          "type": "emotional",
+          "title": "Emotional Regulation",
+          "titleEn": "Emotional Regulation",
+          "content": "Keep emotions flowing freely — don't suppress negative feelings. Stay socially connected, join group activities. Avoid excessive worry and depression. Practice meditation and deep breathing to relax.",
+          "contentEn": "Keep emotions flowing freely — don't suppress negative feelings. Stay socially connected, join group activities. Avoid excessive worry and depression. Practice meditation and deep breathing to relax."
+        }
+      ],
+      "priority": "high",
+      "tags": [
+        "Qi Stagnation",
+        "Soothe Liver",
+        "Regulate Qi",
+        "Relieve Stagnation"
+      ],
+      "titleEn": "Qi Stagnation Constitution Regulation",
+      "summaryEn": "Soothe liver, regulate Qi, relieve depression, calm mind, harmonize emotions",
+      "tagsEn": [
+        "Qi Stagnation",
+        "Soothe Liver",
+        "Regulate Qi",
+        "Relieve Stagnation"
+      ]
+    },
+    {
+      "id": "REC_I_001",
+      "title": "Special/Allergic Constitution Regulation",
+      "summary": "Avoid allergens, strengthen constitution, prevent allergic reactions",
+      "appliesTo": {
+        "constitutionTypes": [
+          "I"
+        ]
+      },
+      "sections": [
+        {
+          "type": "diet",
+          "title": "Dietary Regulation",
+          "titleEn": "Dietary Regulation",
+          "content": [
+            {
+              "name": "Eat anti-allergy foods",
+              "description": "Locally sourced, fresh foods. Some find benefits from fermented foods, omega-3 rich foods",
+              "frequency": "Daily",
+              "nameEn": "Eat anti-allergy foods",
+              "descriptionEn": "Locally sourced, fresh foods. Some find benefits from fermented foods, omega-3 rich foods",
+              "frequencyEn": "Daily"
+            },
+            {
+              "name": "Avoid common allergens",
+              "description": "Shellfish, nuts, dairy, gluten, eggs - based on personal triggers",
+              "contraindications": [
+                "Those with allergic constitution"
+              ],
+              "nameEn": "Avoid common allergens",
+              "descriptionEn": "Shellfish, nuts, dairy, gluten, eggs - based on personal triggers"
+            },
+            {
+              "name": "Avoid spicy, fishy, rank foods",
+              "description": "Lamb, dog meat, seafood, chili, alcohol",
+              "contraindications": [
+                "During acute allergic episodes"
+              ],
+              "nameEn": "Avoid spicy, fishy, rank foods",
+              "descriptionEn": "Lamb, dog meat, seafood, chili, alcohol"
+            }
+          ]
+        },
+        {
+          "type": "lifestyle",
+          "title": "Daily Life Regulation",
+          "titleEn": "Daily Life Regulation",
+          "content": "Identify and avoid personal allergen exposure. Keep home clean, use air purifier if needed. Wear mask in high pollen areas. Build constitution through regular sleep, moderate exercise.",
+          "contentEn": "Identify and avoid personal allergen exposure. Keep home clean, use air purifier if needed. Wear mask in high pollen areas. Build constitution through regular sleep, moderate exercise."
+        },
+        {
+          "type": "exercise",
+          "title": "Exercise Recommendations",
+          "titleEn": "Exercise Recommendations",
+          "content": [
+            {
+              "name": "Regular moderate exercise",
+              "description": "Walking, swimming, tai chi - strengthens immunity without overtaxing",
+              "frequency": "30 minutes daily",
+              "nameEn": "Regular moderate exercise",
+              "descriptionEn": "Walking, swimming, tai chi - strengthens immunity without overtaxing",
+              "frequencyEn": "30 minutes daily"
+            },
+            {
+              "name": "Avoid exercise in allergenic environments",
+              "description": "During pollen season, choose indoor exercise instead of outdoor",
+              "nameEn": "Avoid exercise in allergenic environments",
+              "descriptionEn": "During pollen season, choose indoor exercise instead of outdoor"
+            }
+          ]
+        },
+        {
+          "type": "acupressure",
+          "title": "Acupressure Points",
+          "titleEn": "Acupressure Points",
+          "content": [
+            {
+              "name": "Yingxiang (LI20)",
+              "description": "Beside the midpoint of the lateral border of the nostril, in the nasolabial groove - opens nasal passages",
+              "frequency": "Massage 3-5 minutes daily",
+              "nameEn": "Yingxiang (LI20)",
+              "descriptionEn": "Beside the midpoint of the lateral border of the nostril, in the nasolabial groove - opens nasal passages",
+              "frequencyEn": "Massage 3-5 minutes daily"
+            },
+            {
+              "name": "Zusanli (ST36)",
+              "description": "3 cun below the knee, strengthens constitution and immunity",
+              "frequency": "Massage 5-10 minutes daily",
+              "nameEn": "Zusanli (ST36)",
+              "descriptionEn": "3 cun below the knee, strengthens constitution and immunity",
+              "frequencyEn": "Massage 5-10 minutes daily"
+            }
+          ]
+        },
+        {
+          "type": "emotional",
+          "title": "Emotional Regulation",
+          "titleEn": "Emotional Regulation",
+          "content": "Maintain emotional calm, avoid excessive stress. Develop a balanced attitude toward your allergic condition and avoid excessive anxiety.",
+          "contentEn": "Maintain emotional calm, avoid excessive stress. Develop a balanced attitude toward your allergic condition and avoid excessive anxiety."
+        }
+      ],
+      "priority": "high",
+      "tags": [
+        "Special/Allergic",
+        "Allergy",
+        "Prevention"
+      ],
+      "titleEn": "Special/Allergic Constitution Regulation",
+      "summaryEn": "Avoid allergens, strengthen constitution, prevent allergic reactions",
+      "tagsEn": [
+        "Special/Allergic",
+        "Allergy",
+        "Prevention"
+      ]
+    }
+  ],
+  "seasonalRecommendations": [
+    {
+      "season": "spring",
+      "name": "Spring",
+      "advice": "In spring, Yang energy rises. Follow spring's nature of 'growth and emergence' — sleep late, rise early, stretch the body, and keep emotions free and easy. Eat mildly pungent and sweet foods such as chives, coriander, and bean sprouts. Reduce sour and astringent foods. Exercise outdoors to invigorate the body."
+    },
+    {
+      "season": "summer",
+      "name": "Summer",
+      "advice": "In summer, Yang energy flourishes. Follow summer's nature of 'exuberance' — sleep late, rise early, embrace the sunlight, and keep the mood joyful. Eat cooling, heat-clearing foods such as watermelon, mung beans, and bitter melon. Reduce spicy and warming foods. Avoid excessive use of air conditioning."
+    },
+    {
+      "season": "autumn",
+      "name": "Autumn",
+      "advice": "In autumn, Yang energy gathers inward. Follow autumn's nature of 'harvest and collection' — sleep early, rise early. Eat Yin-nourishing, moisture-retaining foods such as pears, lily bulbs, and snow fungus. Reduce spicy and drying foods. Protect the lungs from autumn dryness."
+    },
+    {
+      "season": "winter",
+      "name": "Winter",
+      "advice": "In winter, Yang energy is stored deep within. Follow winter's nature of 'storage and conservation' — sleep early, rise late, conserve energy. Eat warming kidney-tonifying foods such as lamb, walnuts, and chestnuts. Reduce raw and cold foods. Keep warm and avoid cold exposure."
+    }
+  ],
+  "metadata": {
+    "totalRecommendations": 9,
+    "totalSections": 40
+  }
+}

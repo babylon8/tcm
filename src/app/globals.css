@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --primary: 47.9 95.8% 53.1%;
+  --border: 214.3 31.8% 91.4%;
+}
+
+body {
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
