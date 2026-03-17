@@ -45,3 +45,8 @@ backup-*/
 
 # TypeScript
 *.tsbuildinfo
+
+# Large/binary files (keep out of repo)
+reference.pdf
+*.db
+.gitattributes
