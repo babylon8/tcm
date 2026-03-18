@@ -36,6 +36,7 @@ export default function QuestionPage() {
         console.error('Failed to load questions:', error);
         setLoading(false);
       });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const startIndex = currentStep * QUESTIONS_PER_STEP;

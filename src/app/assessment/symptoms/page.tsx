@@ -329,7 +329,7 @@ function SymptomCheckerWizard() {
               <div className="flex items-start gap-3">
                 <Info className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
                 <p className="text-sm text-blue-800">
-                  Select the body area where you're experiencing symptoms. You can check multiple areas by coming back to this step.
+                  Select the body area where you&apos;re experiencing symptoms. You can check multiple areas by coming back to this step.
                 </p>
               </div>
             </div>
@@ -578,7 +578,7 @@ function SymptomCheckerWizard() {
                   <h3 className="font-semibold text-blue-900 mb-2">What This Means</h3>
                   <p className="text-blue-800 text-sm mb-3">
                     These patterns are based on Traditional Chinese Medicine principles. They represent 
-                    possible imbalances in your body's energy (Qi), fluids, or organ systems.
+                    possible imbalances in your body&apos;s energy (Qi), fluids, or organ systems.
                   </p>
                   <p className="text-blue-800 text-sm font-medium">
                     ⚠️ This is for educational purposes only and is not a medical diagnosis. 
