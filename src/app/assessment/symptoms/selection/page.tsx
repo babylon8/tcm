@@ -32,7 +32,7 @@ export default function SymptomSelectionLandingPage() {
               Select a body region or browse by category to identify your symptoms and understand their TCM significance.
             </p>
             <Link
-              href="/assessment/symptoms/page"
+              href="/assessment/symptoms"
               className="inline-flex items-center justify-center px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-primary-600 transition-colors shadow-lg"
             >
               <Activity className="w-5 h-5 mr-2" />
