@@ -270,13 +270,27 @@ export default function ResultsPage() {
                     <div key={rec.id} className="border-l-4 border-primary pl-4">
                       <h3 className="text-lg font-semibold mb-2">{rec.titleEn}</h3>
                       <p className="text-gray-600 mb-3">{rec.summaryEn}</p>
-                      <div className="space-y-3">
-                        {rec.sections.slice(0, 3).map((section, sectionIndex) => (
+                      <div className="space-y-4">
+                        {rec.sections.map((section, sectionIndex) => (
                           <div key={sectionIndex}>
-                            <h4 className="font-medium text-primary mb-1">{section.titleEn}</h4>
-                            {typeof section.contentEn === 'string' && (
+                            <h4 className="font-medium text-primary mb-2">{section.titleEn}</h4>
+                            {typeof section.contentEn === 'string' ? (
                               <p className="text-sm text-gray-600">{section.contentEn}</p>
-                            )}
+                            ) : Array.isArray(section.content) ? (
+                              <ul className="space-y-2">
+                                {section.content.map((item, itemIndex) => (
+                                  <li key={itemIndex} className="text-sm text-gray-700">
+                                    <span className="font-medium">{item.nameEn || item.name}:</span>{' '}
+                                    <span className="text-gray-600">
+                                      {item.descriptionEn || item.description}
+                                      {(item.frequencyEn || item.frequency) && (
+                                        <span className="text-gray-500 italic"> ({item.frequencyEn || item.frequency})</span>
+                                      )}
+                                    </span>
+                                  </li>
+                                ))}
+                              </ul>
+                            ) : null}
                           </div>
                         ))}
                       </div>
