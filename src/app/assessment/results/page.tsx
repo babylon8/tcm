@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { ArrowLeft, RefreshCw, ChevronDown, ChevronUp } from 'lucide-react';
+import { ArrowLeft, RefreshCw, ChevronDown, ChevronUp, Save } from 'lucide-react';
 import { loadAdaptiveQuestions, loadConstitutions, loadRecommendations, loadBodyTypes, getMatchStrength, BodyTypesData } from '@/lib/data';
 import {
   calculateAllConstitutionScores,
@@ -15,6 +15,7 @@ import { useAssessmentStore } from '@/store/assessment';
 import { useAppStore } from '@/store/app';
 import type { Constitution, ConstitutionResult, Recommendation } from '@/types';
 import { getConstitutionColor } from '@/lib/utils';
+import { useAuth } from '@/contexts/AuthContext';
 
 // Visual match strength bar component
 function MatchStrengthBar({ score, showLabel = true }: { score: number; showLabel?: boolean }) {
@@ -53,6 +54,7 @@ function MatchStrengthBar({ score, showLabel = true }: { score: number; showLabe
 export default function ResultsPage() {
   const router = useRouter();
   const { addAssessment, setCurrentAssessment } = useAppStore();
+  const { user } = useAuth();
   
   const [loading, setLoading] = useState(true);
   const [primaryConstitution, setPrimaryConstitution] = useState<ConstitutionResult | null>(null);
@@ -61,6 +63,8 @@ export default function ResultsPage() {
   const [recommendations, setRecommendations] = useState<Recommendation[]>([]);
   const [bodyTypesData, setBodyTypesData] = useState<BodyTypesData | null>(null);
   const [showDetailedRecs, setShowDetailedRecs] = useState(false);
+  const [saving, setSaving] = useState(false);
+  const [saveMessage, setSaveMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
 
   useEffect(() => {
     async function loadResults() {
@@ -132,6 +136,55 @@ export default function ResultsPage() {
     router.push('/assessment/streamlined');
   };
 
+  const handleSaveToHistory = async () => {
+    if (!user) {
+      router.push('/auth/login?redirect=/assessment/results');
+      return;
+    }
+
+    if (!primaryConstitution) return;
+
+    setSaving(true);
+    setSaveMessage(null);
+
+    try {
+      const answers = useAssessmentStore.getState().answers;
+      const questionsData = await loadAdaptiveQuestions();
+      const allScores = calculateAllConstitutionScores(questionsData.questions, answers);
+
+      const response = await fetch('/api/assessment/save', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          assessment_type: 'constitution',
+          results: {
+            primary: primaryConstitution,
+            secondary: secondaryConstitutions,
+            scores: allScores.reduce((acc, s) => {
+              acc[s.constitutionId] = s.convertedScore;
+              return acc;
+            }, {} as Record<string, number>),
+            recommendations: recommendations.map(r => r.id),
+          },
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to save assessment');
+      }
+
+      setSaveMessage({ type: 'success', text: 'Assessment saved to your history!' });
+      setTimeout(() => setSaveMessage(null), 5000);
+    } catch (error) {
+      console.error('Error saving assessment:', error);
+      setSaveMessage({ type: 'error', text: 'Failed to save assessment. Please try again.' });
+    } finally {
+      setSaving(false);
+    }
+  };
+
   if (loading) {
     return (
       <div className="min-h-screen bg-gradient-to-b from-primary-50 to-white flex items-center justify-center">
@@ -184,14 +237,60 @@ export default function ResultsPage() {
                 </div>
               </div>
             </div>
-            <button
-              onClick={handleRetake}
-              className="inline-flex items-center px-3 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-colors text-sm"
-            >
-              <RefreshCw className="w-4 h-4 mr-1" />
-              Retake
-            </button>
+            <div className="flex gap-2">
+              <button
+                onClick={handleRetake}
+                className="inline-flex items-center px-3 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-colors text-sm"
+              >
+                <RefreshCw className="w-4 h-4 mr-1" />
+                Retake
+              </button>
+            </div>
           </div>
+
+          {saveMessage && (
+            <div
+              className={`mb-4 p-3 rounded-lg text-sm ${
+                saveMessage.type === 'success'
+                  ? 'bg-green-50 text-green-800 border border-green-200'
+                  : 'bg-red-50 text-red-800 border border-red-200'
+              }`}
+            >
+              {saveMessage.text}
+            </div>
+          )}
+
+          {user && (
+            <button
+              onClick={handleSaveToHistory}
+              disabled={saving}
+              className="w-full mb-6 inline-flex items-center justify-center px-4 py-3 bg-sage-600 hover:bg-sage-700 disabled:bg-gray-400 text-white rounded-lg transition-colors font-medium"
+            >
+              {saving ? (
+                <>
+                  <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
+                  Saving...
+                </>
+              ) : (
+                <>
+                  <Save className="w-4 h-4 mr-2" />
+                  Save to My History
+                </>
+              )}
+            </button>
+          )}
+
+          {!user && (
+            <div className="mb-6 p-4 bg-blue-50 border border-blue-200 rounded-lg text-sm text-blue-800">
+              <p className="mb-2 font-medium">💡 Want to save your results?</p>
+              <Link
+                href="/auth/login?redirect=/assessment/results"
+                className="inline-flex items-center text-blue-700 hover:text-blue-900 underline"
+              >
+                Sign in to save this assessment to your history
+              </Link>
+            </div>
+          )}
 
           {/* Match Strength Bar */}
           <div className="mb-6">
