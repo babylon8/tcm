@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { User, Calendar, Activity, LogOut, Trash2, ArrowRight } from 'lucide-react';
@@ -20,7 +20,7 @@ export default function ProfilePage() {
   const [assessments, setAssessments] = useState<AssessmentRecord[]>([]);
   const [loading, setLoading] = useState(true);
   const [deleting, setDeleting] = useState<string | null>(null);
-  const supabase = createClient();
+  const supabaseRef = useRef<any>(null);
 
   useEffect(() => {
     if (!authLoading && !user) {
@@ -29,13 +29,16 @@ export default function ProfilePage() {
     }
 
     if (user) {
+      supabaseRef.current = createClient();
       loadAssessmentHistory();
     }
   }, [user, authLoading, router]);
 
   const loadAssessmentHistory = async () => {
     setLoading(true);
-    const { data, error } = await supabase
+    if (!supabaseRef.current) return;
+
+    const { data, error } = await supabaseRef.current
       .from('assessment_history')
       .select('*')
       .order('created_at', { ascending: false });
@@ -52,9 +55,10 @@ export default function ProfilePage() {
     if (!confirm('Are you sure you want to delete this assessment?')) {
       return;
     }
+    if (!supabaseRef.current) return;
 
     setDeleting(id);
-    const { error } = await supabase
+    const { error } = await supabaseRef.current
       .from('assessment_history')
       .delete()
       .eq('id', id);
