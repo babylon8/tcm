@@ -1,6 +1,6 @@
 'use client';
 
-import { createContext, useContext, useEffect, useState } from 'react';
+import { createContext, useContext, useEffect, useState, useRef } from 'react';
 import { createClient } from '@/lib/supabase/client';
 
 interface AuthContextType {
@@ -16,9 +16,20 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<any | null>(null);
   const [session, setSession] = useState<any | null>(null);
   const [loading, setLoading] = useState(true);
-  const supabase = createClient();
+  const supabaseRef = useRef<any>(null);
 
   useEffect(() => {
+    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+    const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+
+    if (!supabaseUrl || !supabaseKey) {
+      setLoading(false);
+      return;
+    }
+
+    const supabase = createClient();
+    supabaseRef.current = supabase;
+
     const getSession = async () => {
       const {
         data: { session },
@@ -38,10 +49,11 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     });
 
     return () => subscription.unsubscribe();
-  }, [supabase.auth]);
+  }, []);
 
   const signOut = async () => {
-    await supabase.auth.signOut();
+    if (!supabaseRef.current) return;
+    await supabaseRef.current.auth.signOut();
     setUser(null);
     setSession(null);
   };
