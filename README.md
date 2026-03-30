@@ -7,7 +7,7 @@ A web application to help users self-diagnose health issues through Traditional 
 1. **Constitution Assessment** - 9 TCM constitution types questionnaire with adaptive 2-phase flow
 2. **Symptom Checker** - 3-step wizard with TCM pattern analysis
 3. **Results Dashboard** - Constitution profile + comprehensive recommendations
-4. **User Authentication** - Google/Facebook OAuth + email/password login
+4. **User Authentication** - Google OAuth + email/password login
 5. **User Profiles** - Assessment history tracking
 6. **Admin Dashboard** - User management for babylon8@gmail.com
 
@@ -91,12 +91,6 @@ In Supabase Dashboard > Authentication > Providers:
 3. Add authorized redirect URI: `https://[your-project-ref].supabase.co/auth/v1/callback`
 4. Copy Client ID and Client Secret to Supabase
 
-**Facebook OAuth:**
-1. Enable Facebook provider
-2. Create app at [Facebook Developers](https://developers.facebook.com/)
-3. Add OAuth redirect URI: `https://[your-project-ref].supabase.co/auth/v1/callback`
-4. Copy App ID and App Secret to Supabase
-
 ### 5. Configure Site URL (for Vercel deployment)
 
 In Supabase Dashboard > Authentication > URL Configuration:
@@ -143,7 +137,7 @@ Quick overview:
 1. Go to Supabase Dashboard → Authentication → URL Configuration
 2. Set Site URL to `https://your-app-name.vercel.app`
 3. Add redirect URL: `https://your-app-name.vercel.app/auth/callback`
-4. Update Google/Facebook OAuth apps with Vercel callback URLs
+4. Update Google OAuth app with Vercel callback URLs
 5. Clear browser cookies and test again
 
 ### "Database error saving new user" during OAuth signup

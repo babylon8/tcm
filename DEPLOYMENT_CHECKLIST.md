@@ -10,7 +10,6 @@ This guide will help you deploy the TCM Self-Diagnosis app to Vercel with full a
 - [ ] GitHub repository with latest code pushed
 - [ ] Vercel account created
 - [ ] Google OAuth app created (Google Cloud Console)
-- [ ] Facebook OAuth app created (Facebook Developers)
 
 ---
 
@@ -86,22 +85,6 @@ Expected output: `assessment_history`, `users`
    - Paste Client ID and Client Secret
    - Save
 
-### Step 5: Configure Facebook OAuth
-
-1. Go to [Facebook Developers](https://developers.facebook.com/)
-2. Create a new app (or select existing)
-3. Add **Facebook Login** product
-4. Go to Facebook Login → Settings
-5. Add **Valid OAuth Redirect URIs**:
-   ```
-   https://[your-supabase-project-ref].supabase.co/auth/v1/callback
-   ```
-6. Copy **App ID** and **App Secret** from Settings → Basic
-7. In Supabase Dashboard → Authentication → Providers → Facebook:
-   - Enable Facebook provider
-   - Paste App ID and App Secret
-   - Save
-
 ---
 
 ## Part 3: Vercel Deployment
@@ -160,14 +143,6 @@ Add the following environment variables in Vercel:
    ```
 3. Save
 
-**Facebook Developers:**
-1. Go to Facebook Login → Settings
-2. Add to **Valid OAuth Redirect URIs**:
-   ```
-   https://your-app-name.vercel.app/auth/callback
-   ```
-3. Save
-
 ---
 
 ## Part 5: Verification & Testing
@@ -187,13 +162,6 @@ Visit your Vercel deployment and test each authentication method:
 - [ ] Go to `/auth/login`
 - [ ] Click "Continue with Google"
 - [ ] Should redirect to Google login (NOT localhost)
-- [ ] After authorization, should redirect back to `/profile`
-- [ ] Profile page should show user info
-
-**Facebook OAuth:**
-- [ ] Go to `/auth/login`
-- [ ] Click "Continue with Facebook"
-- [ ] Should redirect to Facebook login (NOT localhost)
 - [ ] After authorization, should redirect back to `/profile`
 - [ ] Profile page should show user info
 
@@ -297,7 +265,7 @@ Visit your Vercel deployment and test each authentication method:
 
 After successful deployment, verify:
 
-- [ ] All authentication methods work (email, Google, Facebook)
+- [ ] All authentication methods work (email, Google OAuth)
 - [ ] Admin dashboard accessible to babylon8@gmail.com only
 - [ ] Assessment history saves and displays correctly
 - [ ] No localhost redirects during OAuth flow
