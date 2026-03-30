@@ -111,6 +111,9 @@ npm install @supabase/supabase-js @supabase/ssr
 - [Questionnaire Design](./docs/QUESTIONNAIRE.md)
 - [Auth Implementation Status](./AUTH_IMPLEMENTATION_STATUS.md)
 - [**Deployment Checklist**](./DEPLOYMENT_CHECKLIST.md) - Complete guide for Vercel deployment
+- [**Troubleshooting Flowchart**](./TROUBLESHOOTING_FLOWCHART.md) - Quick problem diagnosis and fixes
+- [**Migration Quick Reference**](./MIGRATION_QUICK_REFERENCE.md) - Step-by-step migration execution with troubleshooting
+- [**OAuth Troubleshooting**](./OAUTH_TROUBLESHOOTING.md) - Detailed "Database error saving new user" fix guide
 
 ## Deployment
 
@@ -128,6 +131,8 @@ Quick overview:
 8. Test all authentication flows
 
 ## Troubleshooting
+
+**Quick problem diagnosis**: See [TROUBLESHOOTING_FLOWCHART.md](./TROUBLESHOOTING_FLOWCHART.md) for decision tree
 
 ### OAuth redirects to localhost after Vercel deployment
 
@@ -151,6 +156,10 @@ Quick overview:
    ```sql
    SELECT * FROM pg_policies WHERE tablename = 'users' AND policyname LIKE '%insert%';
    ```
+
+**For complete step-by-step migration guide with all error scenarios, see:**
+- [**MIGRATION_QUICK_REFERENCE.md**](./MIGRATION_QUICK_REFERENCE.md) - Execution steps with immediate fixes
+- [**OAUTH_TROUBLESHOOTING.md**](./OAUTH_TROUBLESHOOTING.md) - Detailed debugging guide
 
 For more troubleshooting scenarios, see [DEPLOYMENT_CHECKLIST.md](./DEPLOYMENT_CHECKLIST.md).
 

@@ -17,6 +17,8 @@ This guide will help you deploy the TCM Self-Diagnosis app to Vercel with full a
 
 ### Step 1: Run Database Migrations
 
+> **For detailed step-by-step execution with all error scenarios, see [MIGRATION_QUICK_REFERENCE.md](./MIGRATION_QUICK_REFERENCE.md)**
+
 1. Open Supabase Dashboard → SQL Editor
 2. Execute migrations **in order**:
 
@@ -208,12 +210,14 @@ Visit your Vercel deployment and test each authentication method:
 
 **Solution:**
 1. Verify you ran **all three** migrations (especially migration 3: `20260330000000_fix_users_insert_policy.sql`)
-2. Check Supabase Dashboard → Logs for detailed error
-3. Verify RLS policies in SQL Editor:
+2. See [MIGRATION_QUICK_REFERENCE.md](./MIGRATION_QUICK_REFERENCE.md) for step-by-step execution
+3. See [OAUTH_TROUBLESHOOTING.md](./OAUTH_TROUBLESHOOTING.md) for detailed debugging
+4. Check Supabase Dashboard → Logs for detailed error
+5. Verify RLS policies in SQL Editor:
    ```sql
    SELECT * FROM pg_policies WHERE tablename = 'users';
    ```
-4. Should see INSERT policy: `"Enable insert for authenticated users during signup"`
+6. Should see INSERT policy: `"Enable insert for authenticated users during signup"`
 
 ### Issue: "Invalid API key" or 401 Unauthorized
 
