@@ -71,13 +71,15 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
 
 ### 3. Run Database Migrations
 
-Run the SQL migrations in your Supabase SQL Editor (Dashboard > SQL Editor):
+Run the SQL migrations in your Supabase SQL Editor (Dashboard > SQL Editor) **in order**:
 
 1. Execute `supabase/migrations/20260318000001_create_users_table.sql`
    - Creates users table with RLS policies
    - Automatically sets babylon8@gmail.com as admin
 2. Execute `supabase/migrations/20260318000002_create_assessment_history_table.sql`
    - Creates assessment_history table with RLS policies
+3. Execute `supabase/migrations/20260330000000_fix_users_insert_policy.sql`
+   - Fixes INSERT policy for OAuth user creation (CRITICAL)
 
 ### 4. Configure OAuth Providers
 
@@ -114,24 +116,49 @@ npm install @supabase/supabase-js @supabase/ssr
 - [Data Models](./docs/DATA_MODELS.md)
 - [Questionnaire Design](./docs/QUESTIONNAIRE.md)
 - [Auth Implementation Status](./AUTH_IMPLEMENTATION_STATUS.md)
+- [**Deployment Checklist**](./DEPLOYMENT_CHECKLIST.md) - Complete guide for Vercel deployment
 
 ## Deployment
 
-### Vercel Deployment
+**For complete deployment instructions, see [DEPLOYMENT_CHECKLIST.md](./DEPLOYMENT_CHECKLIST.md)**
+
+Quick overview:
 
 1. Push code to GitHub
-2. Import repository in Vercel dashboard
-3. Add environment variables:
-   - `NEXT_PUBLIC_SUPABASE_URL`
-   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
-4. Deploy
+2. Run all three Supabase migrations (including the INSERT policy fix)
+3. Import repository in Vercel dashboard
+4. Add environment variables in Vercel
+5. Deploy
+6. Update Supabase Site URL to Vercel domain
+7. Update OAuth redirect URLs for production
+8. Test all authentication flows
 
-### Post-Deployment
+## Troubleshooting
 
-1. Update Supabase Site URL to your Vercel domain
-2. Add Vercel domain to OAuth redirect URLs
-3. Test authentication flow (Google/Facebook/Email)
-4. Verify admin access at `/admin` with babylon8@gmail.com
+### OAuth redirects to localhost after Vercel deployment
+
+**Cause**: Supabase Site URL still points to `http://localhost:3000` instead of your Vercel domain.
+
+**Solution**:
+1. Go to Supabase Dashboard → Authentication → URL Configuration
+2. Set Site URL to `https://your-app-name.vercel.app`
+3. Add redirect URL: `https://your-app-name.vercel.app/auth/callback`
+4. Update Google/Facebook OAuth apps with Vercel callback URLs
+5. Clear browser cookies and test again
+
+### "Database error saving new user" during OAuth signup
+
+**Cause**: Missing INSERT policy on users table.
+
+**Solution**:
+1. Verify you ran the third migration: `20260330000000_fix_users_insert_policy.sql`
+2. Check Supabase Dashboard → Logs for detailed error
+3. Verify RLS policy exists:
+   ```sql
+   SELECT * FROM pg_policies WHERE tablename = 'users' AND policyname LIKE '%insert%';
+   ```
+
+For more troubleshooting scenarios, see [DEPLOYMENT_CHECKLIST.md](./DEPLOYMENT_CHECKLIST.md).
 
 ## Disclaimer
 
