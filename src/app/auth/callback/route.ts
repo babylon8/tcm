@@ -7,6 +7,7 @@ export async function GET(request: NextRequest) {
   const code = requestUrl.searchParams.get('code');
   const error = requestUrl.searchParams.get('error');
   const errorDescription = requestUrl.searchParams.get('error_description');
+  const redirectTo = requestUrl.searchParams.get('redirect') || '/profile';
 
   if (error) {
     return NextResponse.redirect(
@@ -25,5 +26,5 @@ export async function GET(request: NextRequest) {
     }
   }
 
-  return NextResponse.redirect(new URL('/profile', requestUrl.origin));
+  return NextResponse.redirect(new URL(redirectTo, requestUrl.origin));
 }

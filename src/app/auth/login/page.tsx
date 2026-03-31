@@ -36,7 +36,8 @@ function LoginForm() {
       setError(signInError.message);
       setLoading(false);
     } else {
-      router.push('/profile');
+      const redirectTo = searchParams.get('redirect') || '/profile';
+      router.push(redirectTo);
       router.refresh();
     }
   };
@@ -45,11 +46,13 @@ function LoginForm() {
     setLoading(true);
     setError('');
 
+    const redirectTo = searchParams.get('redirect') || '/profile';
+    
     const supabase = createClient();
     const { error: signInError } = await supabase.auth.signInWithOAuth({
       provider,
       options: {
-        redirectTo: `${window.location.origin}/auth/callback`,
+        redirectTo: `${window.location.origin}/auth/callback?redirect=${encodeURIComponent(redirectTo)}`,
       },
     });
 
